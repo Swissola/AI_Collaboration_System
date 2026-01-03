@@ -1,6 +1,35 @@
 # Health & Fitness Project - Starter Setup
 
-## The Essentials (Week 1 Setup)
+## Understanding the Three Layers
+
+This example shows how a real project evolved using the three-layer system:
+
+**Layer 1 (Personal Preferences)** - Account-wide, applies to ALL your AI conversations
+**Layer 2 (System Prompt)** - Project-specific context, added at setup
+**Layer 3 (Memory)** - Learned patterns, added after friction
+
+---
+
+## Layer 1: Personal Preferences (Set Once, Account-Wide)
+
+*These were set in account settings BEFORE starting this project. They apply to all AI conversations - fitness, coding, writing, everything.*
+
+```
+- Always explain reasoning before giving recommendations
+- Challenge my assumptions when they might lead to poor outcomes  
+- Prioritise sustainable approaches over quick fixes
+```
+
+**Why these matter:** 
+- "Explain reasoning" helps me understand, whether it's fitness programming or debugging code
+- "Challenge assumptions" prevents me from pursuing flawed approaches in any domain
+- "Sustainable over quick fixes" applies to fitness routines, code architecture, learning strategies
+
+---
+
+## Layer 2: System Prompt (Project Setup - Week 1)
+
+*This goes in Project Custom Instructions. It's what you know BEFORE using the AI for this project.*
 
 ### 1. Context: Who You Are & What You're Doing
 
@@ -32,18 +61,17 @@ I'm focused on building sustainable fitness habits after previous attempts at in
 4. Develop enough knowledge to understand what I'm doing and why (not just following blindly)
 5. Create a system that adapts to my schedule variations
 
-### 4. Preferences: How I Want Us to Work
+### 4. Preferences: How I Want to Work (Project-Specific)
 
 **Communication:**
-- Use British English spelling throughout
 - I'm a beginner but with good structural understanding - explain concepts but don't oversimplify
 - I want to understand WHY things work, not just WHAT to do
-- Challenge assumptions when needed, but stay supportive about the process
 
 **Approach:**
 - Evidence-based recommendations over fitness industry hype
-- Sustainable progress over quick results
 - Clear progression schemes - I like systematic approaches
+
+*Note: Universal preferences like "explain reasoning" are in Layer 1 (Personal Preferences), not here.*
 
 ### 5. Red Flags: What Won't Work For Me
 
@@ -55,13 +83,21 @@ I'm focused on building sustainable fitness habits after previous attempts at in
 
 ---
 
-## How This Evolved (Added After Week 2)
+## Layer 3: Memory (Added After Friction - Week 2+)
 
-### First Memory Instruction (After noticing pattern)
+*These were added to Project Memory after noticing recurring patterns. They're learned, not known upfront.*
 
-**Friction noticed:** Claude kept suggesting exercises that required equipment I don't have (cable machines, barbell, leg press).
+### How Memory Developed Through Friction
 
-**Memory instruction added:**
+**Week 1:** Used the system with just Layer 2 (System Prompt) above. Noticed friction.
+
+---
+
+### Memory Instruction #1 (After Week 2)
+
+**Friction noticed (3 times):** The AI kept suggesting exercises requiring equipment I don't have (cable machines, barbell, leg press).
+
+**Added to Project Memory:**
 ```
 Equipment Check Before Exercise Suggestions:
 - Always confirm available equipment before prescribing specific exercises
@@ -74,11 +110,11 @@ Equipment Check Before Exercise Suggestions:
 
 ---
 
-### Second Memory Instruction (After Week 3)
+### Memory Instruction #2 (After Week 3)
 
-**Friction noticed:** Workout suggestions were sometimes too complex (4-5 exercises per muscle group, multiple set/rep schemes in one session).
+**Friction noticed (3 times):** Workout suggestions were too complex (4-5 exercises per muscle group, multiple set/rep schemes in one session).
 
-**Memory instruction added:**
+**Added to Project Memory:**
 ```
 Workout Complexity Calibration:
 - Prefer simple, effective programmes over complex ones
@@ -92,9 +128,11 @@ Workout Complexity Calibration:
 
 ---
 
-## Optional Expansion (Added Month 2)
+## Layer 2 Expansions (Added to System Prompt - Month 2)
 
-### Operating Modes (Added when I noticed distinct interaction types)
+*These optional sections were added to Project Custom Instructions (Layer 2) after friction revealed the need.*
+
+### Operating Modes (Added when distinct interaction types became clear)
 
 **Mode 1: Programme Planning**
 When I'm: Planning training blocks, designing progression schemes, setting up new phases
@@ -179,13 +217,10 @@ When suggesting programme changes, reference these priorities explicitly.
 
 ---
 
-## Current Status
+## Three-Layer Summary
 
-**Version:** 2.0  
-**Created:** [Start date]  
-**Last Major Update:** [After 2 months]  
-**Next Review:** [In 1 month]
+**Layer 1 (Personal Preferences):** 3 universal standards set once, apply everywhere  
+**Layer 2 (System Prompt):** 5 essentials + 2 optional sections added after Month 2  
+**Layer 3 (Memory):** 2 learned patterns from friction
 
-**Active Memory Instructions:** 2  
-**System Prompt Sections:** Core + Operating Modes + Decision Framework  
-**Works Well For:** Home training with limited equipment, flexible scheduling, progressive strength building
+**Total setup time:** 30 minutes initially, evolved over 2 months through real use
