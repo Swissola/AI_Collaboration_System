@@ -79,6 +79,13 @@ Quick navigation guide to all files in this project.
 - Real-world examples across domains
 - Maintenance strategies
 
+**`guides/personal-preferences-guide.md`** - Personal preferences setup
+- Account-level vs. project-level instructions
+- Real example: preferences evolved over 2 months
+- Building your own through friction
+- Decision tree for what goes where
+- Integration with projects
+
 **`guides/template-usage-order.md`** - Template workflow guide
 - Clear usage order (starter → advanced)
 - Phase-by-phase timeline
@@ -176,6 +183,7 @@ claude-instruction-design/
 ├── guides/
 │   ├── implementation-guide.md        # Primary setup guide
 │   ├── memory-guide.md                # Memory system guide
+│   ├── personal-preferences-guide.md  # Account-level preferences
 │   ├── template-usage-order.md        # How to use templates
 │   └── quick-start-checklist.md       # Fast-track setup
 │

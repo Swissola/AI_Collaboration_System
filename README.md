@@ -39,7 +39,7 @@ A complete system for designing effective Claude Projects through friction-drive
 
 **📂 Examples** - Health/fitness and career/coding filled examples showing evolution
 
-**📚 Guides** - Implementation, memory development, template usage, quick-start checklist
+**📚 Guides** - Implementation, memory development, template usage, quick-start checklist, personal preferences
 
 **📖 Reference** - Glossary of terms and concepts, comprehensive project index
 

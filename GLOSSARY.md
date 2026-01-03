@@ -436,4 +436,5 @@ Personal Preferences (Everywhere)
 - **README.md** - System overview
 - **implementation-guide.md** - Detailed setup process
 - **memory-guide.md** - Deep dive on memory development
+- **personal-preferences-guide.md** - Account-level preferences setup
 - **template-usage-order.md** - How to use templates
