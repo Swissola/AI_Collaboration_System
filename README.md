@@ -39,7 +39,7 @@ A complete system for designing effective Claude Projects through friction-drive
 
 **📂 Examples** - Health/fitness and career/coding filled examples showing evolution
 
-**📚 Guides** - Implementation, memory development, template usage, quick-start checklist, personal preferences
+**📚 Guides** - Implementation, memory development, personal preferences (account-level), template usage, quick-start checklist
 
 **📖 Reference** - Glossary of terms and concepts, comprehensive project index
 
@@ -130,21 +130,49 @@ Add optional sections only when friction reveals you need them:
 
 ## Key Concepts
 
+### The Three Layers
+
+Your complete AI collaboration system has three levels:
+
+**Personal Preferences (Account-wide):**
+- Universal standards for ALL Claude conversations
+- Language, communication style, work quality expectations
+- Set once in account settings, applies everywhere
+- Example: "Use British English" or "Always verify syntax before suggesting tests"
+
+**System Prompt (Project-specific):**
+- Context for THIS domain/project
+- Your goals, constraints, background
+- What you know before starting
+- Example: "I'm learning Python for data science with limited time"
+
+**Project Memory (Learned patterns):**
+- What you discover through friction
+- Specific corrections after Rule of Three
+- Evolves continuously through use
+- Example: "When suggesting exercises, ask about equipment first"
+
+**Together:** Universal baseline + Project context + Learned patterns = Personalised system
+
+---
+
 ### System Prompt vs. Memory
 
+Understanding the difference between project-level instructions:
+
 **System Prompt (Custom Instructions):**
-- What you know before starting
-- Your context, goals, constraints
-- General preferences
+- What you know before starting THIS project
+- Your context, goals, constraints for this domain
+- General project preferences
 - Doesn't change often
 
 **Project Memory:**
-- What you learn through use
+- What you learn through using THIS project
 - Specific corrections from friction
-- Discovered preferences
+- Discovered project-specific preferences
 - Evolves continuously
 
-**Together:** Hypothesis + Findings = Continuously improving system
+**Together with Personal Preferences:** Universal baseline (preferences) + Starting hypothesis (system prompt) + Findings (memory) = Continuously improving system
 
 ### The Rule of Three
 
