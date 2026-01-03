@@ -17,3 +17,4 @@ Thumbs.db
 # User-specific customizations
 my-*.md
 drafts/
+.git-credentials
