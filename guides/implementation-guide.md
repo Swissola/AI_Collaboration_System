@@ -11,7 +11,83 @@ The result: Start light, expand deliberately, let friction guide you.
 
 ---
 
+## Understanding the Three-Layer System
+
+Before you start, understand where this implementation guide fits in your complete AI collaboration setup.
+
+### The Three Layers
+
+Your complete AI system has three distinct layers:
+
+**Layer 1: Personal Preferences (Account-wide)**
+- Universal standards that apply to ALL your AI conversations
+- Examples: "Use British English", "Always explain your reasoning", "Verify code syntax before suggesting"
+- Set once in your account settings
+- Applies across all projects and conversations
+- **Not covered in this guide** - set these in your AI platform's account settings
+
+*Where to set:*
+- Claude: Settings → Profile → Personal Preferences
+- ChatGPT: Settings → Personalization → Custom Instructions
+- GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
+- Gemini: Account settings
+- API: Not applicable (stateless)
+
+**Layer 2: System Prompt (Project-specific) ← THIS GUIDE**
+- Context specific to THIS project/domain
+- Your goals, constraints, background for this particular area
+- What you know BEFORE starting this project
+- Examples: "I'm learning Python for data science", "I have 30 minutes daily", "No gym access"
+- **This is what you're building in this guide**
+
+*Where to set:*
+- Claude: Project → Custom Instructions
+- ChatGPT: Create a GPT or use conversation instructions
+- GitHub Copilot: `.github/copilot-instructions.md` in your repository
+- Gemini: Create a Gem
+- API: System message in each request
+
+**Layer 3: Project Memory (Learned patterns) ← THIS GUIDE**
+- Patterns you discover through friction while using THIS project
+- Specific corrections you've made 3+ times (Rule of Three)
+- Evolves continuously as you work
+- Examples: "When suggesting exercises, ask about equipment first", "Always define jargon on first use"
+- **This guide shows you how to build memory through friction**
+
+*Where to set:*
+- Claude: Project → Memory
+- ChatGPT: Memory feature or append to GPT instructions
+- GitHub Copilot: Append to repository instructions file (manual)
+- Gemini: Append to Gem instructions (manual)
+- API: Append to system message (manual)
+
+### What This Guide Covers
+
+This implementation guide focuses on **Layers 2 and 3**:
+- Building your **System Prompt** (project-specific context)
+- Developing your **Memory** (learned patterns through friction)
+
+**Layer 1 (Personal Preferences) is separate.** Set those in your account settings before starting this guide.
+
+### How the Layers Work Together
+
+```
+Layer 1 (Personal Preferences) = "I always want British English"
+    ↓
+Layer 2 (System Prompt) = "For THIS fitness project, I have no gym"
+    ↓
+Layer 3 (Memory) = "I learned: always ask about equipment first"
+```
+
+**Together:** Universal baseline + Project context + Learned patterns = Personalised collaboration
+
+---
+
 ## Quick Start: First 30 Minutes
+
+**Before you start:** Have you set your Personal Preferences (Layer 1)? These are account-wide settings like "Use British English" or "Always explain reasoning". Set these in your AI platform's account settings BEFORE building your project-specific setup.
+
+**This guide builds Layer 2 (System Prompt) and Layer 3 (Memory).**
 
 ### Step 1: Choose Your Template (2 min)
 
@@ -33,11 +109,13 @@ Open starter template and fill in:
 
 **Don't overthink it.** First draft is fine. You'll refine through use.
 
-### Step 3: Add to Your AI System (5 min)
+### Step 3: Add to Your System Prompt - Layer 2 (5 min)
 
 1. Copy your filled template
 2. Add to your AI project's custom instructions or system prompt
 3. Save
+
+**Remember:** This goes in your **project-level instructions (Layer 2)**, not your account-wide preferences (Layer 1).
 
 **For different platforms:**
 - Claude Projects: Settings → Custom Instructions
@@ -90,14 +168,14 @@ You don't need formal documentation - a notes file is fine.
 - Don't add complex frameworks you haven't tested
 - Don't copy sections from advanced template "just in case"
 
-### Week 2-3: Identify Patterns (Rule of Three)
+### Week 2-3: Identify Patterns (Rule of Three) - Building Layer 3
 
-**Goal:** Capture friction that's actually recurring, not one-offs.
+**Goal:** Capture friction that's actually recurring, not one-offs. You're now building **Layer 3 (Memory)**.
 
 **The Rule of Three:**
 - First time: Could be a fluke, just correct and move on
 - Second time: Might be a pattern, note it mentally
-- Third time: Definitely a pattern, time to address it
+- Third time: Definitely a pattern, time to add to Memory (Layer 3)
 
 **When you hit the third occurrence:**
 
@@ -105,17 +183,17 @@ Use this prompt with your AI:
 ```
 "I've noticed I keep correcting [specific thing]. This is the third time. 
 Can you help me identify the pattern and create either:
-1. A memory instruction to prevent this, or
-2. An addition to my system prompt if it's about context?"
+1. A memory instruction (Layer 3) to prevent this, or
+2. An addition to my system prompt (Layer 2) if it's about context I should have included upfront?"
 ```
 
-The AI will help you articulate the pattern and craft appropriate instruction.
+The AI will help you articulate the pattern and decide which layer it belongs in.
 
 **Example patterns people discover:**
-- "The AI keeps suggesting things that require [resource I don't have]"
-- "Explanations use terms I don't know without defining them"
-- "Responses are more complex than I need"
-- "Tone doesn't match my preference"
+- "The AI keeps suggesting things that require [resource I don't have]" → Add to System Prompt (Layer 2 - context you knew)
+- "Explanations use terms I don't know without defining them" → Add to Memory (Layer 3 - learned pattern)
+- "Responses are more complex than I need" → Check Personal Preferences (Layer 1 - universal standard?)
+- "Tone doesn't match my preference for THIS project" → Add to System Prompt (Layer 2 - project preference)
 
 ### Month 1 Review (30 min)
 
@@ -251,39 +329,84 @@ The advanced template includes many optional sections. Here's when to add each:
 
 ---
 
-## Memory vs. System Prompt: Decision Guide
+## Three-Layer Decision Guide
 
-When you identify a pattern to address, where should it go?
+When you identify a pattern to address, which layer does it belong in?
 
-### Add to System Prompt when:
-- It's about **unchanging context** (who you are, core constraints)
-- It's **background information** the AI needs for all interactions
-- It's a **general preference** (British English, explanation style)
-- It **won't change** unless your situation changes
+### Layer 1: Personal Preferences (Account-wide)
+**Add here when it applies to ALL your AI conversations, across all projects**
+
+Examples:
+- "Always use British English spelling"
+- "Explain your reasoning before giving recommendations"
+- "Never use emojis in professional contexts"
+- "Verify code syntax before suggesting I test changes"
+
+**How to decide:** Would this apply if you were working on a completely different project? If yes → Personal Preferences
+
+### Layer 2: System Prompt (Project-specific)
+**Add here when it's about THIS project's context**
+
+- It's about **unchanging context** for this project (who you are here, core constraints)
+- It's **background information** the AI needs for all interactions in this domain
+- It's a **project-specific preference** (fitness approach, coding style for this project)
+- It **won't change** unless your situation in this domain changes
 
 **Examples:**
-- "I have access to [specific equipment]"
-- "I'm at beginner level in [domain]"
-- "I prefer explanations that include why, not just what"
+- "I have access to [specific equipment]" (fitness project)
+- "I'm at beginner level in Python" (coding project)
+- "I prefer functional programming style for this codebase"
+- "This project uses TypeScript with strict mode"
 
-### Add to Memory when:
-- It's a **specific correction** you've made repeatedly
+**How to decide:** Did you know this BEFORE starting to use the AI for this project? If yes → System Prompt (Layer 2)
+
+### Layer 3: Memory (Learned patterns)
+**Add here when you discovered it through friction while using THIS project**
+
+- It's a **specific correction** you've made repeatedly (Rule of Three)
 - It's a **pattern** discovered through friction
 - It's an **edge case** or nuance that wasn't obvious upfront
-- It **might evolve** or need refinement
+- It **might evolve** or need refinement as you learn more
 
 **Examples:**
-- "When suggesting exercises, always check equipment first"
+- "When suggesting exercises, always ask about equipment first"
 - "Don't use terminology without defining it on first use"
 - "Suggest incremental improvements, not all at once"
+- "For this codebase, always show type annotations in examples"
 
-### Rule of thumb:
-If you knew it before using your AI → System Prompt  
-If you learned it through using your AI → Memory
+**How to decide:** Did you learn this WHILE using the AI for this project? If yes → Memory (Layer 3)
+
+### Quick Decision Tree
+
+```
+Does this apply to ALL your projects?
+├─ Yes → Layer 1 (Personal Preferences)
+└─ No → Continue...
+
+    Did you know this BEFORE using the AI for this project?
+    ├─ Yes → Layer 2 (System Prompt)
+    └─ No → Layer 3 (Memory)
+```
+
+### Common Mistakes
+
+**❌ Putting project context in Personal Preferences**
+- "I'm learning Python" → This is Layer 2 (System Prompt for coding project)
+- Why wrong: Not relevant to your fitness or writing projects
+
+**❌ Putting learned patterns in System Prompt**
+- "Always ask about equipment first" → This is Layer 3 (Memory)
+- Why wrong: You discovered this through friction, not upfront knowledge
+
+**❌ Putting universal preferences in System Prompt**
+- "Use British English" → This is Layer 1 (Personal Preferences)
+- Why wrong: You want this across ALL projects, not just this one
 
 ---
 
-## Working with Memory Instructions
+## Working with Memory Instructions (Layer 3)
+
+**Remember:** Memory is Layer 3 - patterns you discover through friction, not things you knew upfront.
 
 ### Creating Effective Memory Instructions
 
