@@ -39,36 +39,12 @@ Here's a real set of preferences built through friction-driven development, with
 
 ```
 British English spelling throughout (conversation and code).
-I'm a beginner coder with good structural understanding.
 ```
 
 **Why here, not projects?**
 - Applies everywhere - fitness projects, coding projects, general chats
-- Foundational context that never changes
-- Known before using Claude, not learned through friction
-
----
-
-### Code Projects
-
-```
-- When working on code projects:
-  * Check project files with view tool before asking for uploads
-  * Provide clear options without flip-flopping between approaches
-  * Before suggesting I test changes: verify syntax yourself by reading 
-    modified sections with 20+ lines of context, manually trace bracket/tag 
-    matching, and confirm nesting levels are correct
-```
-
-**Friction that led here:**
-1. **Check files first** - Claude kept asking "can you upload X?" when files were already accessible
-2. **Clear options** - Got frustrated with Claude changing approaches mid-conversation ("actually, let's do Y instead")
-3. **Verify syntax** - Tired of testing code only to find obvious syntax errors Claude should have caught
-
-**Why preferences, not project memory?**
-- Applies to ALL code projects (games, tools, websites)
-- About HOW Claude works, not domain-specific patterns
-- Quality standard, not project-specific correction
+- Foundational preference that never changes
+- Known before using AI, not learned through friction
 
 ---
 
@@ -80,12 +56,12 @@ I'm a beginner coder with good structural understanding.
   * Move obsolete files to /archive/ folder (with date) during active development
   * Update all cross-references (search project for old filenames/terms)
   * Verify directory structure matches documentation
-  * Present clean, single-source-of-truth results in main directories
+  * Single-source-of-truth in main directories
   * Delete archive folder entirely when project finalised
 ```
 
 **Friction that led here:**
-1. **Cleanup pass** - Claude would present work with obsolete files still present, contradictory versions
+1. **Cleanup pass** - AI would present work with obsolete files still present, contradictory versions
 2. **Archive during development** - Wanted safety net during iteration but clean results at end
 3. **Update cross-references** - Found broken links after file renames
 4. **Single source of truth** - Encountered duplicate file trees, specifications in multiple places getting out of sync
@@ -93,9 +69,30 @@ I'm a beginner coder with good structural understanding.
 **Evolution:** Started with just "cleanup pass", added others as specific patterns emerged
 
 **Why preferences?**
-- Applies to ANY documentation project (this framework, work docs, personal wikis)
+- Applies to ANY documentation project (this framework, test plans, proposals, work docs, personal wikis)
 - Fundamental quality standard for deliverables
-- Not domain-specific, it's how work should be done
+- Not domain-specific, it's how documentation work should be done
+
+---
+
+### When Operations Fail
+
+```
+- When operations fail:
+  * Diagnose cause after first failure - don't retry blindly
+  * Maximum 2 retries before investigating root cause
+  * Check if credentials/tokens/environment changed since last success
+```
+
+**Friction that led here:**
+- AI kept retrying failed git pushes without checking if proxy token expired
+- Repeated identical commands expecting different results
+- Wasted time on multiple timeouts instead of diagnosing once
+
+**Why preferences?**
+- Applies to any technical operation (git, API calls, file operations)
+- Universal debugging principle
+- About HOW to work through failures, not domain-specific
 
 ---
 
@@ -108,23 +105,47 @@ I'm a beginner coder with good structural understanding.
   * Repeated occurrences: Execute directly without asking
   * Never provide manual instructions for tasks you can do yourself
   * Only suggest manual steps when you genuinely cannot complete the task
-  * Examples: GitHub operations, file creation, code execution, API calls
 ```
 
 **Friction that led here:**
-- Claude gave git commands when it could push to GitHub directly
+- AI gave git commands when it could push to GitHub directly
 - Provided file creation instructions instead of just creating files
 - Wasted time on manual steps for automatable tasks
 
 **Why this matters:**
 - Balance: Security on first use (ask permission) vs. efficiency on repeated use (just do it)
 - Prevents frustration of repeated permission requests
-- Stops Claude defaulting to "here's how you do it" when "I'll do it" is better
+- Stops AI defaulting to "here's how you do it" when "I'll do it" is better
 
 **Why preferences?**
 - Fundamental working relationship principle
 - Applies across all domains and projects
 - About HOW we collaborate, not WHAT we're working on
+
+---
+
+### What About Code-Specific Rules?
+
+You might notice there are **no code-specific rules** in Personal Preferences. That's deliberate!
+
+**Code-specific patterns belong in Project Memory (coding projects):**
+
+```
+When working on code:
+- Check project files with view tool before asking for uploads
+- Provide clear options without flip-flopping between approaches
+- Before suggesting I test changes: verify syntax yourself (read modified 
+  sections with 20+ lines context, trace brackets/tags, confirm nesting)
+```
+
+**Why Project Memory, not Preferences?**
+- Only applies to coding projects, not fitness/documentation/general chats
+- Learned through friction in specific coding work
+- Domain-specific quality standards, not universal
+
+**The distinction:**
+- Preferences = Works across ALL domains
+- Project Memory = Specific to coding projects only
 
 ---
 
@@ -155,8 +176,10 @@ When you find yourself correcting the same thing 3+ times:
 If yes to 1 and 2, no to 3 → Add to preferences
 
 **Examples:**
-- "Always verify code syntax before suggesting I test" → Yes, universal quality standard
+- "Always verify code syntax before suggesting I test" → Yes, universal quality standard across all coding work
 - "When suggesting exercises, always ask about equipment first" → No, that's project-specific memory for fitness project
+- "Check project files before asking for uploads" → No, that's coding-project-specific memory
+- "Always complete documentation with cleanup pass" → Yes, applies to any documentation work
 
 ### Common Categories
 
@@ -242,26 +265,28 @@ Every 2-3 months:
 
 Your preferences work WITH project instructions, not instead of them.
 
-**Example: Fitness Project**
+**Example: Coding Project**
 
 *Personal Preferences:*
-- British English
-- Verify syntax before suggesting tests (if coding involved)
+- British English spelling
 - Documentation cleanup standards
+- Action vs. instruction methodology
+- Failure diagnosis approach
 
-*Custom Instructions (Fitness Project):*
-- Context: "I'm a fitness beginner with limited equipment"
-- Goals: "Build sustainable habits, avoid injury"
-- Constraints: "Home gym only, 4x per week max"
+*Custom Instructions (Coding Project):*
+- Context: "I'm a beginner coder with good structural understanding"
+- Goals: "Build portfolio projects, learn Python, get first dev role"
+- Constraints: "8-12 hours/week, no formal mentorship"
 
-*Memory (Fitness Project):*
-- "When suggesting exercises: Ask about equipment first, don't assume gym access"
-- "Prefer simple effective programmes over complex ones"
+*Memory (Coding Project):*
+- "Check project files with view tool before asking for uploads"
+- "Provide clear options without flip-flopping between approaches"
+- "Verify syntax before suggesting I test (read 20+ lines context, trace brackets)"
 
 **See how they layer?**
-- Preferences = Universal baseline
-- Custom Instructions = Project context
-- Memory = Learned project-specific patterns
+- Preferences = Universal baseline (applies to ALL domains)
+- Custom Instructions = Project context (who you are in THIS domain)
+- Memory = Learned project-specific patterns (from friction in THIS project)
 
 ---
 
