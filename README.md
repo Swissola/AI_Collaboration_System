@@ -147,6 +147,7 @@ Your complete AI collaboration system has three levels:
 - Language, communication style, work quality expectations
 - Set once in account settings, applies everywhere
 - Example: "Use British English" or "Always verify syntax before suggesting tests"
+- **→ See [Personal Preferences Guide](guides/personal-preferences-guide.md)**
 
 *Platform-specific:*  
 - Claude: Personal Preferences in Settings → Profile  
@@ -160,6 +161,7 @@ Your complete AI collaboration system has three levels:
 - Your goals, constraints, background
 - What you know before starting
 - Example: "I'm learning Python for data science with limited time"
+- **→ See [Implementation Guide](guides/implementation-guide.md)**
 
 *Platform-specific:*  
 - Claude: Project Custom Instructions  
@@ -173,6 +175,7 @@ Your complete AI collaboration system has three levels:
 - Specific corrections after Rule of Three
 - Evolves continuously through use
 - Example: "When suggesting exercises, ask about equipment first"
+- **→ See [Memory Guide](guides/memory-guide.md)**
 
 *Platform-specific:*  
 - Claude: Project Memory feature  
