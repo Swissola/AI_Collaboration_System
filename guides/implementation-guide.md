@@ -5,7 +5,7 @@
 This guide combines two philosophies:
 
 **From the articles:** Structured templates, operating modes, friction-driven memory development  
-**From Claude's experience:** Start minimal with context, evolve through real use, trust adaptation
+**From AI collaboration experience:** Start minimal with context, evolve through real use, trust adaptation
 
 The result: Start light, expand deliberately, let friction guide you.
 
@@ -33,17 +33,22 @@ Open starter template and fill in:
 
 **Don't overthink it.** First draft is fine. You'll refine through use.
 
-### Step 3: Add to Claude Project (5 min)
+### Step 3: Add to Your AI System (5 min)
 
 1. Copy your filled template
-2. Open your Claude Project → Settings → Custom Instructions
-3. Paste the template
-4. Save
+2. Add to your AI project's custom instructions or system prompt
+3. Save
+
+**For different platforms:**
+- Claude Projects: Settings → Custom Instructions
+- ChatGPT: Settings → Custom Instructions  
+- API usage: Include in system message
+- Other platforms: Check documentation for persistent instructions
 
 ### Step 4: Test (3 min)
 
 Ask 2-3 typical questions for your domain:
-- Does Claude seem to understand your context?
+- Does the AI seem to understand your context?
 - Is the response at the right level?
 - Does the tone feel right?
 
@@ -246,7 +251,7 @@ Is this a critical project you can't afford to break?
 **Goal:** See how your starter setup actually works in practice.
 
 **What to do:**
-- Use Claude normally for your project tasks
+- Use your AI normally for your project tasks
 - Notice when responses feel off or need correction
 - Don't immediately fix the system prompt - just note patterns
 
@@ -261,7 +266,7 @@ Pattern?: [First time? Second? Third?]
 You don't need formal documentation - a notes file is fine.
 
 **Common Week 1 friction:**
-- Claude assumes wrong skill level (too advanced or too simple)
+- AI assumes wrong skill level (too advanced or too simple)
 - Suggestions ignore your constraints (equipment, time, budget)
 - Response format doesn't match your preference
 - Tone doesn't feel right (too formal, too casual, etc.)
@@ -282,7 +287,7 @@ You don't need formal documentation - a notes file is fine.
 
 **When you hit the third occurrence:**
 
-Use this prompt with Claude:
+Use this prompt with your AI:
 ```
 "I've noticed I keep correcting [specific thing]. This is the third time. 
 Can you help me identify the pattern and create either:
@@ -290,10 +295,10 @@ Can you help me identify the pattern and create either:
 2. An addition to my system prompt if it's about context?"
 ```
 
-Claude will help you articulate the pattern and craft appropriate instruction.
+The AI will help you articulate the pattern and craft appropriate instruction.
 
 **Example patterns people discover:**
-- "Claude keeps suggesting things that require [resource I don't have]"
+- "The AI keeps suggesting things that require [resource I don't have]"
 - "Explanations use terms I don't know without defining them"
 - "Responses are more complex than I need"
 - "Tone doesn't match my preference"
@@ -333,7 +338,7 @@ The advanced template includes many optional sections. Here's when to add each:
 
 ### Operating Modes
 
-**Add when:** You notice you interact with Claude differently for different types of tasks and those differences aren't being honored.
+**Add when:** You notice you interact with your AI differently for different types of tasks and those differences aren't being honoured.
 
 **Signs you need this:**
 - You want detailed explanation when planning but quick answers when executing
@@ -342,28 +347,28 @@ The advanced template includes many optional sections. Here's when to add each:
 
 **How to add:**
 1. Identify 2-4 distinct interaction types in your actual usage
-2. For each, describe: when you're in this mode, how Claude should respond
+2. For each, describe: when you're in this mode, how the AI should respond
 3. Include trigger examples (phrases you naturally use)
 4. Test with typical questions for each mode
 
-**Don't add if:** Claude naturally adapts to context without explicit modes.
+**Don't add if:** The AI naturally adapts to context without explicit modes.
 
 ### Decision Framework
 
-**Add when:** Claude's priorities don't match yours when suggesting options.
+**Add when:** The AI's priorities don't match yours when suggesting options.
 
 **Signs you need this:**
-- Claude suggests things that technically work but aren't what you'd choose
+- The AI suggests things that technically work but aren't what you'd choose
 - Advice doesn't reflect what actually matters to you
 - You keep having to explain "but X is more important than Y"
 
 **How to add:**
-1. Think of a recent decision Claude helped with
+1. Think of a recent decision the AI helped with
 2. What factors did you weigh? What order?
 3. List 3-5 priorities explicitly
 4. Give examples of how to resolve conflicts
 
-**Don't add if:** Claude's suggestions generally align with what you'd choose.
+**Don't add if:** The AI's suggestions generally align with what you'd choose.
 
 ### Domain Principles
 
@@ -379,14 +384,14 @@ The advanced template includes many optional sections. Here's when to add each:
 2. For each, why it matters and what it means practically
 3. How to resolve when principles conflict
 
-**Don't add if:** Claude's advice generally aligns with your values.
+**Don't add if:** The AI's advice generally aligns with your values.
 
 ### Success Metrics
 
 **Add when:** You want help tracking progress and making data-driven adjustments.
 
 **Signs you need this:**
-- You're tracking data and want Claude to help analyze it
+- You're tracking data and want the AI to help analyse it
 - You want systematic progress review
 - You need help distinguishing signal from noise
 
@@ -400,11 +405,11 @@ The advanced template includes many optional sections. Here's when to add each:
 
 ### Response Structure
 
-**Add when:** You're consistently reformatting Claude's responses.
+**Add when:** You're consistently reformatting the AI's responses.
 
 **Signs you need this:**
 - You keep editing response format (length, structure, style)
-- Claude uses bullets when you want prose (or vice versa)
+- The AI uses bullets when you want prose (or vice versa)
 - Level of detail is consistently wrong
 
 **How to add:**
@@ -412,11 +417,11 @@ The advanced template includes many optional sections. Here's when to add each:
 2. Give examples of good vs. bad formatting
 3. Specify when different formats apply
 
-**Don't add if:** Claude's format generally works for you.
+**Don't add if:** The AI's format generally works for you.
 
 ### Common Pitfalls
 
-**Add when:** You recognize patterns in your own mistakes that Claude should watch for.
+**Add when:** You recognise patterns in your own mistakes that the AI should watch for.
 
 **Signs you need this:**
 - You have recurring tendencies that derail progress
@@ -426,7 +431,7 @@ The advanced template includes many optional sections. Here's when to add each:
 **How to add:**
 1. Identify 2-4 mistakes you tend to make
 2. Describe what they look like and why you do them
-3. How Claude should spot and address them
+3. How the AI should spot and address them
 
 **Don't add if:** You don't have clear recurring patterns yet.
 
@@ -438,7 +443,7 @@ When you identify a pattern to address, where should it go?
 
 ### Add to System Prompt when:
 - It's about **unchanging context** (who you are, core constraints)
-- It's **background information** Claude needs for all interactions
+- It's **background information** the AI needs for all interactions
 - It's a **general preference** (British English, explanation style)
 - It **won't change** unless your situation changes
 
@@ -459,8 +464,8 @@ When you identify a pattern to address, where should it go?
 - "Suggest incremental improvements, not all at once"
 
 ### Rule of thumb:
-If you knew it before using Claude → System Prompt  
-If you learned it through using Claude → Memory
+If you knew it before using your AI → System Prompt  
+If you learned it through using your AI → Memory
 
 ---
 
@@ -510,7 +515,7 @@ Explain code better
 
 ## Troubleshooting Common Issues
 
-### "Claude's responses are still generic"
+### "The AI's responses are still generic"
 
 **Likely cause:** Context section too vague
 
@@ -519,9 +524,9 @@ Explain code better
 - Specific constraints with numbers (4 hours/week, £50/month budget)
 - Concrete goals with success criteria
 
-**Test:** Ask a domain-specific question. Can Claude answer without asking clarifying questions?
+**Test:** Ask a domain-specific question. Can the AI answer without asking clarifying questions?
 
-### "Claude assumes wrong skill level"
+### "The AI assumes wrong skill level"
 
 **Likely cause:** Skill level description not calibrated
 
@@ -530,11 +535,11 @@ Explain code better
 - Give examples: "I understand [X] but still learning [Y]"
 - Specify what you can/can't do independently
 
-**Test:** Ask Claude to explain something. Is it at the right level?
+**Test:** Ask the AI to explain something. Is it at the right level?
 
 ### "Suggestions ignore my constraints"
 
-**Likely cause:** Constraints not emphasized enough
+**Likely cause:** Constraints not emphasised enough
 
 **Fix:** Make constraints more explicit and prominent:
 - List specific limitations clearly
@@ -570,7 +575,7 @@ Explain code better
 **Likely cause:** Pattern not captured in memory
 
 **Fix:** Use the friction-detection approach:
-- Tell Claude about the pattern
+- Tell the AI about the pattern
 - Work together to create memory instruction
 - Add to project memory
 - Test if it resolves friction
@@ -645,12 +650,12 @@ This keeps memory concise whilst providing depth when needed.
 - Setup complete in 30 minutes
 - Using project with starter setup
 - Noticing first friction points
-- Learning how Claude responds to your setup
+- Learning how the AI responds to your setup
 
 ### Week 2-3
 - Identifying recurring patterns
 - Adding first memory instructions (2-3)
-- System starting to feel personalized
+- System starting to feel personalised
 - Fewer corrections needed
 
 ### Month 1
@@ -691,7 +696,7 @@ After 3 months, you should have:
 - ✓ Well-calibrated system requiring little adjustment
 - ✓ Memory instructions covering major patterns
 - ✓ Optional sections added only where genuinely needed
-- ✓ Productive working relationship with Claude
+- ✓ Productive working relationship with your AI
 
 **If you're not seeing these:** Review troubleshooting section or consider whether your setup needs major revision.
 
@@ -706,7 +711,7 @@ After 3 months, you should have:
 5. **Examples over descriptions** - Show what you want, don't just tell
 6. **Evolve don't revolve** - Gradual refinement beats starting over
 7. **Review regularly** - Monthly maintenance prevents drift
-8. **Trust adaptation** - Claude can figure out a lot from context
+8. **Trust adaptation** - AI can figure out a lot from context
 
 ---
 
@@ -714,7 +719,7 @@ After 3 months, you should have:
 
 1. Choose your starting template (starter recommended)
 2. Fill in the five essentials (20 min)
-3. Add to Claude Project (5 min)
+3. Add to your AI system (5 min)
 4. Use for one week without changes
 5. Apply friction-driven improvements
 6. Schedule first monthly review
