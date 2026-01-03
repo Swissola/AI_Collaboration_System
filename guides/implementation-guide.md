@@ -56,194 +56,6 @@ If something's obviously wrong, adjust. Otherwise, move on to using it.
 
 ---
 
-## Applying to Existing Projects
-
-Already have an AI project with custom instructions? Here's how to adapt this framework without starting from scratch.
-
-### Step 1: Audit Your Current Setup (15 min)
-
-Review what you already have:
-
-**What's working well?**
-- Which instructions does the AI consistently follow?
-- What context does it understand correctly?
-- Which patterns have emerged naturally?
-
-**What's causing friction?**
-- What do you keep correcting repeatedly?
-- Where does the AI misunderstand your intent?
-- What instructions are ignored or inconsistent?
-
-**What's unclear or vague?**
-- Instructions that seemed good but don't work in practice
-- Contradictory guidance
-- Over-complicated sections
-
-### Step 2: Categorise Your Existing Content (20 min)
-
-Map your current instructions to the framework:
-
-**Context (Who/What):**
-- Extract: Background, role, domain information
-- Keep: Clear, accurate context
-- Remove: Outdated context, aspirational descriptions
-
-**Constraints (Limitations):**
-- Extract: Time, resources, skill level, access limitations
-- Keep: Honest, current constraints
-- Remove: Constraints you've outgrown
-
-**Goals (Objectives):**
-- Extract: What you're trying to achieve
-- Keep: Specific, measurable objectives
-- Remove: Vague aspirations, completed goals
-
-**Preferences (How to work):**
-- Extract: Communication style, tone, format preferences
-- Keep: Proven preferences from experience
-- Remove: Guesses that didn't matter
-
-**Red Flags (Won't work):**
-- Extract: Things that definitely don't work for you
-- Keep: Clear dealbreakers from experience
-- Remove: Hypothetical concerns that never materialised
-
-**Memory Instructions (Learned patterns):**
-- Extract: Specific corrections you've made 3+ times
-- Keep: Confirmed patterns that recur
-- Remove: One-off corrections, edge cases
-
-### Step 3: Restructure (30 min)
-
-**Option A: Clean Migration**
-1. Copy starter template to new file
-2. Fill each section with extracted content from your audit
-3. Add as new version alongside old instructions
-4. Test for one week
-5. If better, replace old; if worse, identify why
-
-**Option B: Gradual Refinement**
-1. Reorganise current instructions using the five essentials structure
-2. Keep all existing content initially
-3. Remove/refine one section per week based on friction
-4. Gradually migrate to cleaner structure
-
-**Option C: Hybrid Approach**
-1. Keep current instructions as-is
-2. Add framework sections for areas currently missing
-3. Merge overlapping content over time
-4. Eventually consolidate into unified structure
-
-**Recommendation:** Option A for projects under 3 months old, Option B for mature projects with lots of working memory, Option C if you're risk-averse.
-
-### Step 4: Extract Memory Separately (15 min)
-
-If your current setup has learned patterns mixed with context:
-
-**Identify memory vs. context:**
-- Memory = "You learned this through friction" (specific corrections, discovered patterns)
-- Context = "You knew this before starting" (background, goals, constraints)
-
-**Separate them:**
-- System Prompt: Context you knew upfront
-- Memory: Patterns discovered through use
-
-**Example:**
-- "I'm learning Python" → System Prompt (context)
-- "When explaining code, always show full function not just snippets" → Memory (learned pattern)
-
-### Step 5: Test and Validate (1 week)
-
-**Day 1-2: Immediate testing**
-- Ask typical questions
-- Check if AI understands context correctly
-- Verify tone and style are appropriate
-
-**Day 3-7: Real usage**
-- Use for actual work
-- Note new friction points
-- Compare to old setup
-
-**Week 2: Decide**
-- Better than before? Commit to new structure
-- Worse? Identify what's missing from old setup
-- Mixed? Keep best of both
-
-### Common Migration Pitfalls
-
-**❌ Trying to preserve everything**
-- Old instructions often contain dead weight
-- Not everything needs to migrate
-- Fresh start can be liberating
-
-**❌ Losing working patterns**
-- If something works consistently, preserve it
-- Don't discard effective memory instructions
-- Document "why this works" before removing
-
-**❌ Changing too much at once**
-- Hard to identify what broke if everything changed
-- Migrate in phases if project is critical
-- Keep rollback option available
-
-**❌ Not comparing to old setup**
-- Run new and old in parallel for a week
-- Keep notes on which handles tasks better
-- Learn from what the old system did well
-
-**❌ Forgetting the rule of three**
-- Don't immediately add new memory for old friction
-- New structure might prevent old problems
-- Wait to see if patterns still recur
-
-### Migration Decision Tree
-
-```
-Is your current setup working reasonably well?
-├─ Yes → Use Option B (Gradual Refinement)
-│   └─ Preserve what works, improve what doesn't
-│
-└─ No → Use Option A (Clean Migration)
-    └─ Fresh start, extract only proven patterns
-```
-
-```
-Do you have lots of working memory instructions (10+)?
-├─ Yes → Be careful not to lose them
-│   └─ Document each one before restructuring
-│
-└─ No → Clean slate is safer
-    └─ Less risk of losing valuable patterns
-```
-
-```
-Is this a critical project you can't afford to break?
-├─ Yes → Use Option C (Hybrid) or run parallel for 2 weeks
-│   └─ Safety first, migrate gradually
-│
-└─ No → Option A (Clean Migration)
-    └─ Opportunity to start fresh
-```
-
-### Success Indicators After Migration
-
-**Week 1:**
-- ✓ AI maintains understanding from old setup
-- ✓ New structure feels clearer
-- ✓ No major regressions
-
-**Month 1:**
-- ✓ Friction points from old setup resolved
-- ✓ Easier to maintain and update
-- ✓ Clear separation of context, memory, and preferences
-
-**Month 3:**
-- ✓ Better than old setup across the board
-- ✓ Framework makes additions/changes easier
-- ✓ Confident in long-term sustainability
-
----
-
 ## The Evolution Cycle
 
 ### Week 1: Use & Observe
@@ -510,6 +322,197 @@ Explain code better
 - It's too vague to be actionable
 - It conflicts with another instruction
 - Your preferences have evolved
+
+---
+
+
+---
+
+## Applying to Existing Projects
+
+Already have an AI project with custom instructions? Here's how to adapt this framework without starting from scratch.
+
+### Step 1: Audit Your Current Setup (15 min)
+
+Review what you already have:
+
+**What's working well?**
+- Which instructions does the AI consistently follow?
+- What context does it understand correctly?
+- Which patterns have emerged naturally?
+
+**What's causing friction?**
+- What do you keep correcting repeatedly?
+- Where does the AI misunderstand your intent?
+- What instructions are ignored or inconsistent?
+
+**What's unclear or vague?**
+- Instructions that seemed good but don't work in practice
+- Contradictory guidance
+- Over-complicated sections
+
+### Step 2: Categorise Your Existing Content (20 min)
+
+Map your current instructions to the framework:
+
+**Context (Who/What):**
+- Extract: Background, role, domain information
+- Keep: Clear, accurate context
+- Remove: Outdated context, aspirational descriptions
+
+**Constraints (Limitations):**
+- Extract: Time, resources, skill level, access limitations
+- Keep: Honest, current constraints
+- Remove: Constraints you've outgrown
+
+**Goals (Objectives):**
+- Extract: What you're trying to achieve
+- Keep: Specific, measurable objectives
+- Remove: Vague aspirations, completed goals
+
+**Preferences (How to work):**
+- Extract: Communication style, tone, format preferences
+- Keep: Proven preferences from experience
+- Remove: Guesses that didn't matter
+
+**Red Flags (Won't work):**
+- Extract: Things that definitely don't work for you
+- Keep: Clear dealbreakers from experience
+- Remove: Hypothetical concerns that never materialised
+
+**Memory Instructions (Learned patterns):**
+- Extract: Specific corrections you've made 3+ times
+- Keep: Confirmed patterns that recur
+- Remove: One-off corrections, edge cases
+
+### Step 3: Restructure (30 min)
+
+**Option A: Clean Migration**
+1. Copy starter template to new file
+2. Fill each section with extracted content from your audit
+3. Add as new version alongside old instructions
+4. Test for one week
+5. If better, replace old; if worse, identify why
+
+**Option B: Gradual Refinement**
+1. Reorganise current instructions using the five essentials structure
+2. Keep all existing content initially
+3. Remove/refine one section per week based on friction
+4. Gradually migrate to cleaner structure
+
+**Option C: Hybrid Approach**
+1. Keep current instructions as-is
+2. Add framework sections for areas currently missing
+3. Merge overlapping content over time
+4. Eventually consolidate into unified structure
+
+**Recommendation:** Option A for projects under 3 months old, Option B for mature projects with lots of working memory, Option C if you're risk-averse.
+
+### Step 4: Extract Memory Separately (15 min)
+
+If your current setup has learned patterns mixed with context:
+
+**Identify memory vs. context:**
+- Memory = "You learned this through friction" (specific corrections, discovered patterns)
+- Context = "You knew this before starting" (background, goals, constraints)
+
+**Separate them:**
+- System Prompt: Context you knew upfront
+- Memory: Patterns discovered through use
+
+**Example:**
+- "I'm learning Python" → System Prompt (context)
+- "When explaining code, always show full function not just snippets" → Memory (learned pattern)
+
+### Step 5: Test and Validate (1 week)
+
+**Day 1-2: Immediate testing**
+- Ask typical questions
+- Check if AI understands context correctly
+- Verify tone and style are appropriate
+
+**Day 3-7: Real usage**
+- Use for actual work
+- Note new friction points
+- Compare to old setup
+
+**Week 2: Decide**
+- Better than before? Commit to new structure
+- Worse? Identify what's missing from old setup
+- Mixed? Keep best of both
+
+### Common Migration Pitfalls
+
+**❌ Trying to preserve everything**
+- Old instructions often contain dead weight
+- Not everything needs to migrate
+- Fresh start can be liberating
+
+**❌ Losing working patterns**
+- If something works consistently, preserve it
+- Don't discard effective memory instructions
+- Document "why this works" before removing
+
+**❌ Changing too much at once**
+- Hard to identify what broke if everything changed
+- Migrate in phases if project is critical
+- Keep rollback option available
+
+**❌ Not comparing to old setup**
+- Run new and old in parallel for a week
+- Keep notes on which handles tasks better
+- Learn from what the old system did well
+
+**❌ Forgetting the rule of three**
+- Don't immediately add new memory for old friction
+- New structure might prevent old problems
+- Wait to see if patterns still recur
+
+### Migration Decision Tree
+
+```
+Is your current setup working reasonably well?
+├─ Yes → Use Option B (Gradual Refinement)
+│   └─ Preserve what works, improve what doesn't
+│
+└─ No → Use Option A (Clean Migration)
+    └─ Fresh start, extract only proven patterns
+```
+
+```
+Do you have lots of working memory instructions (10+)?
+├─ Yes → Be careful not to lose them
+│   └─ Document each one before restructuring
+│
+└─ No → Clean slate is safer
+    └─ Less risk of losing valuable patterns
+```
+
+```
+Is this a critical project you can't afford to break?
+├─ Yes → Use Option C (Hybrid) or run parallel for 2 weeks
+│   └─ Safety first, migrate gradually
+│
+└─ No → Option A (Clean Migration)
+    └─ Opportunity to start fresh
+```
+
+### Success Indicators After Migration
+
+**Week 1:**
+- ✓ AI maintains understanding from old setup
+- ✓ New structure feels clearer
+- ✓ No major regressions
+
+**Month 1:**
+- ✓ Friction points from old setup resolved
+- ✓ Easier to maintain and update
+- ✓ Clear separation of context, memory, and preferences
+
+**Month 3:**
+- ✓ Better than old setup across the board
+- ✓ Framework makes additions/changes easier
+- ✓ Confident in long-term sustainability
 
 ---
 
