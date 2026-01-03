@@ -1,4 +1,4 @@
-# Contributing to Claude Instruction Design System
+# Contributing to AI Collaboration System (AICS)
 
 Thank you for your interest in contributing! This project welcomes contributions from the community.
 

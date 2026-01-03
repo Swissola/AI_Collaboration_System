@@ -1,4 +1,4 @@
-# Claude Instruction Design System - File Index
+# AI Collaboration System (AICS) - File Index
 
 Quick navigation guide to all files in this project.
 
@@ -166,7 +166,7 @@ Quick navigation guide to all files in this project.
 ## 📁 Directory Structure
 
 ```
-claude-instruction-design/
+AI_Collaboration_System/
 │
 ├── README.md                          # Start here
 ├── GLOSSARY.md                        # Terms and concepts

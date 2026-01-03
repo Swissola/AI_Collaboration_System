@@ -1,7 +1,9 @@
-# Claude Instruction Design System
+# AI Collaboration System (AICS)
 ## Hybrid Approach: Structured Flexibility
 
-A comprehensive system for creating effective Claude Projects that combines structured frameworks with adaptive, friction-driven development.
+A comprehensive system for creating effective AI Projects that combines structured frameworks with adaptive, friction-driven development.
+
+Built for Claude Projects but applicable to any AI provider - the concepts and framework are directly transferable.
 
 ---
 
