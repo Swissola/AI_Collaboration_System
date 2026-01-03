@@ -443,7 +443,7 @@ See [PROJECT-INDEX.md](PROJECT-INDEX.md) for the complete file tree and detailed
 → Starter Template → Relevant Example → Implementation Guide (Quick Start section)
 
 **Have existing project?**
-→ Implementation Guide (Quick Start section)
+→ Implementation Guide (Applying to Existing Projects section)
 
 **Want to understand memory?**
 → Memory Guide

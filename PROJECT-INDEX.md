@@ -133,8 +133,8 @@ Quick navigation guide to all files in this project.
 1. README.md (15 min)
    └─> Understand the framework
 
-2. Implementation Guide - Quick Start section (30 min)
-   └─> Adapt framework to existing setup
+2. Implementation Guide - "Applying to Existing Projects" (30 min)
+   └─> Learn adaptation process
 
 3. Relevant Example (15 min)
    └─> See structure applied
