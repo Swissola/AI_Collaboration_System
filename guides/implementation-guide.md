@@ -41,7 +41,9 @@ Open starter template and fill in:
 
 **For different platforms:**
 - Claude Projects: Settings → Custom Instructions
-- ChatGPT: Settings → Custom Instructions  
+- ChatGPT: Settings → Custom Instructions
+- GitHub Copilot: Repository → `.github/copilot-instructions.md` file
+- Gemini: Create a Gem with custom instructions
 - API usage: Include in system message
 - Other platforms: Check documentation for persistent instructions
 

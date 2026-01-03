@@ -233,13 +233,13 @@ AI_Collaboration_System/
 
 ### By Experience Level
 
-**Never used Claude Projects:**
+**Never used AI project features:**
 → README → Quick Start Checklist → Examples → Template
 
-**Used Claude Projects casually:**
+**Used AI custom instructions casually:**
 → Implementation Guide → Examples → Template → Memory Guide
 
-**Power user wanting optimization:**
+**Power user wanting optimisation:**
 → Memory Builder Guide → Advanced Techniques → Template deep-dive
 
 ---

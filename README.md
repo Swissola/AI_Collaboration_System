@@ -97,6 +97,8 @@ Fill in five core sections:
 
 *For Claude: Add to Project Custom Instructions*  
 *For ChatGPT: Add to Custom Instructions in Settings*  
+*For GitHub Copilot: Create `.github/copilot-instructions.md` in your repository*  
+*For Gemini: Create a Gem with these instructions*  
 *For other AIs: Use your platform's equivalent persistent instruction field*
 
 ### Phase 2: Friction Recognition (Weeks 1-3)
@@ -148,7 +150,9 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Personal Preferences in Settings → Profile  
-- ChatGPT: Custom Instructions in Settings  
+- ChatGPT: Custom Instructions in Settings
+- GitHub Copilot: Personal Instructions (github.com/copilot → profile menu)
+- Gemini: Account-level settings
 - Other AIs: Account-level settings where available
 
 **System Prompt (Project-specific):**
@@ -159,7 +163,9 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Project Custom Instructions  
-- ChatGPT: GPTs or conversation-specific instructions  
+- ChatGPT: GPTs or conversation-specific instructions
+- GitHub Copilot: Repository Instructions (`.github/copilot-instructions.md`)
+- Gemini: Gems (custom AI instances)
 - Other AIs: Per-session or project-specific prompts
 
 **Project Memory (Learned patterns):**
@@ -170,7 +176,9 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Project Memory feature  
-- ChatGPT: Memory feature or persistent instructions  
+- ChatGPT: Memory feature or persistent instructions
+- GitHub Copilot: Append to repository instructions (manual evolution)
+- Gemini: Append to Gem instructions (manual evolution)
 - Other AIs: Append to system prompt or use platform's memory equivalent
 
 **Together:** Universal baseline + Project context + Learned patterns = Personalised system
@@ -405,13 +413,15 @@ Templates are starting points, not restrictions. Adapt freely. The core concept 
 - Month 1: Significantly personalised
 - Month 3: Feels genuinely collaborative
 
-**"Can I use this with ChatGPT, Gemini, or other AIs?"**
+**"Can I use this with ChatGPT, Gemini, Copilot, or other AIs?"**
 
 Absolutely! The framework is platform-agnostic. The core concepts (context, constraints, goals, friction-driven evolution) work with any AI system that supports custom instructions. 
 
 *Platform differences:*  
 - **Claude Projects:** Native support for separate Custom Instructions and Memory makes implementation straightforward  
-- **ChatGPT:** Use Custom Instructions (account-level) and GPTs or conversation context (project-level)  
+- **ChatGPT:** Use Custom Instructions (account-level) and GPTs or conversation context (project-level), plus Memory feature
+- **GitHub Copilot:** Personal Instructions (account-level) and Repository Instructions (project-level via `.github/copilot-instructions.md`)
+- **Gemini:** Account settings and Gems (custom AI instances)
 - **Other AIs:** Adapt to your platform's instruction/memory capabilities
 
 The friction-driven methodology works regardless of platform - just adjust how you store and structure your instructions.
