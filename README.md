@@ -1,15 +1,15 @@
 # AI Collaboration System (AICS)
 ## Hybrid Approach: Structured Flexibility
 
-A comprehensive system for creating effective AI Projects that combines structured frameworks with adaptive, friction-driven development.
+A comprehensive system for creating effective AI collaboration setups that combines structured frameworks with adaptive, friction-driven development.
 
-Built for Claude Projects but applicable to any AI provider - the concepts and framework are directly transferable.
+Works with any AI provider that supports custom instructions and persistent context. Designed primarily for Claude Projects but fully applicable to ChatGPT, Gemini, and other LLM platforms.
 
 ---
 
 ## What This System Does
 
-Transforms Claude from a generic AI assistant into a personalised collaborator that:
+Transforms any AI assistant from a generic tool into a personalised collaborator that:
 - Understands your context without repeated explanation
 - Adapts to your skill level and constraints
 - Learns your preferences through actual use
@@ -17,13 +17,13 @@ Transforms Claude from a generic AI assistant into a personalised collaborator t
 
 **Two philosophies combined:**
 
-**From established research (articles):**
+**From established research (prompt engineering):**
 - Structured templates and frameworks
 - Operating modes for different interaction types
 - Systematic friction tracking
 - Memory as learned patterns
 
-**From Claude's direct experience:**
+**From real-world AI collaboration experience:**
 - Start minimal, expand deliberately
 - Context over commands
 - Trust adaptation when possible
@@ -35,7 +35,7 @@ Transforms Claude from a generic AI assistant into a personalised collaborator t
 
 ## What's Inside
 
-A complete system for designing effective Claude Projects through friction-driven development.
+A complete system for designing effective AI collaboration setups through friction-driven development.
 
 **📁 Templates** - Starter (essential 5 sections) + Advanced (optional expansions)
 
@@ -57,7 +57,7 @@ A complete system for designing effective Claude Projects through friction-drive
 "Define everything upfront with comprehensive templates"
 
 **Pure adaptive approach says:**
-"Just give context and let Claude figure it out"
+"Just give context and let the AI figure it out"
 
 **This hybrid approach says:**
 "Start with essential structure, trust adaptation, expand deliberately through real friction"
@@ -76,7 +76,7 @@ A complete system for designing effective Claude Projects through friction-drive
 
 **The balance:**
 - Essential structure upfront (who, what, constraints)
-- Trust Claude's adaptation from context
+- Trust the AI's adaptation from context
 - Add specificity only when friction reveals need
 
 ---
@@ -93,7 +93,11 @@ Fill in five core sections:
 4. **Preferences:** How you want to work (2-4 certainties)
 5. **Red Flags:** What definitely won't work
 
-**Add to Claude Project → Use for one week**
+**Add to your AI system's custom instructions → Use for one week**
+
+*For Claude: Add to Project Custom Instructions*  
+*For ChatGPT: Add to Custom Instructions in Settings*  
+*For other AIs: Use your platform's equivalent persistent instruction field*
 
 ### Phase 2: Friction Recognition (Weeks 1-3)
 
@@ -137,10 +141,15 @@ Add optional sections only when friction reveals you need them:
 Your complete AI collaboration system has three levels:
 
 **Personal Preferences (Account-wide):**
-- Universal standards for ALL Claude conversations
+- Universal standards for ALL AI conversations
 - Language, communication style, work quality expectations
 - Set once in account settings, applies everywhere
 - Example: "Use British English" or "Always verify syntax before suggesting tests"
+
+*Platform-specific:*  
+- Claude: Personal Preferences in Settings → Profile  
+- ChatGPT: Custom Instructions in Settings  
+- Other AIs: Account-level settings where available
 
 **System Prompt (Project-specific):**
 - Context for THIS domain/project
@@ -148,11 +157,21 @@ Your complete AI collaboration system has three levels:
 - What you know before starting
 - Example: "I'm learning Python for data science with limited time"
 
+*Platform-specific:*  
+- Claude: Project Custom Instructions  
+- ChatGPT: GPTs or conversation-specific instructions  
+- Other AIs: Per-session or project-specific prompts
+
 **Project Memory (Learned patterns):**
 - What you discover through friction
 - Specific corrections after Rule of Three
 - Evolves continuously through use
 - Example: "When suggesting exercises, ask about equipment first"
+
+*Platform-specific:*  
+- Claude: Project Memory feature  
+- ChatGPT: Memory feature or persistent instructions  
+- Other AIs: Append to system prompt or use platform's memory equivalent
 
 **Together:** Universal baseline + Project context + Learned patterns = Personalised system
 
@@ -193,11 +212,11 @@ Don't capture every correction as a pattern.
 
 ### Friction as Signal
 
-**Friction** = Gap between what Claude gives and what you need
+**Friction** = Gap between what the AI gives and what you need
 
 **Good friction (capture it):**
 - Same correction three+ times
-- Consistent preference not being honored
+- Consistent preference not being honoured
 - Regular misunderstanding of context
 
 **Normal friction (don't capture):**
@@ -213,7 +232,7 @@ Don't capture every correction as a pattern.
 
 ### Compared to Generic AI Use
 ❌ Repeat context every conversation  
-✅ Claude remembers your situation
+✅ AI remembers your situation
 
 ❌ Generic advice for everyone  
 ✅ Tailored to your constraints
@@ -233,7 +252,7 @@ Don't capture every correction as a pattern.
 
 ### This Hybrid Approach
 ✅ Start with enough structure to work  
-✅ Trust Claude to adapt from context  
+✅ Trust the AI to adapt from context  
 ✅ Expand only when friction reveals needs  
 ✅ Evolve continuously through use  
 ✅ Maintain through lightweight reviews
@@ -284,7 +303,7 @@ Don't capture every correction as a pattern.
 
 1. Open `starter-template.md`
 2. Fill five essential sections (20 min)
-3. Add to Claude Project → Custom Instructions (5 min)
+3. Add to your AI system's custom instructions (5 min)
 4. Test with 2-3 questions (5 min)
 5. Use for one week, note friction
 
@@ -333,7 +352,7 @@ Don't capture every correction as a pattern.
 - ✓ Well-calibrated system needing little adjustment
 - ✓ Memory instructions covering main patterns
 - ✓ Optional sections added only where genuinely useful
-- ✓ Productive collaboration with Claude
+- ✓ Productive collaboration with your AI
 
 **If not seeing these:** Check troubleshooting section in implementation guide.
 
@@ -347,7 +366,7 @@ Don't capture every correction as a pattern.
 - Use the rule of three for patterns
 - Let friction guide improvements
 - Review and maintain monthly
-- Trust Claude's adaptation from context
+- Trust the AI's adaptation from context
 - Document reality, not aspirations
 
 ### Don'ts ✗
@@ -386,9 +405,16 @@ Templates are starting points, not restrictions. Adapt freely. The core concept 
 - Month 1: Significantly personalised
 - Month 3: Feels genuinely collaborative
 
-**"Can I use this with ChatGPT or other AI?"**
+**"Can I use this with ChatGPT, Gemini, or other AIs?"**
 
-Yes, the framework adapts to any AI system. Claude Projects have specific features (larger context, direct memory editing) that make some aspects easier, but the principles work anywhere.
+Absolutely! The framework is platform-agnostic. The core concepts (context, constraints, goals, friction-driven evolution) work with any AI system that supports custom instructions. 
+
+*Platform differences:*  
+- **Claude Projects:** Native support for separate Custom Instructions and Memory makes implementation straightforward  
+- **ChatGPT:** Use Custom Instructions (account-level) and GPTs or conversation context (project-level)  
+- **Other AIs:** Adapt to your platform's instruction/memory capabilities
+
+The friction-driven methodology works regardless of platform - just adjust how you store and structure your instructions.
 
 **"What if I have multiple related projects?"**
 
@@ -433,10 +459,10 @@ See [PROJECT-INDEX.md](PROJECT-INDEX.md) for the complete file tree and detailed
 ## Contributing & Feedback
 
 This system combines insights from:
-- Wyndo's AI Maker articles on Claude Projects
-- Claude's direct experience with users
+- Prompt engineering research and best practices
+- Real-world AI collaboration experience across platforms
 - Friction-driven development methodology
-- Real-world implementation patterns
+- Implementation patterns from Claude, ChatGPT, and other AI systems
 
 **Found a better approach? Discovered new patterns?**
 - Share examples of what worked
@@ -474,7 +500,7 @@ The best collaboration system is one that grew with you, not one that tried to p
 
 1. Open `/templates/starter-template.md`
 2. Fill in five sections (20 min)
-3. Add to your Claude Project
+3. Add to your AI system's custom instructions
 4. Start working
 5. Notice friction
 6. Capture patterns
