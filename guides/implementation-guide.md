@@ -47,12 +47,12 @@ Your complete AI system has three distinct layers:
 - Gemini: Create a Gem
 - API: System message in each request
 
-**Layer 3: Project Memory (Learned patterns) ← THIS GUIDE**
+**Layer 3: Project Memory (Learned patterns)**
 - Patterns you discover through friction while using THIS project
 - Specific corrections you've made 3+ times (Rule of Three)
 - Evolves continuously as you work
 - Examples: "When suggesting exercises, ask about equipment first", "Always define jargon on first use"
-- **This guide shows you how to build memory through friction**
+- **See [Memory Guide](memory-guide.md) for deep dive on building Layer 3**
 
 *Where to set:*
 - Claude: Project → Memory
@@ -63,11 +63,15 @@ Your complete AI system has three distinct layers:
 
 ### What This Guide Covers
 
-This implementation guide focuses on **Layers 2 and 3**:
-- Building your **System Prompt** (project-specific context)
-- Developing your **Memory** (learned patterns through friction)
+This implementation guide focuses on **Layer 2 (System Prompt)**:
+- Building your project-specific context
+- Setting up the five essentials
+- When to expand with optional sections
+- Applying to existing projects
 
-**Layer 1 (Personal Preferences) is separate.** See the [Personal Preferences Guide](personal-preferences-guide.md) for building your account-wide standards.
+**For Layer 3 (Memory):** This guide introduces the friction-driven approach, but see the [Memory Guide](memory-guide.md) for comprehensive memory development techniques.
+
+**For Layer 1 (Personal Preferences):** See the [Personal Preferences Guide](personal-preferences-guide.md) for building your account-wide standards.
 
 ### How the Layers Work Together
 
@@ -89,7 +93,7 @@ Layer 3 (Memory) = "I learned: always ask about equipment first"
 
 → **See [Personal Preferences Guide](personal-preferences-guide.md) to build Layer 1 first**
 
-If you've already set your Personal Preferences, continue below. **This guide builds Layer 2 (System Prompt) and Layer 3 (Memory).**
+If you've already set your Personal Preferences, continue below. **This guide builds Layer 2 (System Prompt).** Layer 3 (Memory) is introduced here, but see the [Memory Guide](memory-guide.md) for comprehensive memory development.
 
 ### Step 1: Choose Your Template (2 min)
 
@@ -409,6 +413,10 @@ Does this apply to ALL your projects?
 ## Working with Memory Instructions (Layer 3)
 
 **Remember:** Memory is Layer 3 - patterns you discover through friction, not things you knew upfront.
+
+**For comprehensive memory development:** See the [Memory Guide](memory-guide.md) for advanced techniques, maintenance strategies, and detailed examples.
+
+**Quick reference for this guide:**
 
 ### Creating Effective Memory Instructions
 
