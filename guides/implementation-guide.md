@@ -24,7 +24,7 @@ Your complete AI system has three distinct layers:
 - Examples: "Use British English", "Always explain your reasoning", "Verify code syntax before suggesting"
 - Set once in your account settings
 - Applies across all projects and conversations
-- **Not covered in this guide** - set these in your AI platform's account settings
+- **Not covered in this guide** - See the [Personal Preferences Guide](personal-preferences-guide.md) for building Layer 1
 
 *Where to set:*
 - Claude: Settings → Profile → Personal Preferences
@@ -67,7 +67,7 @@ This implementation guide focuses on **Layers 2 and 3**:
 - Building your **System Prompt** (project-specific context)
 - Developing your **Memory** (learned patterns through friction)
 
-**Layer 1 (Personal Preferences) is separate.** Set those in your account settings before starting this guide.
+**Layer 1 (Personal Preferences) is separate.** See the [Personal Preferences Guide](personal-preferences-guide.md) for building your account-wide standards.
 
 ### How the Layers Work Together
 
@@ -85,9 +85,11 @@ Layer 3 (Memory) = "I learned: always ask about equipment first"
 
 ## Quick Start: First 30 Minutes
 
-**Before you start:** Have you set your Personal Preferences (Layer 1)? These are account-wide settings like "Use British English" or "Always explain reasoning". Set these in your AI platform's account settings BEFORE building your project-specific setup.
+**Before you start:** Have you set your Personal Preferences (Layer 1)? These are account-wide settings like "Use British English" or "Always explain reasoning". 
 
-**This guide builds Layer 2 (System Prompt) and Layer 3 (Memory).**
+→ **See [Personal Preferences Guide](personal-preferences-guide.md) to build Layer 1 first**
+
+If you've already set your Personal Preferences, continue below. **This guide builds Layer 2 (System Prompt) and Layer 3 (Memory).**
 
 ### Step 1: Choose Your Template (2 min)
 
