@@ -17,19 +17,22 @@ Quick navigation guide to all files in this project.
 
 ## 📋 Templates
 
-**`templates/starter-template.md`** - Essential 5-section template
+**`templates/starter-template.md`** - Essential 5-section template for Layer 2
 - Context, Constraints, Goals, Preferences, Red Flags
-- Minimal but complete (30-minute setup)
-- Health/Fitness domain examples
+- 20-30 minute setup with three-layer system explanation
+- Health/Fitness domain examples throughout
+- Platform-specific guidance (Claude, ChatGPT, Copilot, Gemini, API)
+- Layer 1 reminder before starting
 - Works immediately, expand as needed
-- **This is Layer 2: Project Context**
+- **Builds Layer 2: Project Context**
 
-**`templates/advanced-template.md`** - Optional expansions reference
-- Operating modes, decision frameworks, success metrics
-- Career/Coding domain examples
-- Add sections one at a time when friction reveals needs
-- Reference library, not a starting point
-- **Still Layer 2: Project Context expansions**
+**`templates/advanced-template.md`** - Optional expansions reference for Layer 2
+- 8 optional sections: Operating Modes, Decision Framework, Domain Principles, Success Metrics, Response Structure, Common Pitfalls, Integration, Tools & Systems
+- Career/Coding domain examples throughout
+- Platform-specific guidance for adding expansions
+- Add ONE section at a time when friction reveals needs
+- Reference library, not a checklist
+- **Layer 2 expansions only** (Layer 3 built through friction)
 
 **Use when:** Always start with starter template. Reference advanced after Week 2+ when you've identified specific needs through friction.
 
@@ -37,23 +40,25 @@ Quick navigation guide to all files in this project.
 
 ## 📚 Examples
 
-Both examples now demonstrate the complete three-layer system evolution:
+Both examples show evolution timeline in ultra-lean format (~100 lines each):
 
-**`examples/health-fitness-starter-example.md`** - Fitness domain
-- Layer 1: Universal preferences (explain reasoning, challenge assumptions, sustainable over quick fixes)
-- Layer 2: Project setup with five essentials
-- Layer 3: Memory instructions added through friction (Rule of Three)
-- Optional expansions added to Layer 2 after Month 2
-- Shows 2-month evolution from minimal start
+**`examples/health-fitness-starter-example.md`** - Fitness domain evolution
+- Day 1: Layer 1 setup + Layer 2 essentials (5 sections) + empty Layer 3
+- Week 1: First friction patterns → 2 memory instructions added to Layer 3
+- Month 2: Layer 2 expanded (Operating Modes, Decision Framework) + Layer 3 matured (5 total instructions)
+- Shows equipment assumptions and workout complexity friction
+- Evolution summary table: Day 1 vs Month 2
+- ~100 lines, highly scannable
 
-**`examples/career-coding-starter-example.md`** - Self-taught developer path
-- Layer 1: Different universal preferences (ask clarifying questions, flag wrong problems, use concrete examples)
-- Layer 2: Career/coding specific context
-- Layer 3: Memory patterns from friction
-- Demonstrates project-based learning approach
-- Shows how to avoid tutorial hell through friction-driven learning
+**`examples/career-coding-starter-example.md`** - Self-taught developer evolution
+- Day 1: Layer 1 setup + Layer 2 essentials (5 sections) + empty Layer 3
+- Week 1: First friction patterns → 2 memory instructions added to Layer 3
+- Month 2: Layer 2 expanded (3 sections including Common Pitfalls) + Layer 3 matured (5 total instructions)
+- Shows tutorial hell pattern and code explanation friction
+- Demonstrates how system addresses tutorial hell at multiple layers
+- ~100 lines, highly scannable
 
-**Use when:** Want to see how the three-layer system works in practice, or need domain-specific inspiration
+**Use when:** Want to see evolution timeline (Day 1 → Week 1 → Month 2) showing exactly WHAT was added WHEN and why through friction.
 
 ---
 
