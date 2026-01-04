@@ -6,7 +6,7 @@ Quick navigation guide to all files in this project.
 
 ## 📄 Start Here
 
-**`README.md`** - Main project overview
+**[`README.md`](README.md)** - Main project overview
 - What this system is and why it exists
 - Three-layer framework explained (Personal Preferences, Project Context, Memory)
 - Quick start overview
@@ -17,7 +17,7 @@ Quick navigation guide to all files in this project.
 
 ## 📋 Templates
 
-**`templates/starter-template.md`** - Essential 5-section template for Layer 2
+**[`templates/starter-template.md`](templates/starter-template.md)** - Essential 5-section template for Layer 2
 - Context, Constraints, Goals, Preferences, Red Flags
 - 20-30 minute setup with three-layer system explanation
 - Health/Fitness domain examples throughout
@@ -26,7 +26,7 @@ Quick navigation guide to all files in this project.
 - Works immediately, expand as needed
 - **Builds Layer 2: Project Context**
 
-**`templates/advanced-template.md`** - Optional expansions reference for Layer 2
+**[`templates/advanced-template.md`](templates/advanced-template.md)** - Optional expansions reference for Layer 2
 - 8 optional sections: Operating Modes, Decision Framework, Domain Principles, Success Metrics, Response Structure, Common Pitfalls, Integration, Tools & Systems
 - Career/Coding domain examples throughout
 - Platform-specific guidance for adding expansions
@@ -42,7 +42,7 @@ Quick navigation guide to all files in this project.
 
 Both examples show evolution timeline in ultra-lean format (~100 lines each):
 
-**`examples/health-fitness-starter-example.md`** - Fitness domain evolution
+**[`examples/health-fitness-starter-example.md`](examples/health-fitness-starter-example.md)** - Fitness domain evolution
 - Day 1: Layer 1 setup + Layer 2 essentials (5 sections) + empty Layer 3
 - Week 1: First friction patterns → 2 memory instructions added to Layer 3
 - Month 2: Layer 2 expanded (Operating Modes, Decision Framework) + Layer 3 matured (5 total instructions)
@@ -50,7 +50,7 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
 - Evolution summary table: Day 1 vs Month 2
 - ~100 lines, highly scannable
 
-**`examples/career-coding-starter-example.md`** - Self-taught developer evolution
+**[`examples/career-coding-starter-example.md`](examples/career-coding-starter-example.md)** - Self-taught developer evolution
 - Day 1: Layer 1 setup + Layer 2 essentials (5 sections) + empty Layer 3
 - Week 1: First friction patterns → 2 memory instructions added to Layer 3
 - Month 2: Layer 2 expanded (3 sections including Common Pitfalls) + Layer 3 matured (5 total instructions)
@@ -66,14 +66,14 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
 
 ### Layer-Specific Guides
 
-**`guides/personal-preferences-guide.md`** - Layer 1 setup (account-wide)
+**[`guides/personal-preferences-guide.md`](guides/personal-preferences-guide.md)** - Layer 1 setup (account-wide)
 - Building universal standards that apply to ALL AI conversations
 - Examples across multiple domains
 - How to distinguish Layer 1 from Layer 2
 - Platform-specific setup instructions
 - Evolved example showing real development over 2 months
 
-**`guides/project-context-guide.md`** - Layer 2 setup (project-specific)
+**[`guides/project-context-guide.md`](guides/project-context-guide.md)** - Layer 2 setup (project-specific)
 - Complete three-layer overview
 - Step-by-step project setup (30 minutes)
 - Evolution cycle (Weeks 1-3, Month 1-3)
@@ -85,7 +85,7 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
 - Advanced techniques
 - **Most comprehensive guide in the system**
 
-**`guides/memory-guide.md`** - Layer 3 development (learned patterns)
+**[`guides/memory-guide.md`](guides/memory-guide.md)** - Layer 3 development (learned patterns)
 - Understanding project memory vs. context
 - Friction-driven memory development
 - Rule of Three methodology
@@ -95,21 +95,21 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
 
 ### Supporting Guides
 
-**`guides/quick-start-checklist.md`** - Fast-track setup
+**[`guides/quick-start-checklist.md`](guides/quick-start-checklist.md)** - Fast-track setup
 - 30-minute minimum viable setup
 - Week 1 tracking template
 - Monthly maintenance checklist
 - Friction pattern identification
 - Success indicators
 
-**`guides/template-usage-order.md`** - Template workflow
+**[`guides/template-usage-order.md`](guides/template-usage-order.md)** - Template workflow
 - Clear usage order (starter → advanced)
 - Phase-by-phase timeline
 - When to expand beyond essentials
 - Common mistakes to avoid
 - Decision trees and FAQs
 
-**`GLOSSARY.md`** - Terms and concepts reference
+**[`GLOSSARY.md`](GLOSSARY.md)** - Terms and concepts reference
 - Three-layer system (Personal Preferences, Project Context, Memory)
 - Friction, Rule of Three, Memory Instructions
 - Template terminology
