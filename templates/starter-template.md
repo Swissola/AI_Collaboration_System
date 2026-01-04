@@ -1,8 +1,21 @@
-# Claude Project Starter Template
+# AI Project Starter Template
 
-## Quick Start: The Essentials (15 minutes)
+## Understanding What You're Building
 
-This is your minimal viable setup. Fill this in first, use it for a week, then expand based on what you learn.
+**This template builds Layer 2: Project Context**
+
+Before using this template, make sure you've set up **Layer 1 (Personal Preferences)** in your AI platform's account settings. Layer 1 contains universal standards that apply to ALL your AI conversations. See the [Personal Preferences Guide](../guides/personal-preferences-guide.md) if you haven't done this yet.
+
+**The Three-Layer System:**
+- **Layer 1: Personal Preferences** - Account-wide standards (set once, applies everywhere)
+- **Layer 2: Project Context** - Project-specific context (what you're building with this template)
+- **Layer 3: Project Memory** - Friction-learned patterns (built after using Layer 2 for a week)
+
+---
+
+## Quick Start: The Five Essentials (20-30 minutes)
+
+This is your minimal viable Layer 2 setup. Fill in these five sections, use your AI for a week, then expand based on friction patterns you discover.
 
 All examples use Health/Fitness domain for consistency.
 
@@ -17,17 +30,17 @@ What to include:
 - Your role or focus area
 - Current skill/experience level (be honest)
 - What you're working on or towards
-- Relevant background that affects how you approach this
+- Relevant background that affects your approach
 ```
 
-**Why this matters:** This is how I understand who I'm talking to. The more specific you are about your actual situation (not who you wish you were), the more useful my responses will be.
+**Why this matters:** Context enables the AI to understand who it's working with. The more specific you are about your actual situation (not who you wish you were), the more useful responses will be.
 
 **Example:**
 ```
 I'm focused on building sustainable fitness habits. Beginner level currently, with good understanding of how things should work structurally but limited practical experience. Working around a busy schedule with limited equipment access.
 ```
 
-**Key pattern:** Be specific about what you CAN do and what you're STILL LEARNING. This calibrates my responses perfectly.
+**Key pattern:** Be specific about what you CAN do and what you're STILL LEARNING. This calibrates AI responses appropriately.
 
 *See [Appendix A](#appendix-a-additional-context-examples) for other domain examples.*
 
@@ -51,7 +64,7 @@ Limitations:
 - [Non-negotiable boundaries]
 ```
 
-**Why this matters:** Constraints enable creativity. When I know what you CAN'T do, I can suggest what you CAN do within those limits. Unrealistic suggestions waste both our time.
+**Why this matters:** Constraints enable creativity. When the AI knows what you CAN'T do, it can suggest what you CAN do within those limits. Unrealistic suggestions waste time.
 
 **Example:**
 ```
@@ -61,7 +74,7 @@ Budget: £50/month maximum for equipment or guidance
 Limitations: Previous attempts at intense 6-day programmes failed due to unsustainability. Must work around occasional lower back sensitivity (no current injury, just need to watch form).
 ```
 
-**Critical insight:** Include what HASN'T worked before. This prevents me from suggesting things you've already tried and failed at.
+**Critical insight:** Include what HASN'T worked before. This prevents the AI from suggesting things you've already tried and failed at.
 
 *See [Appendix B](#appendix-b-additional-constraints-examples) for other domain examples.*
 
@@ -73,7 +86,7 @@ Limitations: Previous attempts at intense 6-day programmes failed due to unsusta
 [3-5 specific, concrete goals - not vague aspirations]
 
 What makes a good goal here:
-- Specific enough that we'd know if you achieved it
+- Specific enough that you'd know if you achieved it
 - Actually achievable within your constraints
 - Prioritised (what matters most?)
 ```
@@ -95,27 +108,27 @@ What makes a good goal here:
 
 ---
 
-### 4. Preferences: How I Want Us to Work
+### 4. Preferences: How You Want to Work
+
+**IMPORTANT:** Only include project-specific preferences here. Universal preferences (like "Use British English") belong in Layer 1 (Personal Preferences), not here.
 
 ```
-[2-4 things you're certain about - add more as you discover them]
+[2-4 things specific to THIS project - add more as you discover them]
 
 Communication:
-- [British English / American English]
-- [Technical level to assume]
-- [What definitely annoys you in AI responses]
+- [Technical level to assume for THIS domain]
+- [What annoys you in responses for THIS type of work]
 
 Approach:
-- [What style works for you - challenging? supportive? data-driven?]
-- [Do you want explanations or just answers?]
+- [What style works for you in THIS area - challenging? supportive? data-driven?]
+- [Do you want explanations or just answers for THIS domain?]
 ```
 
-**Why this matters:** These preferences prevent friction before it starts. If you hate excessive bullet points, tell me now rather than reformatting every response for a week.
+**Why this matters:** Project-specific preferences prevent friction before it starts. These are things that matter for THIS domain but might be different in another project.
 
 **Example:**
 ```
 Communication:
-- Use British English spelling throughout
 - I'm a beginner but understand concepts - explain without talking down
 - Avoid fitness industry hype and pseudoscience
 
@@ -126,7 +139,9 @@ Approach:
 - Sustainable > optimal; consistency > intensity
 ```
 
-**Key pattern:** Include what annoys you. "Avoid X" is as helpful as "Do Y". If something in AI responses drives you mad, say so now.
+**Key pattern:** Include what annoys you in THIS domain. "Avoid X" is as helpful as "Do Y" for preventing friction.
+
+**Remember:** "Use British English spelling" is Layer 1 (Personal Preferences), not here. "Avoid fitness industry hype" is Layer 2 because it's specific to the fitness domain.
 
 *See [Appendix D](#appendix-d-additional-preferences-examples) for other domain examples.*
 
@@ -137,10 +152,10 @@ Approach:
 ```
 [What to avoid based on past experience or known preferences]
 
-This prevents me from suggesting things that sound good but won't work for your situation.
+This prevents the AI from suggesting things that sound good but won't work for your situation.
 ```
 
-**Why this matters:** Your red flags are often more informative than your goals. They tell me about past failures and hard boundaries. This prevents wasted suggestions.
+**Why this matters:** Red flags are often more informative than goals. They tell the AI about past failures and hard boundaries, preventing wasted suggestions.
 
 **Example:**
 ```
@@ -157,39 +172,60 @@ This prevents me from suggesting things that sound good but won't work for your 
 
 ---
 
-## That's Your Starting Point
+## That's Your Layer 2 Starting Point
 
-Copy the above five sections, fill them in, add to your Claude Project's Custom Instructions.
+**Next steps:**
 
-Use it for a week. Notice friction. Then come back and expand.
+1. Copy the above five sections
+2. Fill them in for your project (20-30 minutes)
+3. Add to your AI platform's project context storage:
+
+**Where to add Layer 2 (Project Context):**
+- **Claude:** Project → Custom Instructions
+- **ChatGPT:** Create a GPT, or use custom instructions for conversation
+- **GitHub Copilot:** Create `.github/copilot-instructions.md` file in your repository
+- **Gemini:** Create a Gem with these instructions
+- **API:** Include as system message in your requests
+
+4. Use for a week
+5. Track friction patterns
+6. Build Layer 3 (Memory) from recurring issues
 
 ---
 
 ## The Evolution Process
 
 ### Week 1: Just Use It
-- Work with Claude normally using your starter setup
+- Work with your AI normally using your Layer 2 setup
 - Notice when responses miss the mark
 - Don't fix everything immediately - just note patterns
+- Track friction using the Rule of Three
 
-### Week 2-3: Capture Friction
+### Week 2-3: Build Layer 3 (Memory)
 When you find yourself correcting the same thing 3+ times:
-1. Tell me: "I've noticed I keep correcting [X]"
-2. We'll discuss the pattern together
-3. Create a memory instruction or add to system prompt
+1. Recognize the pattern
+2. Create a memory instruction (Layer 3)
+3. Add it to your platform's memory storage
 4. Test if it resolves the friction
+
+**Where to add Layer 3 (Project Memory):**
+- **Claude:** Project → Memory
+- **ChatGPT:** Memory feature or append to GPT instructions
+- **GitHub Copilot:** Append to `.github/copilot-instructions.md` (manual)
+- **Gemini:** Append to Gem instructions (manual)
+- **API:** Append to system message (manual)
 
 ### Monthly: Light Review
 - What's working well? (keep it)
-- What causes friction? (fix it)
-- Has context changed? (update it)
-- Any new patterns? (capture them)
+- What causes friction? (fix it in Layer 3)
+- Has context changed? (update Layer 2)
+- Any new patterns? (capture in Layer 3)
 
 ---
 
-## Friction → Memory Instructions
+## Layer 3: Friction → Memory Instructions
 
-When you notice a pattern worth capturing:
+When you notice a pattern worth capturing (3+ occurrences):
 
 **Template for memory instructions:**
 ```
@@ -199,7 +235,7 @@ When [situation/trigger]:
 - Why: [reason this matters]
 ```
 
-**Why this works:** Memory instructions are surgical fixes for recurring problems. Not "be better" but "do X instead of Y in situation Z."
+**Why this works:** Memory instructions (Layer 3) are surgical fixes for recurring problems. Not "be better generally" but "do X instead of Y in situation Z."
 
 **Example - Equipment assumptions:**
 ```
@@ -209,9 +245,9 @@ When suggesting exercises:
 - Why: Prevents suggesting workouts I can't complete
 ```
 
-Add these to Project Memory (Settings → Memory) not to the system prompt.
-
-**Why separate?** System prompt = context that doesn't change. Memory = specific learned patterns from use.
+**Layer 2 vs Layer 3:**
+- **Layer 2 (Project Context):** What you knew BEFORE using the AI - "I have home equipment only"
+- **Layer 3 (Memory):** What you learned AFTER using the AI - "Always ask about equipment first"
 
 **The Pattern:** Most memory instructions follow this structure:
 1. Trigger/situation (when this happens...)
@@ -223,116 +259,37 @@ Add these to Project Memory (Settings → Memory) not to the system prompt.
 
 ---
 
-## What to Add Next (After Week 1)
+## What to Add Next (After Month 1+)
 
-Based on how our interactions actually go, you might want to add:
+After using your Layer 2 essentials for a month and building some Layer 3 memory instructions, you might need to expand Layer 2 with optional sections from the [Advanced Template](advanced-template.md).
 
-### Operating Modes (If you notice distinct interaction patterns)
+**Add ONE section at a time when friction reveals the need:**
 
-**When to add:** You realize planning conversations need different depth than execution conversations.
+### Consider adding if you notice:
+- **Operating Modes:** You interact differently for different types of work (planning vs. execution)
+- **Decision Framework:** AI suggestions work but don't align with your priorities
+- **Domain Principles:** AI keeps suggesting things that violate how you think work should be done
+- **Success Metrics:** You want help analyzing progress and adjusting based on data
+- **Response Structure:** Specific format preferences keep recurring
+- **Common Pitfalls:** You have recurring mistakes the AI should help you avoid
+- **Integration:** This project connects with other areas needing coordination
+- **Tools & Systems:** External tools/workflows the AI should reference
 
-**Quick example:**
-```
-Mode 1: Programme Planning - When designing training, setting goals, thinking long-term
-- Detailed, challenge assumptions, think in blocks/phases
+**Don't add sections "just in case" - wait for friction to reveal genuine needs.**
 
-Mode 2: Daily Execution - When I need today's workout, quick answers, immediate actions
-- Concise, actionable, key points only
-```
-
-### Decision Framework (If priorities don't align)
-
-**When to add:** Claude suggests things that work technically but don't align with what matters to you.
-
-**Quick example:**
-```
-When helping me make training decisions:
-1. Sustainability (can I maintain this for months?)
-2. Safety (injury prevention)
-3. Effectiveness (does it work?)
-4. Enjoyment (do I actually want to do this?)
-```
-
-### Domain Principles (If core beliefs keep getting violated)
-
-**When to add:** You find yourself repeatedly saying "but that goes against [principle I believe in]."
-
-**Quick example:**
-```
-Key principles for training:
-- Consistency beats intensity
-- Form before load
-- Recovery is training
-- Individual response varies
-```
-
-### Success Metrics (If you want help tracking progress)
-
-**When to add:** You have data you're tracking and want help analyzing patterns and suggesting adjustments.
-
-**Quick example:**
-```
-How I measure fitness progress:
-- Primary: Consistency (sessions completed vs. planned - aim for 80%+)
-- Secondary: Strength progression (weight/reps on key lifts)
-- Leading signals: Energy levels, recovery feeling, motivation
-```
-
-**Key principle:** Don't add these until you experience friction that makes you wish you had them. Week 1 often reveals which 1-2 sections you actually need.
+See [Advanced Template](advanced-template.md) for details on each optional section.
 
 ---
-
-## Template Expansion Options
-
-As you discover needs, you can add these sections (see Advanced Template for full details):
-
-- **Response Structure** (if format keeps being wrong)
-- **Integration with Other Projects** (if cross-impacts matter)
-- **Tools & Tracking** (if you use specific tools)
-- **Common Pitfalls** (if you notice your own patterns)
-
-**But don't add these until you actually need them.**
-
-These are options, not requirements. Most projects only need 1-2 of these sections, if any. Let friction reveal what matters.
-
----
-
-## Quick Checklist
-
-Starting new project:
-- [ ] Fill in the 5 essential sections above
-- [ ] Add to Claude Project Custom Instructions
-- [ ] Test with 2-3 typical questions
-- [ ] Use for one week without changes
-- [ ] Note friction patterns
-- [ ] Add memory instructions after Week 1
-
-Remember: Good enough now beats perfect later. Start with the essentials, evolve through use.
-
----
-
-## Version Control
-
-- **Created:** [Date]
-- **Last Updated:** [Date]
-- **Next Review:** [After 1 month]
-
-Keep a simple log of what you change and why - helps you understand what works.
-
----
-
-# Appendices: Additional Domain Examples
-
 ## Appendix A: Additional Context Examples
 
 ### Career/Coding
 ```
-I'm a beginner coder with good structural understanding. Currently learning Python and web fundamentals, working towards becoming a professional developer. I think systematically about problems but still building practical coding skills through projects.
+I'm transitioning into software development through self-study. No CS degree but 3 years in project management (understand working methodologies). Currently learning Python and web fundamentals. Good at picking up concepts, struggle with practical application (too much consuming, not enough building). Full-time job limits learning time.
 ```
 
 ### Content Creation
 ```
-I'm a writer building an audience on Substack, currently at 500 subscribers after 2 months. I have strong ideas and voice but still learning distribution and growth strategies. Background in marketing helps me think strategically, but I'm new to consistent content creation.
+I'm building a technical writing practice focused on developer tools. Background in software but new to content creation. Understand technical subjects deeply, still developing ability to explain them clearly to varied audiences. Comfortable with written content, less so with video/audio formats.
 ```
 
 ### Research/Learning
@@ -428,7 +385,6 @@ Limitations: No marketing experience. Small network. Solo founder (no cofounder)
 ### Career/Coding
 ```
 Communication:
-- Use British English spelling
 - Beginner-intermediate level - explain concepts but don't oversimplify
 - Avoid unexplained jargon (define terms on first use)
 
@@ -442,7 +398,6 @@ Approach:
 ### Content Creation
 ```
 Communication:
-- British English spelling
 - Assume marketing background, but new to content creation specifics
 - Avoid generic writing advice - I need strategies specific to my niche
 
@@ -456,7 +411,6 @@ Approach:
 ### Research/Learning
 ```
 Communication:
-- British English spelling
 - Academic writing style acceptable
 - Technical depth welcome (I can handle it)
 
@@ -470,7 +424,6 @@ Approach:
 ### Business/Entrepreneurship
 ```
 Communication:
-- British English spelling
 - Technical founder - comfortable with technical topics
 - Less comfortable with business/marketing jargon (explain when needed)
 
@@ -525,6 +478,8 @@ Approach:
 
 ## Appendix F: Additional Memory Instruction Examples
 
+These are Layer 3 examples - patterns learned through friction, not part of initial Layer 2 setup.
+
 ### Code complexity:
 ```
 When explaining code:
@@ -556,3 +511,30 @@ When suggesting product features:
 - Don't: Suggest nice-to-have features before basics work
 - Why: Solo founder, need to ship and validate before expanding scope
 ```
+
+---
+
+## Quick Reference
+
+**Layer 1 (Personal Preferences):** Account settings - applies everywhere
+- Example: "Use British English spelling"
+
+**Layer 2 (Project Context):** This template - project-specific context
+- Example: "I'm learning Python with 8 hours/week"
+
+**Layer 3 (Project Memory):** Built through friction - learned patterns
+- Example: "When explaining code, define jargon on first use"
+
+**Decision guide:**
+- Universal across all projects? → Layer 1
+- Knew it before using AI? → Layer 2
+- Learned through friction (3+ times)? → Layer 3
+
+**Next steps:**
+1. Set up Layer 1 if you haven't (see [Personal Preferences Guide](../guides/personal-preferences-guide.md))
+2. Fill in this template for Layer 2 (20-30 minutes)
+3. Use for Week 1, track friction
+4. Build Layer 3 from patterns (Week 2+)
+5. Expand Layer 2 if needed (Month 1+, see [Advanced Template](advanced-template.md))
+
+Good luck building your AI collaboration system! 🚀

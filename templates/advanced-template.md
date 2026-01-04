@@ -1,59 +1,42 @@
-# Claude Project Advanced Template
+# AI Project Advanced Template
 
-## Purpose
+## Understanding This Template
 
-This template includes all the optional expansions from the starter template. Use this AFTER you've worked with the starter for at least a week and have identified specific needs.
+**This template is for Layer 2 (Project Context) expansions only.**
 
-Don't fill this all in at once - add sections as friction reveals you need them.
+Before using this template:
+1. **Layer 1 (Personal Preferences)** should be set in account settings - see [Personal Preferences Guide](../guides/personal-preferences-guide.md)
+2. **Layer 2 Essentials** should be set using [Starter Template](starter-template.md) - the five essentials
+3. You've used your Layer 2 essentials for at least a week
+4. You're building **Layer 3 (Memory)** from friction patterns (see [Memory Guide](../guides/memory-guide.md))
 
----
+**Purpose:** This template shows ALL possible Layer 2 expansions. Use it as a **reference**, not a checklist.
 
-## Core Setup (Required)
-
-### 1. Context: Who You Are & What You're Doing
-
-```
-[Your actual situation, skill level, focus area, relevant background]
-```
-
-### 2. Constraints: What You're Working Within
-
-```
-Time available: [Actual hours]
-Resources: [What you have access to]
-Limitations: [Skills learning, past failures, boundaries]
-```
-
-### 3. Goals: What You're Actually Trying to Achieve
-
-```
-1. [Specific goal 1]
-2. [Specific goal 2]
-3. [Specific goal 3]
-4. [Specific goal 4]
-5. [Specific goal 5]
-```
-
-### 4. Preferences: How I Want Us to Work
-
-```
-Communication: [Language, technical level, what annoys you]
-Approach: [Style - challenging/supportive/data-driven]
-```
-
-### 5. Red Flags: What Won't Work For Me
-
-```
-[What to avoid based on experience or constraints]
-```
+**Critical:** Don't fill this all in at once. Add ONE section at a time when friction reveals you need it.
 
 ---
 
-## Optional Expansions
+## Layer 2 Essentials (Use Starter Template)
+
+Don't recreate the five essentials here - they're in the [Starter Template](starter-template.md):
+
+1. **Context:** Who you are & what you're doing
+2. **Constraints:** What you're working within
+3. **Goals:** What you're trying to achieve
+4. **Preferences:** How you want to work (project-specific only)
+5. **Red Flags:** What won't work for you
+
+**Already filled in the starter template?** Good. Now consider if you need any optional expansions below.
+
+---
+
+## Layer 2 Optional Expansions
+
+Add these to your project context ONE AT A TIME when friction reveals the need.
 
 ### Operating Modes (Add when you notice distinct interaction patterns)
 
-**When to use:** You realize you interact with Claude differently for different types of work and want those differences made explicit.
+**When to use:** You realize you interact with your AI differently for different types of work and want those differences made explicit.
 
 **Why this matters:** Without modes, you might get detailed strategic thinking when you just need a quick answer, or vice versa.
 
@@ -74,7 +57,7 @@ Mode [Name]: [When you're doing what]
 When I'm: Making career decisions, planning skill development, positioning myself
 Examples: "Should I learn X or Y next?", "Thinking about job change", "Career strategy question"
 
-Claude should:
+AI should:
 - Approach: Multi-year timeline, consider opportunity costs, market realities
 - Depth: Comprehensive - explore implications and alternatives
 - Style: Honest and direct - balance ambition with realism
@@ -86,7 +69,7 @@ Claude should:
 When I'm: Writing code, debugging, implementing features right now
 Examples: "How do I implement...", "Getting this error...", "This isn't working..."
 
-Claude should:
+AI should:
 - Approach: Problem-solving focused - help me get unstuck
 - Depth: Complete working examples with explanations
 - Style: Educational but practical - teach whilst helping ship
@@ -913,3 +896,41 @@ Pitfall 3: Isolation Learning
 - Spot: All time on technical, no visibility/networking
 - Suggest: "Technically ready. Time to be visible"
 ```
+
+---
+
+## Where to Add These Expansions
+
+Once you've decided to add an optional section, add it to your **Layer 2 (Project Context)** storage:
+
+**Platform-specific locations:**
+- **Claude:** Project → Custom Instructions (append to your five essentials)
+- **ChatGPT:** Edit your GPT or custom instructions (append to existing)
+- **GitHub Copilot:** Edit `.github/copilot-instructions.md` (append to file)
+- **Gemini:** Edit your Gem instructions (append to existing)
+- **API:** Append to system message
+
+**Remember:** These are Layer 2 expansions (project context you're adding deliberately). Layer 3 (Memory) is built through friction using the Rule of Three - see [Memory Guide](../guides/memory-guide.md).
+
+---
+
+## Quick Reference
+
+**When to use this template:**
+- After Week 2+ with starter template
+- When friction reveals a specific need
+- Add ONE section at a time
+- Test for a week before adding more
+
+**When NOT to use:**
+- Don't fill everything in on Day 1
+- Don't add sections "just in case"
+- Don't use instead of starter template
+- Don't use for memory instructions (those are Layer 3)
+
+**The three layers working together:**
+- **Layer 1:** Universal standards (account settings)
+- **Layer 2:** Starter essentials + these optional expansions
+- **Layer 3:** Memory from friction (separate storage)
+
+Start minimal. Expand deliberately. Evolve through use. 🚀
