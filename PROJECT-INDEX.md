@@ -1,4 +1,4 @@
-# AI Collaboration System (AICS) - File Index
+# AI Collaboration System (AICS) - Project Index
 
 Quick navigation guide to all files in this project.
 
@@ -6,126 +6,136 @@ Quick navigation guide to all files in this project.
 
 ## 📄 Start Here
 
-**`README.md`** - Main project overview and introduction
-- What this system is and why it matters
-- Quick start guide
-- Core concepts explained
+**`README.md`** - Main project overview
+- What this system is and why it exists
+- Three-layer framework explained (Personal Preferences, Project Context, Memory)
+- Quick start overview
+- Platform compatibility (Claude, ChatGPT, Copilot, Gemini)
 - FAQ and common questions
 
 ---
 
 ## 📋 Templates
 
-**`templates/starter-template.md`** - Your first 30 minutes
-- Five essential sections
-- Minimal but complete
-- Health/Fitness examples
+**`templates/starter-template.md`** - Essential 5-section template
+- Context, Constraints, Goals, Preferences, Red Flags
+- Minimal but complete (30-minute setup)
+- Health/Fitness domain examples
 - Works immediately, expand as needed
+- **This is Layer 2: Project Context**
 
-**`templates/advanced-template.md`** - Optional expansions
+**`templates/advanced-template.md`** - Optional expansions reference
 - Operating modes, decision frameworks, success metrics
-- Career/Coding examples
-- Reference library for when friction reveals needs
-- Add sections one at a time, not all at once
+- Career/Coding domain examples
+- Add sections one at a time when friction reveals needs
+- Reference library, not a starting point
+- **Still Layer 2: Project Context expansions**
 
-**Use when:** Always start with starter template, reference advanced after Week 1+
+**Use when:** Always start with starter template. Reference advanced after Week 2+ when you've identified specific needs through friction.
 
 ---
 
 ## 📚 Examples
 
-**`examples/health-fitness-starter-example.md`** - Health & Fitness Domain
-- Starter setup filled in showing evolution over 2 months
-- Memory instructions added through friction
-- Optional sections added when needed
-- Shows how system grows from minimal start
+Both examples now demonstrate the complete three-layer system evolution:
 
-**`examples/career-coding-starter-example.md`** - Career Development Domain
-- Self-taught developer path example
-- Project-based learning focus
-- Demonstrates pitfall recognition and correction
-- Shows friction-driven memory development
+**`examples/health-fitness-starter-example.md`** - Fitness domain
+- Layer 1: Universal preferences (explain reasoning, challenge assumptions, sustainable over quick fixes)
+- Layer 2: Project setup with five essentials
+- Layer 3: Memory instructions added through friction (Rule of Three)
+- Optional expansions added to Layer 2 after Month 2
+- Shows 2-month evolution from minimal start
 
-**Use when:** Want to see how starter template evolves into complete system through real use
+**`examples/career-coding-starter-example.md`** - Self-taught developer path
+- Layer 1: Different universal preferences (ask clarifying questions, flag wrong problems, use concrete examples)
+- Layer 2: Career/coding specific context
+- Layer 3: Memory patterns from friction
+- Demonstrates project-based learning approach
+- Shows how to avoid tutorial hell through friction-driven learning
+
+**Use when:** Want to see how the three-layer system works in practice, or need domain-specific inspiration
 
 ---
 
 ## 📖 Guides
 
-### Implementation & Setup
+### Layer-Specific Guides
 
-**`guides/project-context-guide.md`** - Complete setup guide (most important)
-- Step-by-step instructions for creating your project
-- 3-week structured timeline
-- Troubleshooting common issues
-- Maintenance and evolution strategies
+**`guides/personal-preferences-guide.md`** - Layer 1 setup (account-wide)
+- Building universal standards that apply to ALL AI conversations
+- Examples across multiple domains
+- How to distinguish Layer 1 from Layer 2
+- Platform-specific setup instructions
+- Evolved example showing real development over 2 months
+
+**`guides/project-context-guide.md`** - Layer 2 setup (project-specific)
+- Complete three-layer overview
+- Step-by-step project setup (30 minutes)
+- Evolution cycle (Weeks 1-3, Month 1-3)
+- When to expand with optional sections
+- Three-layer decision guide (what goes where)
+- Working with memory (introduction to Layer 3)
 - Applying to existing projects
+- Troubleshooting common issues
+- Advanced techniques
+- **Most comprehensive guide in the system**
 
-**`guides/quick-start-checklist.md`** - Fast-track checklist
+**`guides/memory-guide.md`** - Layer 3 development (learned patterns)
+- Understanding project memory vs. context
+- Friction-driven memory development
+- Rule of Three methodology
+- Memory instruction templates
+- Real-world examples across domains
+- Maintenance and evolution strategies
+
+### Supporting Guides
+
+**`guides/quick-start-checklist.md`** - Fast-track setup
 - 30-minute minimum viable setup
 - Week 1 tracking template
 - Monthly maintenance checklist
 - Friction pattern identification
 - Success indicators
 
-**Use when:** Ready to actually build your project
-
-### Memory & Optimization
-
-**`guides/memory-guide.md`** - Memory development guide
-- Understanding memory vs. system prompt
-- Friction-driven memory approach
-- Memory instruction templates
-- Real-world examples across domains
-- Maintenance strategies
-
-**`guides/personal-preferences-guide.md`** - Personal preferences setup
-- Account-level vs. project-level instructions
-- Real example: preferences evolved over 2 months
-- Building your own through friction
-- Decision tree for what goes where
-- Integration with projects
-
-**`guides/template-usage-order.md`** - Template workflow guide
+**`guides/template-usage-order.md`** - Template workflow
 - Clear usage order (starter → advanced)
 - Phase-by-phase timeline
-- When to expand
+- When to expand beyond essentials
 - Common mistakes to avoid
 - Decision trees and FAQs
 
 **`GLOSSARY.md`** - Terms and concepts reference
-- Core concepts: Friction, Rule of Three, Memory, Project Context, Personal Preferences
+- Three-layer system (Personal Preferences, Project Context, Memory)
+- Friction, Rule of Three, Memory Instructions
 - Template terminology
-- Process terms: Friction Log, Memory Instructions, Evolution Process
-- Common phrases explained
-- Three-layer decision guide (Personal Preferences vs. Project Context vs. Memory)
-- Quick reference for key decisions
-
-**Use when:** You've been using your project for a week+ and want to optimize, or need to understand framework terminology
+- Process terms and phrases
+- Quick decision guide for layer placement
 
 ---
 
-## 🎯 Recommended Path
+## 🎯 Recommended Paths
 
 ### For First-Time Users
 ```
 1. README.md (15 min)
-   └─> Understand what this is and why
+   └─> Understand the three-layer system
 
-2. Project Context Guide (30 min)
-   └─> Learn the complete process
+2. Personal Preferences Guide (20 min)
+   └─> Set up Layer 1 (account-wide)
 
-3. Quick Start Checklist (use while working)
-   └─> Follow step-by-step
+3. Project Context Guide (30 min)
+   └─> Learn Layer 2 setup process
 
 4. Relevant Example (15 min)
-   └─> See a completed version
+   └─> See complete three-layer evolution
 
-5. Master Template (work through)
-   └─> Fill in your own version
+5. Starter Template (20 min)
+   └─> Fill in your Layer 2
 
-6. Memory Builder Guide (after 1 week)
-   └─> Add memory instructions
+6. Use for 1 week, track friction
+
+7. Memory Guide (after Week 1+)
+   └─> Build Layer 3 from friction
 ```
 
 ### For Users With Existing Projects
@@ -134,31 +144,34 @@ Quick navigation guide to all files in this project.
    └─> Understand the framework
 
 2. Project Context Guide - "Applying to Existing Projects" (30 min)
-   └─> Learn adaptation process
+   └─> Learn migration process
 
-3. Relevant Example (15 min)
-   └─> See structure applied
+3. Personal Preferences Guide (15 min)
+   └─> Extract universal preferences to Layer 1
 
-4. Master Template (work through)
-   └─> Restructure your existing content
+4. Relevant Example (15 min)
+   └─> See restructured approach
 
-5. Memory Builder Guide (immediately)
-   └─> Capture existing friction patterns
+5. Audit current setup using three-layer decision guide
+   └─> Separate what goes where
+
+6. Memory Guide (immediately)
+   └─> Capture existing friction patterns as Layer 3
 ```
 
-### For Advanced Users
+### For Power Users
 ```
-1. Master Template (review structure)
-   └─> Understand comprehensive framework
+1. Memory Guide (deep dive)
+   └─> Advanced Layer 3 techniques
 
-2. Memory Builder Guide (deep dive)
-   └─> Advanced memory techniques
+2. Project Context Guide - Advanced Techniques
+   └─> Multi-project coordination, progressive disclosure
 
 3. Examples (compare approaches)
    └─> Learn domain-specific patterns
 
-4. Project Context Guide - Advanced Techniques
-   └─> Multi-project coordination, version control
+4. Advanced Template (reference)
+   └─> Explore all possible Layer 2 expansions
 ```
 
 ---
@@ -168,29 +181,25 @@ Quick navigation guide to all files in this project.
 ```
 AI_Collaboration_System/
 │
-├── README.md                          # Start here
-├── GLOSSARY.md                        # Terms and concepts
-├── PROJECT-INDEX.md                   # This file - comprehensive index
+├── README.md                           # Overview and three-layer introduction
+├── GLOSSARY.md                         # Terms, concepts, quick reference
+├── PROJECT-INDEX.md                    # This file - complete navigation
+├── CONTRIBUTING.md                     # How to contribute
 │
 ├── templates/
-│   ├── starter-template.md            # Always start here
-│   └── advanced-template.md           # Reference after Week 1+
+│   ├── starter-template.md             # Layer 2: Essential 5 sections
+│   └── advanced-template.md            # Layer 2: Optional expansions
 │
 ├── examples/
-│   ├── health-fitness-starter-example.md
-│   └── career-coding-starter-example.md
+│   ├── health-fitness-starter-example.md      # All 3 layers, fitness domain
+│   └── career-coding-starter-example.md       # All 3 layers, coding domain
 │
-├── guides/
-│   ├── project-context-guide.md        # Primary setup guide
-│   ├── memory-guide.md                # Memory system guide
-│   ├── personal-preferences-guide.md  # Account-level preferences
-│   ├── template-usage-order.md        # How to use templates
-│   └── quick-start-checklist.md       # Fast-track setup
-│
-└── tools/                              # Coming in future updates
-    ├── prompt-builder/
-    ├── memory-generator/
-    └── friction-analyzer/
+└── guides/
+    ├── personal-preferences-guide.md   # Layer 1: Account-wide setup
+    ├── project-context-guide.md        # Layer 2: Project-specific setup
+    ├── memory-guide.md                 # Layer 3: Friction-driven development
+    ├── quick-start-checklist.md        # Fast-track Layer 2 setup
+    └── template-usage-order.md         # How to use templates effectively
 ```
 
 ---
@@ -199,62 +208,77 @@ AI_Collaboration_System/
 
 ### By Question Type
 
+**"What are the three layers?"**
+→ README (Key Concepts) → Project Context Guide (Understanding the Three Layers)
+
 **"How do I get started?"**
-→ README.md → Quick Start Checklist → Project Context Guide
+→ Personal Preferences Guide (Layer 1) → Project Context Guide (Layer 2) → Quick Start Checklist
 
-**"What should my prompt look like?"**
-→ Examples folder → Master Template → Project Context Guide
+**"Where does this instruction belong?"**
+→ Project Context Guide (Three-Layer Decision Guide) → GLOSSARY (Decision tree)
 
-**"How do I handle memory?"**
-→ Memory Builder Guide → Examples (memory sections)
+**"What should my project look like?"**
+→ Examples folder → Starter Template → Project Context Guide
+
+**"How do I build memory?"**
+→ Memory Guide → Examples (Layer 3 sections)
 
 **"My project isn't working well"**
-→ Project Context Guide (Troubleshooting) → Memory Builder Guide
+→ Project Context Guide (Troubleshooting) → Memory Guide (friction detection)
 
 **"How do I maintain this?"**
-→ Project Context Guide (Maintenance) → Quick Start Checklist (Monthly Review)
+→ Project Context Guide (Timeline section) → Quick Start Checklist (Monthly Review)
 
 ### By Time Available
 
 **15 minutes:**
-→ README.md (overview and concepts)
+→ README.md (three-layer overview)
 
 **30 minutes:**
-→ Quick Start Checklist (minimal viable setup)
+→ Quick Start Checklist (minimal Layer 2 setup)
 
 **1 hour:**
 → Project Context Guide (comprehensive understanding)
 
 **2-3 hours:**
-→ Complete first project setup following guide
+→ Complete Layer 1 + Layer 2 setup
 
 **Ongoing:**
-→ Memory Builder Guide + regular maintenance
+→ Layer 3 development through friction + regular maintenance
 
 ### By Experience Level
 
 **Never used AI project features:**
-→ README → Quick Start Checklist → Examples → Template
+→ README → Personal Preferences Guide → Quick Start Checklist → Examples → Starter Template
 
 **Used AI custom instructions casually:**
-→ Project Context Guide → Examples → Template → Memory Guide
+→ Project Context Guide → Examples → Memory Guide
 
-**Power user wanting optimisation:**
-→ Memory Builder Guide → Advanced Techniques → Template deep-dive
+**Power user wanting optimization:**
+→ Memory Guide → Advanced Techniques → Three-layer decision mastery
 
 ---
 
-## 📊 Document Relationships
+## 📊 Three-Layer System Map
 
 ```
-README (overview)
-  ├─> Project Context Guide (how to build)
-  │     ├─> Master Template (blank form)
-  │     │     └─> Examples (filled forms)
-  │     └─> Quick Start Checklist (fast path)
-  │
-  └─> Memory Builder Guide (optimization)
-        └─> Examples (memory sections)
+Layer 1: Personal Preferences (Account-wide)
+│   Guide: personal-preferences-guide.md
+│   Setup: Once, applies everywhere
+│   Examples: See examples/ (Layer 1 sections)
+│
+├─> Layer 2: Project Context (Project-specific)
+│   Guide: project-context-guide.md
+│   Templates: starter-template.md, advanced-template.md
+│   Setup: 30 min per project
+│   Examples: See examples/ (Layer 2 sections)
+│   Evolves: Add optional sections after Month 2
+│
+└─> Layer 3: Project Memory (Learned patterns)
+    Guide: memory-guide.md
+    Development: Friction-driven, Rule of Three
+    Examples: See examples/ (Layer 3 sections)
+    Evolves: Continuously through use
 ```
 
 ---
@@ -263,124 +287,155 @@ README (overview)
 
 | Task | Primary Document | Supporting Documents |
 |------|-----------------|---------------------|
-| Understand concepts | README.md | Project Context Guide (intro) |
-| Create first project | Quick Start Checklist | Project Context Guide, Examples |
-| Fill out template | Master Template | Examples, Project Context Guide |
-| Adapt existing project | Project Context Guide (Section) | Examples, Memory Builder Guide |
-| Add memory instructions | Memory Builder Guide | Examples (memory sections) |
+| Understand three-layer system | README, Project Context Guide | GLOSSARY |
+| Set up Layer 1 | Personal Preferences Guide | Examples (Layer 1) |
+| Create Layer 2 (new project) | Starter Template, Quick Start Checklist | Project Context Guide, Examples |
+| Migrate existing project | Project Context Guide (Existing Projects) | Three-Layer Decision Guide |
+| Build Layer 3 | Memory Guide | Examples (Layer 3) |
+| Decide what goes where | Project Context Guide (Decision Guide) | GLOSSARY |
 | Troubleshoot issues | Project Context Guide (Troubleshooting) | All Examples |
-| Maintain project | Quick Start Checklist (Monthly) | Project Context Guide (Maintenance) |
-| Advanced optimization | Memory Builder Guide (Advanced) | Project Context Guide (Advanced) |
+| Maintain all layers | Quick Start Checklist (Monthly) | Project Context Guide (Timeline) |
+| Advanced optimization | Memory Guide (Advanced), Project Context Guide (Advanced) | Examples (evolved states) |
 
 ---
 
 ## 📌 Key Sections by Document
 
 ### README.md
-- What This Is
-- Core Concepts
-- Real-World Applications
-- Best Practices
-- Common Questions
+- System overview
+- Three-layer framework introduction
+- Platform compatibility (Claude, ChatGPT, Copilot, Gemini)
+- Core philosophy (friction-driven, hybrid approach)
+- FAQ
 
-### Project Context Guide
-- Quick Start (15 min)
-- Detailed Setup (3 weeks)
-- Troubleshooting Common Issues
-- Maintenance & Evolution
+### Project Context Guide (project-context-guide.md)
+- Three-layer overview with platform-specific locations
+- Quick Start (30 min Layer 2 setup)
+- Evolution Cycle (Week 1, Weeks 2-3, Month 1-3)
+- When to expand (optional sections)
+- Three-Layer Decision Guide (what goes where)
+- Working with Memory (Layer 3 intro)
+- Applying to Existing Projects
+- Troubleshooting
 - Advanced Techniques
 
-### Memory Builder Guide
-- Understanding Project Memory
-- Friction-Driven Process
-- Memory Instruction Templates
-- Real Examples
-- Maintenance Strategies
+### Personal Preferences Guide (personal-preferences-guide.md)
+- What belongs in Layer 1
+- Building universal standards
+- Platform-specific setup
+- Examples across domains
+- Integration with Layers 2 & 3
 
-### Master Template
-- Core Identity & Context
-- Operating Modes
-- Communication Preferences
-- Domain-Specific Guidelines
-- Success Metrics & Tracking
-- Memory Instructions
+### Memory Guide (memory-guide.md)
+- Understanding Layer 3
+- Friction-driven development
+- Rule of Three methodology
+- Memory instruction templates
+- Maintenance strategies
+- Advanced techniques
 
-### Quick Start Checklist
-- Pre-Setup (5 min)
-- Core Setup (15 min)
-- Communication Setup (10 min)
-- Implementation (5 min)
-- Week 1 Tracking
-- Monthly Maintenance
+### Starter Template (starter-template.md)
+- Context: Who you are, what you're doing
+- Constraints: Time, resources, limitations
+- Goals: Specific objectives
+- Preferences: How you work (project-specific)
+- Red Flags: What won't work
+
+### Quick Start Checklist (quick-start-checklist.md)
+- Pre-setup (Layer 1 reminder)
+- Layer 2 core setup (15 min)
+- Week 1 tracking
+- Layer 3 development prompts
+- Monthly maintenance
 
 ---
 
-## 🎓 Learning Path Recommendations
+## 🎓 Learning Path by Timeline
 
-### Week 1: Foundation
-- [ ] Read README.md
-- [ ] Follow Quick Start Checklist
+### Week 1: Foundation (Layers 1 & 2)
+- [ ] Read README.md (understand three layers)
+- [ ] Set up Layer 1 (Personal Preferences)
+- [ ] Follow Quick Start Checklist (Layer 2)
 - [ ] Review relevant example
-- [ ] Create first basic project
-- [ ] Use and track friction
+- [ ] Use project and track friction
 
-### Week 2: Depth
+### Weeks 2-3: Friction Recognition
 - [ ] Read Project Context Guide fully
-- [ ] Expand system prompt sections
-- [ ] Add domain-specific details
+- [ ] Continue using, note patterns
+- [ ] Identify recurring friction (Rule of Three)
 - [ ] Start friction log
 
-### Week 3: Optimization
-- [ ] Read Memory Builder Guide
+### Week 3-4: Memory Development (Layer 3)
+- [ ] Read Memory Guide
 - [ ] Create first memory instructions
-- [ ] Test and refine
-- [ ] Review and adjust
+- [ ] Add to Layer 3 (Project Memory)
+- [ ] Test and validate
 
-### Month 1+: Evolution
-- [ ] Monthly maintenance reviews
-- [ ] Add memory as patterns emerge
-- [ ] Refine based on real use
+### Month 2: Expansion
+- [ ] Review Layer 2, consider optional sections
+- [ ] Refine Layer 3 based on use
+- [ ] Monthly maintenance review
+- [ ] Consolidate learnings
+
+### Month 3+: Mastery
+- [ ] Three-layer system running smoothly
+- [ ] Occasional refinements only
 - [ ] Consider second project
+- [ ] Apply learnings from first project
 
 ---
 
-## 🔄 Update Frequency
+## 💡 Navigation Tips
 
-| Document | Update Frequency | Why |
-|----------|------------------|-----|
-| README.md | Rarely (major versions) | Core concepts stable |
-| Master Template | Occasionally (quarterly) | Framework evolves slowly |
-| Project Context Guide | Occasionally (as needed) | Based on common issues |
-| Memory Builder Guide | Occasionally (as needed) | Based on patterns discovered |
-| Examples | Occasionally (as they improve) | Real-world refinement |
-| Quick Start Checklist | Rarely (when process changes) | Workflow stable |
+1. **Start with the three-layer concept** - everything else builds on this
+2. **Set up Layer 1 first** - do this once, applies everywhere
+3. **Use Quick Start for Layer 2** - fastest path to working system
+4. **Let friction guide Layer 3** - don't anticipate, discover
+5. **Reference guides as needed** - don't read everything upfront
+6. **Compare examples** when customizing your own
+7. **Return to Memory Guide** after Week 1+ of real use
 
-Your personal files update constantly through friction-driven improvement.
-
----
-
-## 💡 Tips for Navigation
-
-1. **Bookmark this index** for quick reference
-2. **Start with README** for orientation
-3. **Use Quick Start** for speed
-4. **Reference Project Context Guide** when stuck
-5. **Compare Examples** when customising
-6. **Return to Memory Guide** after Week 1
-
-**Most important:** Don't try to read everything before starting. Start with basics, learn through doing, reference guides as needed.
+**Most important:** The three-layer system is designed to be built incrementally. Start minimal (Layers 1 & 2), use for a week, then develop Layer 3 through friction.
 
 ---
 
-## 🚀 Ready to Begin?
+## 🚀 Quick Start Paths
 
-**Path 1 (Speed):** Quick Start Checklist → Relevant Example → Template
-**Path 2 (Thorough):** README → Project Context Guide → Template → Example
-**Path 3 (Existing Project):** Project Context Guide (Existing Projects) → Memory Builder Guide
+**Path 1 - Speed (45 min total):**
+Personal Preferences Guide (20 min) → Quick Start Checklist (25 min) → Done
+
+**Path 2 - Thorough (2 hours total):**
+README (15 min) → Personal Preferences Guide (20 min) → Project Context Guide (45 min) → Relevant Example (15 min) → Starter Template (25 min)
+
+**Path 3 - Existing Project Migration (1.5 hours):**
+README (15 min) → Project Context Guide - Existing Projects (30 min) → Three-Layer Decision Guide (20 min) → Restructure (25 min)
 
 Choose your path and start building!
 
 ---
 
-**This index last updated:** January 2, 2026
-**Project version:** 1.0
+## 🔄 How Documents Work Together
+
+The system has three types of documents that work in concert:
+
+**Conceptual (understand):**
+- README → Overview
+- GLOSSARY → Terms
+- PROJECT-INDEX → Navigation
+
+**Instructional (build):**
+- Personal Preferences Guide → Layer 1
+- Project Context Guide → Layer 2
+- Memory Guide → Layer 3
+- Quick Start Checklist → Fast path
+
+**Reference (customize):**
+- Starter Template → Layer 2 form
+- Advanced Template → Layer 2 options
+- Examples → Completed versions
+
+**Process:**
+1. Read conceptual docs to understand
+2. Use instructional guides to build
+3. Reference templates and examples while customizing
+4. Return to guides when stuck or optimizing
