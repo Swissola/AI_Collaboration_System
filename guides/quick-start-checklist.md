@@ -229,7 +229,7 @@ After 1 month, you should experience:
 - **Usage Guide:** `/guides/template-usage-order.md` (explains the workflow)
 - **Health/Fitness Example:** `/examples/health-fitness-starter-example.md`
 - **Career Example:** `/examples/career-coding-starter-example.md`
-- **Setup Guide:** `/guides/implementation-guide.md`
+- **Setup Guide:** `/guides/project-context-guide.md`
 - **Memory Guide:** `/guides/memory-guide.md`
 
 ---

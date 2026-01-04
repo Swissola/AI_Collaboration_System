@@ -35,7 +35,7 @@ Quick reference for key terms and concepts used throughout this framework.
 
 ---
 
-### System Prompt
+### Project Context
 **What it is:** Your Custom Instructions in Claude Projects. The unchanging context that applies to every conversation.
 
 **Also called:** Custom Instructions, Project Instructions
@@ -73,7 +73,7 @@ When [situation]:
 - Why: [reason this matters]
 ```
 
-**Related:** System Prompt, Friction, Rule of Three
+**Related:** Project Context, Friction, Rule of Three
 
 ---
 
@@ -100,11 +100,11 @@ When [situation]:
 - "When revising documentation, always complete with cleanup pass"
 - "Explain technical concepts at intermediate level"
 
-**Where vs. System Prompt:**
+**Where vs. Project Context:**
 - Personal Preferences: Universal across all Claude use
-- System Prompt: Specific to one project's domain/context
+- Project Context: Specific to one project's domain/context
 
-**Related:** System Prompt, Memory
+**Related:** Project Context, Memory
 
 ---
 
@@ -322,16 +322,16 @@ When suggesting exercises:
 
 ---
 
-### "Memory vs. System Prompt"
-**Meaning:** System Prompt = what you knew before; Memory = what you learned through use.
+### "Memory vs. Project Context"
+**Meaning:** Project Context = what you knew before; Memory = what you learned through use.
 
 **Decision rule:**
-- Knew it before using Claude? → System Prompt
+- Knew it before using Claude? → Project Context
 - Learned it through using Claude? → Memory
 
 ---
 
-### "Personal Preferences vs. System Prompt vs. Memory"
+### "Personal Preferences vs. Project Context vs. Memory"
 **Understanding the three layers:**
 
 **Personal Preferences (Universal):**
@@ -340,7 +340,7 @@ When suggesting exercises:
 - When: Set once, applies always
 - Where: Account Settings → Personal Preferences
 
-**System Prompt (Project-Specific):**
+**Project Context (Project-Specific):**
 - Scope: One specific Claude Project only
 - Examples: Your role, constraints, goals for THIS domain
 - When: Known before starting project
@@ -355,14 +355,14 @@ When suggesting exercises:
 **Visual:**
 ```
 Personal Preferences (Everywhere)
-    ├── Project A: System Prompt + Memory
-    ├── Project B: System Prompt + Memory
+    ├── Project A: Project Context + Memory
+    ├── Project B: Project Context + Memory
     └── Regular Chats (no Project)
 ```
 
 **Example:**
 - Personal Preference: "Use British English spelling" (everywhere)
-- System Prompt: "I'm learning Python for data science" (Python Project only)
+- Project Context: "I'm learning Python for data science" (Python Project only)
 - Memory: "When explaining code, define jargon on first use" (Python Project, after friction)
 
 ---
@@ -399,7 +399,7 @@ Personal Preferences (Everywhere)
 - No → Go to Step 2
 
 *Step 2: Did I know this before using Claude?*
-- Yes → System Prompt (Custom Instructions)
+- Yes → Project Context (Custom Instructions)
 - No → Go to Step 3
 
 *Step 3: Have I corrected this 3+ times?*
@@ -413,7 +413,7 @@ Personal Preferences (Everywhere)
 - Documentation cleanup standards
 - General explanation depth preference
 
-*System Prompt:*
+*Project Context:*
 - Who you are in this domain
 - Your constraints for this project
 - Goals for this specific area
@@ -434,7 +434,7 @@ Personal Preferences (Everywhere)
 ## Related Documents
 
 - **README.md** - System overview
-- **implementation-guide.md** - Detailed setup process
+- **project-context-guide.md** - Detailed setup process
 - **memory-guide.md** - Deep dive on memory development
 - **personal-preferences-guide.md** - Account-level preferences setup
 - **template-usage-order.md** - How to use templates

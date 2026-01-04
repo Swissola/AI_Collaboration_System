@@ -155,12 +155,12 @@ Your complete AI collaboration system has three levels:
 - Gemini: Account-level settings
 - Other AIs: Account-level settings where available
 
-**System Prompt (Project-specific):**
+**Project Context (Project-specific):**
 - Context for THIS domain/project
 - Your goals, constraints, background
 - What you know before starting
 - Example: "I'm learning Python for data science with limited time"
-- **→ See [Implementation Guide](guides/implementation-guide.md)**
+- **→ See [Project Context Guide](guides/project-context-guide.md)**
 
 *Platform-specific:*  
 - Claude: Project Custom Instructions  
@@ -187,11 +187,11 @@ Your complete AI collaboration system has three levels:
 
 ---
 
-### System Prompt vs. Memory
+### Project Context vs. Memory
 
 Understanding the difference between project-level instructions:
 
-**System Prompt (Custom Instructions):**
+**Project Context (Custom Instructions):**
 - What you know before starting THIS project
 - Your context, goals, constraints for this domain
 - General project preferences
@@ -449,19 +449,19 @@ See [PROJECT-INDEX.md](PROJECT-INDEX.md) for the complete file tree and detailed
 ## Quick Navigation
 
 **New to this?**
-→ Start with this README → Starter Template → Implementation Guide
+→ Start with this README → Starter Template → Project Context Guide
 
 **Ready to build?**
-→ Starter Template → Relevant Example → Implementation Guide (Quick Start section)
+→ Starter Template → Relevant Example → Project Context Guide (Quick Start section)
 
 **Have existing project?**
-→ Implementation Guide (Applying to Existing Projects section)
+→ Project Context Guide (Applying to Existing Projects section)
 
 **Want to understand memory?**
 → Memory Guide
 
 **Need troubleshooting?**
-→ Implementation Guide (Troubleshooting section)
+→ Project Context Guide (Troubleshooting section)
 
 **Want to see examples?**
 → Examples folder

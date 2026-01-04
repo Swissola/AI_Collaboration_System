@@ -54,7 +54,7 @@ Quick navigation guide to all files in this project.
 
 ### Implementation & Setup
 
-**`guides/implementation-guide.md`** - Complete setup guide (most important)
+**`guides/project-context-guide.md`** - Complete setup guide (most important)
 - Step-by-step instructions for creating your project
 - 3-week structured timeline
 - Troubleshooting common issues
@@ -94,11 +94,11 @@ Quick navigation guide to all files in this project.
 - Decision trees and FAQs
 
 **`GLOSSARY.md`** - Terms and concepts reference
-- Core concepts: Friction, Rule of Three, Memory, System Prompt, Personal Preferences
+- Core concepts: Friction, Rule of Three, Memory, Project Context, Personal Preferences
 - Template terminology
 - Process terms: Friction Log, Memory Instructions, Evolution Process
 - Common phrases explained
-- Three-layer decision guide (Personal Preferences vs. System Prompt vs. Memory)
+- Three-layer decision guide (Personal Preferences vs. Project Context vs. Memory)
 - Quick reference for key decisions
 
 **Use when:** You've been using your project for a week+ and want to optimize, or need to understand framework terminology
@@ -112,7 +112,7 @@ Quick navigation guide to all files in this project.
 1. README.md (15 min)
    └─> Understand what this is and why
 
-2. Implementation Guide (30 min)
+2. Project Context Guide (30 min)
    └─> Learn the complete process
 
 3. Quick Start Checklist (use while working)
@@ -133,7 +133,7 @@ Quick navigation guide to all files in this project.
 1. README.md (15 min)
    └─> Understand the framework
 
-2. Implementation Guide - "Applying to Existing Projects" (30 min)
+2. Project Context Guide - "Applying to Existing Projects" (30 min)
    └─> Learn adaptation process
 
 3. Relevant Example (15 min)
@@ -157,7 +157,7 @@ Quick navigation guide to all files in this project.
 3. Examples (compare approaches)
    └─> Learn domain-specific patterns
 
-4. Implementation Guide - Advanced Techniques
+4. Project Context Guide - Advanced Techniques
    └─> Multi-project coordination, version control
 ```
 
@@ -181,7 +181,7 @@ AI_Collaboration_System/
 │   └── career-coding-starter-example.md
 │
 ├── guides/
-│   ├── implementation-guide.md        # Primary setup guide
+│   ├── project-context-guide.md        # Primary setup guide
 │   ├── memory-guide.md                # Memory system guide
 │   ├── personal-preferences-guide.md  # Account-level preferences
 │   ├── template-usage-order.md        # How to use templates
@@ -200,19 +200,19 @@ AI_Collaboration_System/
 ### By Question Type
 
 **"How do I get started?"**
-→ README.md → Quick Start Checklist → Implementation Guide
+→ README.md → Quick Start Checklist → Project Context Guide
 
 **"What should my prompt look like?"**
-→ Examples folder → Master Template → Implementation Guide
+→ Examples folder → Master Template → Project Context Guide
 
 **"How do I handle memory?"**
 → Memory Builder Guide → Examples (memory sections)
 
 **"My project isn't working well"**
-→ Implementation Guide (Troubleshooting) → Memory Builder Guide
+→ Project Context Guide (Troubleshooting) → Memory Builder Guide
 
 **"How do I maintain this?"**
-→ Implementation Guide (Maintenance) → Quick Start Checklist (Monthly Review)
+→ Project Context Guide (Maintenance) → Quick Start Checklist (Monthly Review)
 
 ### By Time Available
 
@@ -223,7 +223,7 @@ AI_Collaboration_System/
 → Quick Start Checklist (minimal viable setup)
 
 **1 hour:**
-→ Implementation Guide (comprehensive understanding)
+→ Project Context Guide (comprehensive understanding)
 
 **2-3 hours:**
 → Complete first project setup following guide
@@ -237,7 +237,7 @@ AI_Collaboration_System/
 → README → Quick Start Checklist → Examples → Template
 
 **Used AI custom instructions casually:**
-→ Implementation Guide → Examples → Template → Memory Guide
+→ Project Context Guide → Examples → Template → Memory Guide
 
 **Power user wanting optimisation:**
 → Memory Builder Guide → Advanced Techniques → Template deep-dive
@@ -248,7 +248,7 @@ AI_Collaboration_System/
 
 ```
 README (overview)
-  ├─> Implementation Guide (how to build)
+  ├─> Project Context Guide (how to build)
   │     ├─> Master Template (blank form)
   │     │     └─> Examples (filled forms)
   │     └─> Quick Start Checklist (fast path)
@@ -263,14 +263,14 @@ README (overview)
 
 | Task | Primary Document | Supporting Documents |
 |------|-----------------|---------------------|
-| Understand concepts | README.md | Implementation Guide (intro) |
-| Create first project | Quick Start Checklist | Implementation Guide, Examples |
-| Fill out template | Master Template | Examples, Implementation Guide |
-| Adapt existing project | Implementation Guide (Section) | Examples, Memory Builder Guide |
+| Understand concepts | README.md | Project Context Guide (intro) |
+| Create first project | Quick Start Checklist | Project Context Guide, Examples |
+| Fill out template | Master Template | Examples, Project Context Guide |
+| Adapt existing project | Project Context Guide (Section) | Examples, Memory Builder Guide |
 | Add memory instructions | Memory Builder Guide | Examples (memory sections) |
-| Troubleshoot issues | Implementation Guide (Troubleshooting) | All Examples |
-| Maintain project | Quick Start Checklist (Monthly) | Implementation Guide (Maintenance) |
-| Advanced optimization | Memory Builder Guide (Advanced) | Implementation Guide (Advanced) |
+| Troubleshoot issues | Project Context Guide (Troubleshooting) | All Examples |
+| Maintain project | Quick Start Checklist (Monthly) | Project Context Guide (Maintenance) |
+| Advanced optimization | Memory Builder Guide (Advanced) | Project Context Guide (Advanced) |
 
 ---
 
@@ -283,7 +283,7 @@ README (overview)
 - Best Practices
 - Common Questions
 
-### Implementation Guide
+### Project Context Guide
 - Quick Start (15 min)
 - Detailed Setup (3 weeks)
 - Troubleshooting Common Issues
@@ -325,7 +325,7 @@ README (overview)
 - [ ] Use and track friction
 
 ### Week 2: Depth
-- [ ] Read Implementation Guide fully
+- [ ] Read Project Context Guide fully
 - [ ] Expand system prompt sections
 - [ ] Add domain-specific details
 - [ ] Start friction log
@@ -350,7 +350,7 @@ README (overview)
 |----------|------------------|-----|
 | README.md | Rarely (major versions) | Core concepts stable |
 | Master Template | Occasionally (quarterly) | Framework evolves slowly |
-| Implementation Guide | Occasionally (as needed) | Based on common issues |
+| Project Context Guide | Occasionally (as needed) | Based on common issues |
 | Memory Builder Guide | Occasionally (as needed) | Based on patterns discovered |
 | Examples | Occasionally (as they improve) | Real-world refinement |
 | Quick Start Checklist | Rarely (when process changes) | Workflow stable |
@@ -364,7 +364,7 @@ Your personal files update constantly through friction-driven improvement.
 1. **Bookmark this index** for quick reference
 2. **Start with README** for orientation
 3. **Use Quick Start** for speed
-4. **Reference Implementation Guide** when stuck
+4. **Reference Project Context Guide** when stuck
 5. **Compare Examples** when customising
 6. **Return to Memory Guide** after Week 1
 
@@ -375,8 +375,8 @@ Your personal files update constantly through friction-driven improvement.
 ## 🚀 Ready to Begin?
 
 **Path 1 (Speed):** Quick Start Checklist → Relevant Example → Template
-**Path 2 (Thorough):** README → Implementation Guide → Template → Example
-**Path 3 (Existing Project):** Implementation Guide (Existing Projects) → Memory Builder Guide
+**Path 2 (Thorough):** README → Project Context Guide → Template → Example
+**Path 3 (Existing Project):** Project Context Guide (Existing Projects) → Memory Builder Guide
 
 Choose your path and start building!
 

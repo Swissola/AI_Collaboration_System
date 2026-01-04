@@ -1,4 +1,4 @@
-# Implementation Guide: Hybrid Approach
+# Project Context Guide: Hybrid Approach
 
 ## Overview
 
@@ -33,7 +33,7 @@ Your complete AI system has three distinct layers:
 - Gemini: Account settings
 - API: Not applicable (stateless)
 
-**Layer 2: System Prompt (Project-specific) ← THIS GUIDE**
+**Layer 2: Project Context (Project-specific) ← THIS GUIDE**
 - Context specific to THIS project/domain
 - Your goals, constraints, background for this particular area
 - What you know BEFORE starting this project
@@ -63,7 +63,7 @@ Your complete AI system has three distinct layers:
 
 ### What This Guide Covers
 
-This implementation guide focuses on **Layer 2 (System Prompt)**:
+This implementation guide focuses on **Layer 2 (Project Context)**:
 - Building your project-specific context
 - Setting up the five essentials
 - When to expand with optional sections
@@ -78,7 +78,7 @@ This implementation guide focuses on **Layer 2 (System Prompt)**:
 ```
 Layer 1 (Personal Preferences) = "I always want British English"
     ↓
-Layer 2 (System Prompt) = "For THIS fitness project, I have no gym"
+Layer 2 (Project Context) = "For THIS fitness project, I have no gym"
     ↓
 Layer 3 (Memory) = "I learned: always ask about equipment first"
 ```
@@ -93,7 +93,7 @@ Layer 3 (Memory) = "I learned: always ask about equipment first"
 
 → **See [Personal Preferences Guide](personal-preferences-guide.md) to build Layer 1 first**
 
-If you've already set your Personal Preferences, continue below. **This guide builds Layer 2 (System Prompt).** Layer 3 (Memory) is introduced here, but see the [Memory Guide](memory-guide.md) for comprehensive memory development.
+If you've already set your Personal Preferences, continue below. **This guide builds Layer 2 (Project Context).** Layer 3 (Memory) is introduced here, but see the [Memory Guide](memory-guide.md) for comprehensive memory development.
 
 ### Step 1: Choose Your Template (2 min)
 
@@ -115,7 +115,7 @@ Open starter template and fill in:
 
 **Don't overthink it.** First draft is fine. You'll refine through use.
 
-### Step 3: Add to Your System Prompt - Layer 2 (5 min)
+### Step 3: Add to Your Project Context - Layer 2 (5 min)
 
 1. Copy your filled template
 2. Add to your AI project's custom instructions or system prompt
@@ -196,10 +196,10 @@ Can you help me identify the pattern and create either:
 The AI will help you articulate the pattern and decide which layer it belongs in.
 
 **Example patterns people discover:**
-- "The AI keeps suggesting things that require [resource I don't have]" → Add to System Prompt (Layer 2 - context you knew)
+- "The AI keeps suggesting things that require [resource I don't have]" → Add to Project Context (Layer 2 - context you knew)
 - "Explanations use terms I don't know without defining them" → Add to Memory (Layer 3 - learned pattern)
 - "Responses are more complex than I need" → Check Personal Preferences (Layer 1 - universal standard?)
-- "Tone doesn't match my preference for THIS project" → Add to System Prompt (Layer 2 - project preference)
+- "Tone doesn't match my preference for THIS project" → Add to Project Context (Layer 2 - project preference)
 
 ### Month 1 Review (30 min)
 
@@ -350,7 +350,7 @@ Examples:
 
 **How to decide:** Would this apply if you were working on a completely different project? If yes → Personal Preferences
 
-### Layer 2: System Prompt (Project-specific)
+### Layer 2: Project Context (Project-specific)
 **Add here when it's about THIS project's context**
 
 - It's about **unchanging context** for this project (who you are here, core constraints)
@@ -364,7 +364,7 @@ Examples:
 - "I prefer functional programming style for this codebase"
 - "This project uses TypeScript with strict mode"
 
-**How to decide:** Did you know this BEFORE starting to use the AI for this project? If yes → System Prompt (Layer 2)
+**How to decide:** Did you know this BEFORE starting to use the AI for this project? If yes → Project Context (Layer 2)
 
 ### Layer 3: Memory (Learned patterns)
 **Add here when you discovered it through friction while using THIS project**
@@ -390,21 +390,21 @@ Does this apply to ALL your projects?
 └─ No → Continue...
 
     Did you know this BEFORE using the AI for this project?
-    ├─ Yes → Layer 2 (System Prompt)
+    ├─ Yes → Layer 2 (Project Context)
     └─ No → Layer 3 (Memory)
 ```
 
 ### Common Mistakes
 
 **❌ Putting project context in Personal Preferences**
-- "I'm learning Python" → This is Layer 2 (System Prompt for coding project)
+- "I'm learning Python" → This is Layer 2 (Project Context for coding project)
 - Why wrong: Not relevant to your fitness or writing projects
 
-**❌ Putting learned patterns in System Prompt**
+**❌ Putting learned patterns in Project Context**
 - "Always ask about equipment first" → This is Layer 3 (Memory)
 - Why wrong: You discovered this through friction, not upfront knowledge
 
-**❌ Putting universal preferences in System Prompt**
+**❌ Putting universal preferences in Project Context**
 - "Use British English" → This is Layer 1 (Personal Preferences)
 - Why wrong: You want this across ALL projects, not just this one
 
@@ -552,11 +552,11 @@ If your current setup has learned patterns mixed with context:
 - Context = "You knew this before starting" (background, goals, constraints)
 
 **Separate them:**
-- System Prompt: Context you knew upfront
+- Project Context: Context you knew upfront
 - Memory: Patterns discovered through use
 
 **Example:**
-- "I'm learning Python" → System Prompt (context)
+- "I'm learning Python" → Project Context (context)
 - "When explaining code, always show full function not just snippets" → Memory (learned pattern)
 
 ### Step 5: Test and Validate (1 week)

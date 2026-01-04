@@ -5,7 +5,7 @@
 This example shows a self-taught developer's project using the three-layer system:
 
 **Layer 1 (Personal Preferences)** - Account-wide, applies to ALL your AI conversations
-**Layer 2 (System Prompt)** - Project-specific context, added at setup
+**Layer 2 (Project Context)** - Project-specific context, added at setup
 **Layer 3 (Memory)** - Learned patterns, added after friction
 
 ---
@@ -27,7 +27,7 @@ This example shows a self-taught developer's project using the three-layer syste
 
 ---
 
-## Layer 2: System Prompt (Project Setup - Week 1)
+## Layer 2: Project Context (Project Setup - Week 1)
 
 *This goes in Project Custom Instructions. It's what you know BEFORE using the AI for this project.*
 
@@ -94,7 +94,7 @@ I'm a beginner coder with good structural understanding, working to build profes
 
 ### How Memory Developed Through Friction
 
-**Week 1:** Used the system with just Layer 2 (System Prompt) above. Noticed friction.
+**Week 1:** Used the system with just Layer 2 (Project Context) above. Noticed friction.
 
 ---
 
@@ -136,7 +136,7 @@ Progressive Implementation Approach:
 
 ---
 
-## Layer 2 Expansions (Added to System Prompt - Month 2)
+## Layer 2 Expansions (Added to Project Context - Month 2)
 
 *These optional sections were added to Project Custom Instructions (Layer 2) after friction revealed the need.*
 
@@ -286,7 +286,7 @@ When you notice these patterns emerging, point them out directly but constructiv
 ## Three-Layer Summary
 
 **Layer 1 (Personal Preferences):** 3 universal standards set once, apply everywhere  
-**Layer 2 (System Prompt):** 5 essentials + 3 optional sections added after Month 2  
+**Layer 2 (Project Context):** 5 essentials + 3 optional sections added after Month 2  
 **Layer 3 (Memory):** 2 learned patterns from friction
 
 **Total setup time:** 30 minutes initially, evolved over 2 months through real use

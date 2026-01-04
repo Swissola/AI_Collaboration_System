@@ -2,12 +2,12 @@
 
 ## Understanding Memory in Claude Projects
 
-**System Prompt (Custom Instructions):** What you know before starting - your context, goals, constraints, preferences.
+**Project Context (Custom Instructions):** What you know before starting - your context, goals, constraints, preferences.
 
 **Project Memory:** What you learn through using Claude - specific patterns, corrections, discovered preferences.
 
 Think of it this way:
-- System Prompt = Your hypothesis about what you need
+- Project Context = Your hypothesis about what you need
 - Memory = Your findings from testing that hypothesis
 
 ---
@@ -129,9 +129,9 @@ Suggest 2-3 memory instructions that would address recurring issues."
 
 ---
 
-## Memory vs. System Prompt
+## Memory vs. Project Context
 
-### When to Update System Prompt
+### When to Update Project Context
 
 **Add to system prompt when it's about:**
 - Who you are (doesn't change frequently)
@@ -163,11 +163,11 @@ Suggest 2-3 memory instructions that would address recurring issues."
 
 ```
 Is this about unchanging context? 
-→ Yes: System Prompt
+→ Yes: Project Context
 → No: Continue
 
 Did you know this before using Claude?
-→ Yes: System Prompt  
+→ Yes: Project Context  
 → No: Continue
 
 Have you corrected this 3+ times?
