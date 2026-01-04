@@ -82,11 +82,11 @@ AI should:
 
 ---
 
-### Decision Framework (Add when Claude's priorities don't match yours)
+### Decision Framework (Add when AI's priorities don't match yours)
 
-**When to use:** You notice Claude suggests things that technically work but don't align with what actually matters to you.
+**When to use:** You notice the AI suggests things that technically work but don't align with what actually matters to you.
 
-**Why this matters:** Without explicit priorities, Claude might optimize for effectiveness when you care more about sustainability, or suggest expensive solutions when budget is your main constraint.
+**Why this matters:** Without explicit priorities, the AI might optimize for effectiveness when you care more about sustainability, or suggest expensive solutions when budget is your main constraint.
 
 **Structure:**
 ```
@@ -143,7 +143,7 @@ Analysis:
 Recommendation: Several focused projects wins on P2 and P4.
 ```
 
-**Using the Framework:** When Claude suggests something, you should be able to see which priority it's optimizing for. If suggestions consistently ignore your top priorities, the framework needs to be more explicit.
+**Using the Framework:** When the AI suggests something, you should be able to see which priority it's optimizing for. If suggestions consistently ignore your top priorities, the framework needs to be more explicit.
 
 *See [Appendix B](#appendix-b-additional-decision-framework-examples) for more examples across different domains.*
 
@@ -153,7 +153,7 @@ Recommendation: Several focused projects wins on P2 and P4.
 
 **When to use:** You keep correcting advice that contradicts how you fundamentally think about this domain.
 
-**Why this matters:** Principles guide all advice. Without them explicit, Claude might suggest approaches that work technically but violate what you believe about how things should be done.
+**Why this matters:** Principles guide all advice. Without them explicit, the AI might suggest approaches that work technically but violate what you believe about how things should be done.
 
 **Structure:**
 ```
@@ -198,7 +198,7 @@ When principles conflict:
 - Portfolio evidence of fundamentals beats breadth of shallow knowledge
 ```
 
-**Key Pattern:** Your principles reveal what you value. If Claude keeps suggesting things you disagree with fundamentally, the principles aren't clear enough or aren't being applied consistently.
+**Key Pattern:** Your principles reveal what you value. If the AI keeps suggesting things you disagree with fundamentally, the principles aren't clear enough or aren't being applied consistently.
 
 *See [Appendix C](#appendix-c-additional-domain-principles-examples) for more examples across different domains.*
 
@@ -206,7 +206,7 @@ When principles conflict:
 
 ### Success Metrics (Add when you want help tracking progress)
 
-**When to use:** You want Claude to help analyze progress and suggest adjustments based on data.
+**When to use:** You want the AI to help analyze progress and suggest adjustments based on data.
 
 **Structure:**
 ```
@@ -267,7 +267,7 @@ When to adjust:
 
 ### Response Structure (Add when format keeps being wrong)
 
-**When to use:** You find yourself reformatting Claude's responses consistently.
+**When to use:** You find yourself reformatting the AI's responses consistently.
 
 **Why this matters:** Wrong format adds friction even when content is good. If you're constantly editing structure, make it explicit.
 
@@ -323,7 +323,7 @@ Special cases:
 - When I say "quick": Code only, minimal explanation
 ```
 
-**Testing Your Format Preferences:** Ask Claude a typical question. If you find yourself thinking "I wish it had done X instead of Y," that's what belongs here.
+**Testing Your Format Preferences:** Ask the AI a typical question. If you find yourself thinking "I wish it had done X instead of Y," that's what belongs here.
 
 *See [Appendix E](#appendix-e-additional-response-structure-examples) for more examples across different domains.*
 
@@ -331,9 +331,9 @@ Special cases:
 
 ### Common Pitfalls (Add when you notice your own patterns)
 
-**When to use:** You recognize mistakes you tend to make repeatedly and want Claude to watch for them.
+**When to use:** You recognize mistakes you tend to make repeatedly and want the AI to watch for them.
 
-**Why this matters:** You have blind spots. Naming your patterns lets Claude catch you before you make the same mistake again.
+**Why this matters:** You have blind spots. Naming your patterns lets the AI catch you before you make the same mistake again.
 
 **Structure:**
 ```
@@ -378,7 +378,7 @@ When pointing these out:
 - Don't just point out problem - suggest specific next action
 ```
 
-**Key Pattern:** The best pitfall descriptions include why you do it, not just what it looks like. Understanding the motivation helps Claude address the root cause.
+**Key Pattern:** The best pitfall descriptions include why you do it, not just what it looks like. Understanding the motivation helps the AI address the root cause.
 
 *See [Appendix F](#appendix-f-additional-common-pitfalls-examples) for more examples across different domains.*
 
@@ -412,7 +412,7 @@ Learning connects to job performance:
 
 ### Tools & Systems (Add when specific tools matter)
 
-**When to use:** You use particular tools/platforms and Claude should reference or work with them.
+**When to use:** You use particular tools/platforms and The AI should reference or work with them.
 
 **Structure:**
 ```
@@ -421,7 +421,7 @@ Primary Tools:
 [Tool name]:
 - What I use it for: [Purpose]
 - Data it provides: [Information available]
-- How Claude can help: [What's possible]
+- How The AI can help: [What's possible]
 - Limitations: [What's not possible]
 ```
 
@@ -430,7 +430,7 @@ Primary Tools:
 Training log spreadsheet:
 - What: Track volume, intensity, session RPE, recovery feeling
 - Data: Historical performance, progression trends
-- Claude can: Analyze patterns, suggest adjustments
+- The AI can: Analyze patterns, suggest adjustments
 - Limitations: Manual entry, no automatic tracking
 ```
 
@@ -465,9 +465,9 @@ Coding guidance:
 
 ---
 
-### Learning & Adaptation (Add for how Claude should evolve)
+### Learning & Adaptation (Add for how The AI should evolve)
 
-**When to use:** You want explicit instructions about how Claude should learn from our interactions.
+**When to use:** You want explicit instructions about how The AI should learn from our interactions.
 
 **Structure:**
 ```
@@ -477,7 +477,7 @@ Watch for patterns when I:
 - [Action that indicates friction]
 
 If you notice I've corrected [X] three times:
-1. [What Claude should do]
+1. [What The AI should do]
 
 Memory suggestions:
 - Suggest adding to memory when: [Conditions]
@@ -535,7 +535,7 @@ If I correct code explanations 3+ times:
 - Integration with Other Areas → Cross-impacts are significant
 - Tools & Systems → Specific tool integration matters
 - Domain-Specific Guidelines → General advice misses important specifics
-- Learning & Adaptation → Want explicit control over how Claude evolves
+- Learning & Adaptation → Want explicit control over how the AI evolves
 
 ### Version Control
 
