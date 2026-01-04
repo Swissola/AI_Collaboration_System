@@ -1,226 +1,184 @@
-# Health & Fitness Project - Starter Setup
+# Health & Fitness Example - Three-Layer Evolution
 
-## Understanding the Three Layers
-
-This example shows how a real project evolved using the three-layer system:
-
-**Layer 1 (Personal Preferences)** - Account-wide, applies to ALL your AI conversations
-**Layer 2 (Project Context)** - Project-specific context, added at setup
-**Layer 3 (Memory)** - Learned patterns, added after friction
+This example shows how a fitness project evolves from Day 1 setup through Month 2, building all three layers incrementally through friction-driven development.
 
 ---
 
-## Layer 1: Personal Preferences (Set Once, Account-Wide)
+## Day 1: Initial Setup (30 minutes)
 
-*These were set in account settings BEFORE starting this project. They apply to all AI conversations - fitness, coding, writing, everything.*
+### Layer 1: Personal Preferences (Account-wide)
 
-```
+Set once in account settings, applies to ALL projects:
+
 - Always explain reasoning before giving recommendations
 - Challenge my assumptions when they might lead to poor outcomes  
-- Prioritise sustainable approaches over quick fixes
-```
-
-**Why these matter:** 
-- "Explain reasoning" helps me understand, whether it's fitness programming or debugging code
-- "Challenge assumptions" prevents me from pursuing flawed approaches in any domain
-- "Sustainable over quick fixes" applies to fitness routines, code architecture, learning strategies
+- Prioritise sustainable approaches over quick fixes or intensity
 
 ---
 
-## Layer 2: Project Context (Project Setup - Week 1)
+### Layer 2: Project Context (The Five Essentials)
 
-*This goes in Project Custom Instructions. It's what you know BEFORE using the AI for this project.*
+**Context:**
+I'm focused on building sustainable fitness habits after previous intense programmes failed. Beginner level for most movements but understand training principles conceptually. Working around a variable schedule with home equipment only.
 
-### 1. Context: Who You Are & What You're Doing
+**Constraints:**
+- Time: 4-5 hours per week total, schedule varies weekly
+- Equipment: Home setup only (dumbbells 5-25kg, resistance bands, pull-up bar)
+- Budget: £50/month maximum for equipment or guidance
+- Limitations: Previous 6-day programmes unsustainable, occasional lower back sensitivity (no injury, just need good form)
 
-I'm focused on building sustainable fitness habits after previous attempts at intense programmes failed. Currently at beginner level for most movements, but I understand the principles behind effective training. I'm working around a variable schedule with limited equipment access. I learn best by understanding the reasoning behind recommendations rather than just following instructions blindly.
-
-### 2. Constraints: What You're Working Within
-
-**Time available:**
-- 4-5 hours per week total
-- Schedule varies week to week (work demands fluctuate)
-- Need flexible routine that doesn't break if I miss a day
-
-**Resources:**
-- Home setup: adjustable dumbbells (5-25kg), resistance bands, pull-up bar
-- No gym membership currently
-- Budget: £50/month for equipment or guidance
-
-**Limitations:**
-- Previous intense programmes (6 days/week) burned me out
-- Occasional lower back sensitivity (no current injury, just need to watch form)
-- Still learning proper form on compound movements
-- Limited experience with programme design
-
-### 3. Goals: What You're Actually Trying to Achieve
-
-1. Train consistently 4x per week for 3+ months (prove I can sustain a routine)
+**Goals:**
+1. Train consistently 4x per week for 3+ months (prove sustainability)
 2. Build foundational strength progressively without injury
-3. Maintain high energy levels throughout workday
-4. Develop enough knowledge to understand what I'm doing and why (not just following blindly)
-5. Create a system that adapts to my schedule variations
+3. Maintain high energy levels throughout workday (no afternoon crashes)
 
-### 4. Preferences: How I Want to Work (Project-Specific)
-
-**Communication:**
-- I'm a beginner but with good structural understanding - explain concepts but don't oversimplify
-- I want to understand WHY things work, not just WHAT to do
-
-**Approach:**
+**Preferences (project-specific):**
 - Evidence-based recommendations over fitness industry hype
-- Clear progression schemes - I like systematic approaches
+- I want to understand WHY things work, not just WHAT to do
+- Challenge unrealistic expectations constructively
 
-*Note: Universal preferences like "explain reasoning" are in Layer 1 (Personal Preferences), not here.*
-
-### 5. Red Flags: What Won't Work For Me
-
-- Don't suggest gym-based programmes or equipment I don't have
-- Avoid recommending 5-6 day/week routines (not sustainable for me)
-- Don't assume unlimited time or that I can make fitness my top priority
-- Avoid quick-fix mentality or extreme approaches (cutting, excessive volume)
-- Don't suggest I "just" do advanced movements without progression scheme
+**Red Flags:**
+- Don't suggest gym-based programmes (no access, not getting membership)
+- Don't recommend 5-6 day/week routines (tried before, can't sustain)
+- Don't assume unlimited time or that fitness is my top priority
 
 ---
 
-## Layer 3: Memory (Added After Friction - Week 2+)
+### Layer 3: Project Memory
 
-*These were added to Project Memory after noticing recurring patterns. They're learned, not known upfront.*
-
-### How Memory Developed Through Friction
-
-**Week 1:** Used the system with just Layer 2 (Project Context) above. Noticed friction.
+**Empty** - no friction patterns identified yet. Will build this through Week 1+ of use.
 
 ---
 
-### Memory Instruction #1 (After Week 2)
+## Week 1 Review: First Friction Patterns (after 7 days)
 
-**Friction noticed (3 times):** The AI kept suggesting exercises requiring equipment I don't have (cable machines, barbell, leg press).
+**What caused friction during Week 1:**
 
-**Added to Project Memory:**
-```
-Equipment Check Before Exercise Suggestions:
-- Always confirm available equipment before prescribing specific exercises
-- Home setup: Adjustable dumbbells (5-25kg), resistance bands, pull-up bar, bodyweight
-- NO: Barbell, cable machines, gym equipment
-- Provide alternatives for different equipment scenarios when relevant
-```
+**Issue #1 - Equipment assumptions (3 occurrences):**
+- Day 2: Suggested barbell squats (don't have barbell)
+- Day 4: Recommended cable exercises (no cable machine)
+- Day 6: Suggested leg press (no gym equipment)
+→ Pattern confirmed: AI assumes gym access despite Layer 2 stating "home equipment only"
 
-**Result:** Exercise suggestions now fit what I can actually do at home.
+**Issue #2 - Workout complexity (3 occurrences):**
+- Day 1: Suggested 90-minute comprehensive programme
+- Day 3: Recommended 6-exercise circuit 
+- Day 5: Proposed elaborate warm-up routine requiring 20 minutes
+→ Pattern confirmed: AI suggests more complexity than time constraints allow
 
 ---
 
-### Memory Instruction #2 (After Week 3)
+### Layer 3: First Memory Instructions Added
 
-**Friction noticed (3 times):** Workout suggestions were too complex (4-5 exercises per muscle group, multiple set/rep schemes in one session).
-
-**Added to Project Memory:**
+**Memory #1 - Equipment check (added Week 1):**
 ```
-Workout Complexity Calibration:
-- Prefer simple, effective programmes over complex ones
-- 3-4 exercises per session maximum unless specifically requested
-- Consistent set/rep schemes within a session (e.g., all 3x8-10, not mixing schemes)
-- More frequency with less complexity per session over complicated single sessions
-- Can handle complexity in programme structure (periodization, progression) but not in individual workout complexity
+When suggesting exercises or programmes:
+- Do: Always verify available equipment first before recommending movements
+- Don't: Assume gym access, barbells, machines, or standard gym equipment
+- Why: Prevents suggesting workouts I can't actually complete at home
 ```
 
-**Result:** Workouts became clearer and more manageable.
+**Memory #2 - Workout time reality (added Week 1):**
+```
+When designing workout sessions:
+- Do: Keep total session time to 45-60 minutes maximum including warm-up
+- Don't: Suggest elaborate programmes requiring 90+ minutes or complex setups
+- Why: Time constraint is real - overcomplicated sessions won't get completed
+```
 
 ---
 
-## Layer 2 Expansions (Added to Project Context - Month 2)
+## Month 2: Mature System (after 8 weeks)
 
-*These optional sections were added to Project Custom Instructions (Layer 2) after friction revealed the need.*
-
-### Operating Modes (Added when distinct interaction types became clear)
-
-**Mode 1: Programme Planning**
-When I'm: Planning training blocks, designing progression schemes, setting up new phases
-Examples: "Help me plan next month's training", "Design a progression scheme for..."
-
-Claude should:
-- Think in 4-8 week blocks with clear progression logic
-- Provide complete structure including deload strategy
-- Explain the reasoning behind programme choices
-- Challenge if approach seems unsustainable
-- Consider how this fits with my schedule variability
-
-**Mode 2: Daily Execution**
-When I'm: About to train, need specific workout guidance, checking form cues
-Examples: "What's my workout today?", "How do I perform this exercise?", "Form check on..."
-
-Claude should:
-- Be concise and actionable
-- Provide specific sets/reps/weights based on programme
-- Include key form cues (2-3 main points, not exhaustive)
-- Account for how I'm feeling if I mention it
-- Save detailed explanations unless I ask
-
-**Mode 3: Analysis**
-When I'm: Reviewing training logs, understanding patterns, assessing progress
-Examples: "Looking at last month's training", "Why am I stalling on...", "Progress review"
-
-Claude should:
-- Identify patterns in performance and consistency
-- Connect outcomes to programme variables
-- Be objective about progress (not just encouraging)
-- Suggest evidence-based adjustments
-- Flag if rest/recovery seems inadequate
+**Layer 2 expanded with:**
+- Operating Modes (added Week 4 - noticed different interaction styles)
+- Decision Framework (added Week 6 - priorities weren't clear enough)
 
 ---
 
-### Decision Framework (Added when priorities weren't clear)
+### Layer 2: Operating Modes (expansion added Week 4)
 
-When helping me make decisions about training:
+**Mode 1: Planning & Strategy**
+When I'm thinking about: Programme design, long-term progression, adjusting approach
+AI should: Be comprehensive, explore alternatives, challenge my thinking, consider 4-12 week timelines
+
+**Mode 2: Session Execution**  
+When I'm asking: "What should I do today?", "How do I do X movement?", "Quick form check"
+AI should: Be concise and actionable, give specific answers, minimal explanation unless asked
+
+---
+
+### Layer 2: Decision Framework (expansion added Week 6)
+
+When helping me make training decisions:
 
 **Priority 1: Sustainability & Consistency**
-- Can I actually maintain this for months?
-- Does this accommodate schedule variation?
-- Will this lead to burnout?
+Why: Programme only works if I actually do it for months, not weeks
 
 **Priority 2: Safety & Injury Prevention**
-- Proper form prioritized over load
-- Adequate recovery between sessions
-- Progressive overload that's sensible
+Why: Getting injured breaks consistency and sets back progress
 
-**Priority 3: Effectiveness**
-- Evidence-based approach
-- Efficient use of limited time
-- Measurable progress
+**Priority 3: Progressive Overload**
+Why: Need to get stronger over time, but only after Priorities 1 & 2 satisfied
 
 **Priority 4: Enjoyment**
-- Do I actually like these movements?
-- Variety vs. monotony balance
-- Alignment with how I like to train
-
-When suggesting programme changes, reference these priorities explicitly.
+Why: Makes consistency easier, but won't sacrifice the top 3 for it
 
 ---
 
-## What Worked Well
+### Layer 3: Mature Memory (5 instructions total)
 
-**After 2 months using this system:**
+**Memory #1 & #2:** [from Week 1 - still active]
 
-1. **Starting minimal was right** - I didn't know I'd need equipment checks until Claude kept suggesting things I couldn't do
+**Memory #3 - Progressive complexity (added Week 4):**
+```
+When I'm struggling with a movement:
+- Do: Suggest ONE regression or modification to work on
+- Don't: Provide 5 alternatives or complex progression schemes all at once
+- Why: Analysis paralysis - I need to pick one thing and practise it
+```
 
-2. **Memory instructions from friction worked perfectly** - The rule of three pattern meant I only added what I actually needed
+**Memory #4 - Recovery context (added Week 5):**
+```
+When suggesting training frequency or volume:
+- Do: Ask about current recovery state and life stress before recommending
+- Don't: Assume optimal recovery conditions or that I can always train hard
+- Why: Work stress, poor sleep, or life chaos affects training capacity significantly
+```
 
-3. **Operating modes helped once I added them** - But I needed to use the project first to realize I interact differently for planning vs. doing
-
-4. **Being honest about constraints mattered most** - Admitting "4 hours/week, variable schedule" up front prevented unrealistic suggestions
-
-5. **"Why" explanations were crucial** - Understanding the reasoning helped me adapt when circumstances changed
-
-**What I'd do differently:**
-- Would have added success metrics sooner (helpful for tracking)
-- Could have been more specific about "occasional back sensitivity" (what movements trigger it, what doesn't)
+**Memory #5 - Form cues (added Week 7):**
+```
+When explaining exercise technique:
+- Do: Provide 2-3 key cues maximum, focusing on what I should FEEL
+- Don't: List 10 technical points or use biomechanics jargon
+- Why: Can't think about 10 things whilst lifting - need simple, actionable cues
+```
 
 ---
 
-## Three-Layer Summary
+## Evolution Summary
 
-**Layer 1 (Personal Preferences):** 3 universal standards set once, apply everywhere  
-**Layer 2 (Project Context):** 5 essentials + 2 optional sections added after Month 2  
-**Layer 3 (Memory):** 2 learned patterns from friction
+| Layer | Day 1 | Month 2 | What Changed |
+|-------|-------|---------|--------------|
+| **Layer 1** | 3 universal preferences | (unchanged) | Set once, applies everywhere |
+| **Layer 2** | 5 essentials only | + Operating Modes<br>+ Decision Framework | Added 2 optional sections when friction revealed needs |
+| **Layer 3** | Empty | 5 memory instructions | Built through friction (Rule of Three) |
 
-**Total setup time:** 30 minutes initially, evolved over 2 months through real use
+**Total setup time:**
+- Day 1: 30 minutes (Layer 1 + Layer 2 essentials)
+- Week 1: 15 minutes (added 2 memory instructions from friction)
+- Month 2: 30 minutes (added 2 optional Layer 2 sections + 3 more memory instructions)
+
+**Key insight:** Started minimal, evolved through real use patterns. Didn't anticipate needs - discovered them through friction.
+
+---
+
+## Quick Reference: Three-Layer Decision Guide
+
+**"Always explain reasoning before recommendations"** → Layer 1 (applies to fitness AND coding AND everything)
+
+**"I have home equipment only, no gym"** → Layer 2 (project context known before starting)
+
+**"Always verify equipment first before suggesting exercises"** → Layer 3 (learned after AI assumed gym access 3 times)
+
+**The pattern:** Layer 1 (universal) → Layer 2 (project setup) → Layer 3 (friction-learned)

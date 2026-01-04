@@ -1,292 +1,219 @@
-# Career & Coding Development Project - Starter Setup
+# Career & Coding Example - Three-Layer Evolution
 
-## Understanding the Three Layers
-
-This example shows a self-taught developer's project using the three-layer system:
-
-**Layer 1 (Personal Preferences)** - Account-wide, applies to ALL your AI conversations
-**Layer 2 (Project Context)** - Project-specific context, added at setup
-**Layer 3 (Memory)** - Learned patterns, added after friction
+This example shows how a self-taught developer project evolves from Day 1 setup through Month 2, building all three layers incrementally through friction-driven development.
 
 ---
 
-## Layer 1: Personal Preferences (Set Once, Account-Wide)
+## Day 1: Initial Setup (30 minutes)
 
-*These were set in account settings BEFORE starting this project. They apply to all AI conversations - coding, fitness, writing, everything.*
+### Layer 1: Personal Preferences (Account-wide)
 
-```
+Set once in account settings, applies to ALL projects:
+
 - Ask clarifying questions rather than making assumptions
-- Flag when I'm solving the wrong problem entirely
+- Flag when I'm solving the wrong problem or asking the wrong question
 - Use concrete examples to illustrate abstract concepts
-```
-
-**Why these matter:**
-- "Ask clarifying questions" prevents wasted time in coding, fitness planning, or any domain
-- "Flag wrong problem" helps whether I'm debugging code or designing a workout routine  
-- "Concrete examples" aids learning in programming, fitness techniques, writing styles
 
 ---
 
-## Layer 2: Project Context (Project Setup - Week 1)
+### Layer 2: Project Context (The Five Essentials)
 
-*This goes in Project Custom Instructions. It's what you know BEFORE using the AI for this project.*
+**Context:**
+I'm transitioning into software development through self-study. No CS degree but 3 years in project management (understand working methodologies). Currently learning Python and web fundamentals. Good at picking up concepts, struggle with practical application. Full-time job limits learning time.
 
-### 1. Context: Who You Are & What You're Doing
+**Constraints:**
+- Time: 8-12 hours per week outside work for learning and practice
+- Resources: Decent computer, VS Code, GitHub, basic dev tools, no formal mentorship
+- Budget: ~£50/month for courses, books, or tools
+- Limitations: No CS degree, limited tech network, tendency toward tutorial hell rather than building
 
-I'm a beginner coder with good structural understanding, working to build professional development skills and advance my career. I can grasp system design and logical flow well, but I'm still building practical coding experience. Currently learning Python and web development fundamentals. I think systematically about problems, which helps me understand architecture and patterns, but I need hands-on practice to solidify skills. Working towards becoming a proficient developer who can build real projects independently.
+**Goals:**
+1. Build 3-4 portfolio projects demonstrating real skills (not just tutorials)
+2. Develop Python and web fundamentals to employable level
+3. Land first developer role or substantial freelance work within 12 months
 
-### 2. Constraints: What You're Working Within
+**Preferences (project-specific):**
+- Push me toward building over consuming tutorials
+- Be direct about code quality issues (I want honest feedback)
+- Help me distinguish "good enough to ship" from "needs improvement"
 
-**Time available:**
-- 8-12 hours per week for learning/practice outside work
-- Peak focus time: Early mornings and evenings
-- Schedule varies with work demands
-
-**Resources:**
-- Computer: Decent spec for development work
-- Budget: ~£50/month for courses, books, tools
-- Tools: VS Code, Git/GitHub, basic dev setup
-- No formal mentorship currently (relying on self-directed learning)
-
-**Limitations:**
-- Limited practical coding experience despite understanding concepts
-- No computer science degree (self-taught path)
-- Imposter syndrome when comparing to others
-- Tendency toward tutorial hell (consuming content without building)
-- Limited professional network in tech
-
-### 3. Goals: What You're Actually Trying to Achieve
-
-1. Build 3-4 substantial portfolio projects demonstrating real skills (not just tutorials)
-2. Develop proficiency in Python and web fundamentals to employable level
-3. Contribute to open source to build experience and visibility
-4. Land first developer role or significant freelance projects within 12 months
-5. Build sustainable learning practice (avoid burnout whilst making consistent progress)
-
-### 4. Preferences: How I Want to Work (Project-Specific)
-
-**Communication:**
-- I'm a beginner coder with good structural understanding - explain concepts but don't talk down
-- Provide complete, working code examples with clear comments
-- I want to understand WHY things work this way, not just HOW to do them
-
-**Approach:**
-- Challenge me when I'm overthinking or avoiding building
-- Push toward practical project work over endless learning
-- Direct feedback on code quality and best practices
-- Help me distinguish between "good enough to ship" and "needs improvement"
-
-*Note: Universal preferences like "ask clarifying questions" are in Layer 1 (Personal Preferences), not here.*
-
-### 5. Red Flags: What Won't Work For Me
-
-- Don't suggest I "just" do things that require skills I don't have yet (provide progression)
-- Avoid assuming I have unlimited time to learn everything
-- Don't recommend I build projects requiring extensive backend knowledge before I have basics
-- Don't suggest bootcamps or full-time study (not financially viable currently)
-- Avoid comparisons to people with CS degrees or different circumstances
+**Red Flags:**
+- Don't suggest bootcamps or full-time study (not financially viable)
+- Don't recommend learning 5 frameworks before building projects (leads to paralysis)
+- Don't assume I have mentors or senior dev friends to review my work
+- Don't compare my timeline to people with CS degrees
 
 ---
 
-## Layer 3: Memory (Added After Friction - Week 2+)
+### Layer 3: Project Memory
 
-*These were added to Project Memory after noticing recurring patterns. They're learned, not known upfront.*
-
-### How Memory Developed Through Friction
-
-**Week 1:** Used the system with just Layer 2 (Project Context) above. Noticed friction.
+**Empty** - no friction patterns identified yet. Will build this through Week 1+ of use.
 
 ---
 
-### Memory Instruction #1 (After Week 2)
+## Week 1 Review: First Friction Patterns (after 7 days)
 
-**Friction noticed (3 times):** Code explanations sometimes used terminology I didn't know, or assumed knowledge I didn't have yet.
+**What caused friction during Week 1:**
 
-**Added to Project Memory:**
-```
-Code Explanation Calibration:
-- Assume beginner-to-intermediate Python knowledge
-- Define technical terms on first use within a conversation
-- Explain the "why" behind patterns, not just the "how"
-- Provide complete working examples with comments explaining each section
-- When suggesting refactoring, explain what makes the new version better
-- Avoid unexplained jargon or advanced concepts without introduction
-```
+**Issue #1 - Code explanation level (3 occurrences):**
+- Day 2: Used "memoization" without explaining it
+- Day 4: Mentioned "lexical scope" assuming I knew it
+- Day 6: Referenced "pure functions" without definition
+→ Pattern confirmed: AI assumes more CS knowledge than I have
 
-**Result:** Explanations became more educational and accessible.
-
----
-
-### Memory Instruction #2 (After Week 3)
-
-**Friction noticed (3 times):** The AI would suggest adding many features or improvements at once, which was overwhelming.
-
-**Added to Project Memory:**
-```
-Progressive Implementation Approach:
-- Suggest improvements incrementally, not all at once
-- Structure as: "Get X working first, then add Y, then consider Z"
-- Prioritize core functionality before polish
-- When showing "better" code, also show the progression from basic to better
-- Help me distinguish between "must fix now" and "could improve later"
-- Encourage shipping working versions rather than perfecting before testing
-```
-
-**Result:** Felt more manageable to implement suggestions and make progress.
+**Issue #2 - Suggesting full rewrites (3 occurrences):**
+- Day 1: "Let's refactor this entire module"
+- Day 3: "You should rebuild this with a better architecture"
+- Day 5: "Start over using a proper design pattern"
+→ Pattern confirmed: AI suggests wholesale changes when I need incremental improvements
 
 ---
 
-## Layer 2 Expansions (Added to Project Context - Month 2)
+### Layer 3: First Memory Instructions Added
 
-*These optional sections were added to Project Custom Instructions (Layer 2) after friction revealed the need.*
+**Memory #1 - Code explanation calibration (added Week 1):**
+```
+When explaining code concepts:
+- Do: Define technical terms on first use, assume beginner-intermediate level
+- Don't: Use CS jargon or assume formal computer science education
+- Why: Self-taught path means gaps in theoretical knowledge whilst building practical skills
+```
 
-### Operating Modes (Added when distinct interaction types became clear)
+**Memory #2 - Progressive improvements (added Week 1):**
+```
+When suggesting code improvements:
+- Do: Identify ONE thing to improve and explain how to fix just that
+- Don't: Suggest rebuilding entire sections or wholesale architectural changes
+- Why: Need to ship and learn incrementally, not get stuck in endless refactoring
+```
 
-**Mode 1: Project Planning**
-When I'm: Designing a new project, planning architecture, scoping features
-Examples: "Planning a [type] project", "How should I structure...", "What's realistic for..."
+---
 
-Claude should:
-- Help scope realistically given my skill level
-- Break down into achievable phases
-- Identify learning goals within the project
-- Challenge scope creep or over-complexity
-- Suggest tech stack appropriate for my level
-- Think about what I'll learn, not just what I'll build
+## Month 2: Mature System (after 8 weeks)
+
+**Layer 2 expanded with:**
+- Operating Modes (added Week 4 - different contexts need different approaches)
+- Decision Framework (added Week 5 - priorities weren't explicit)
+- Common Pitfalls (added Week 7 - recognized my patterns)
+
+---
+
+### Layer 2: Operating Modes (expansion added Week 4)
+
+**Mode 1: Career Strategy**
+When I'm thinking about: Learning path, skill priorities, job positioning, long-term direction
+AI should: Multi-year perspective, consider market demand, balance depth vs breadth, honest about timelines
 
 **Mode 2: Active Coding**
-When I'm: Writing code, debugging, implementing features
-Examples: "How do I implement...", "This isn't working...", "Getting error..."
+When I'm asking: Implementation questions, debugging, "how do I...?", code reviews
+AI should: Practical solutions, working examples with explanations, focus on shipping not perfection
 
-Claude should:
-- Provide working code examples
-- Explain what the code does and why
-- Anticipate common issues
-- Show debugging approaches, not just solutions
-- Encourage me to try before showing complete answer
-- Balance "teach to fish" with "help me ship"
-
-**Mode 3: Code Review**
-When I'm: Sharing code for feedback, asking if approach is sound
-Examples: "Review this code", "Is this the right approach?", "How can I improve..."
-
-Claude should:
-- Start with what works well
-- Identify actual problems vs. style preferences
-- Prioritize feedback (critical → important → nice-to-have)
-- Explain why suggestions improve the code
-- Acknowledge trade-offs in different approaches
-- Be direct about code smells or issues
-
-**Mode 4: Career Strategy**
-When I'm: Thinking about next steps, portfolio, job applications, skill development
-Examples: "What should I learn next?", "How to present this project?", "Should I apply for..."
-
-Claude should:
-- Balance ambition with realism
-- Consider market conditions and hiring practices
-- Help identify skill gaps vs. confidence gaps
-- Suggest concrete next actions
-- Challenge self-limiting beliefs constructively
-- Prioritize demonstrable skills over credentials
+**Mode 3: Concept Learning**
+When I'm asking: "What is...", "How does... work?", understanding fundamentals
+AI should: Educational depth, analogies, build from basics, connect to what I already know
 
 ---
 
-### Decision Framework (Added when priorities weren't aligning)
+### Layer 2: Decision Framework (expansion added Week 5)
 
-When helping me make technical or career decisions:
+When helping me make learning/career decisions:
 
-**Priority 1: Learning & Skill Development**
-- Does this build genuinely useful skills?
-- Will this be portfolio-worthy?
-- Am I learning transferable patterns?
+**Priority 1: Demonstrable Skill Development**
+Why: Need portfolio-worthy evidence of capabilities for job applications
 
-**Priority 2: Practical Implementation**
-- Can I actually build this with current skills?
-- Does scope match available time?
-- Will this be completable, not abandoned?
+**Priority 2: Practical Completability**  
+Why: Abandoned projects don't count, must be realistic about finishing
 
-**Priority 3: Career Positioning**
-- Does this demonstrate employable skills?
-- Is this what employers actually look for?
-- Does this differentiate me appropriately?
+**Priority 3: Market Relevance**
+Why: Building for employability, need skills employers actually want
 
-**Priority 4: Sustainability**
-- Can I maintain this pace?
-- Does this balance learning with building?
-- Am I avoiding burnout whilst making progress?
-
-When suggesting project ideas or learning paths, reference these priorities explicitly.
+**Priority 4: Learning Efficiency**
+Why: Time is limited, maximise genuine skill development per hour invested
 
 ---
 
-### Common Pitfalls (Added after recognizing patterns)
+### Layer 2: Common Pitfalls (expansion added Week 7)
 
-**Pitfall 1: Tutorial Hell**
-- What it looks like: Consuming courses/tutorials without building original projects
-- Why I do this: Feels safer than building with incomplete knowledge
-- How to spot it: Multiple courses started, few projects finished
-- What to suggest: Build alongside learning; apply concepts immediately
+**Pitfall #1: Tutorial Hell**
+Pattern: Watching tutorials, reading docs, but not building anything real
+When I say: "Should I learn X before starting?", "Maybe I need another course on Y first"
+AI should: Push me to build with current knowledge, learn by doing, start imperfect projects
 
-**Pitfall 2: Perfectionism Paralysis**
-- What it looks like: Refactoring endlessly before shipping, never "ready"
-- Why I do this: Fear of showing imperfect work
-- How to spot it: Projects 90% done but never published
-- What to suggest: "Good enough to ship" standard; iterate after shipping
-
-**Pitfall 3: Scope Creep**
-- What it looks like: Adding features before core functionality works
-- Why I do this: Exciting new ideas; avoiding harder foundational work
-- How to spot it: Project keeps expanding; never reaches MVP
-- What to suggest: Complete v1.0 first; features can be v2.0
-
-When you notice these patterns emerging, point them out directly but constructively.
+**Pitfall #2: Perfectionism Paralysis**
+Pattern: Endlessly planning architecture, researching best practices, never shipping
+When I say: "What's the right way to structure this?", "Should I use X or Y pattern?"
+AI should: Remind me that working code beats perfect design, encourage shipping then iterating
 
 ---
 
-## What Worked Well
+### Layer 3: Mature Memory (5 instructions total)
 
-**After 2 months using this system:**
+**Memory #1 & #2:** [from Week 1 - still active]
 
-1. **Starting with honest skill assessment was crucial** - Saying "beginner with good structural understanding" prevented both oversimplification and assuming too much
+**Memory #3 - Example-driven learning (added Week 4):**
+```
+When explaining new concepts:
+- Do: Start with a concrete code example, then explain the concept
+- Don't: Start with theory and abstraction before showing practical application
+- Why: I learn better seeing it work first, then understanding why it works
+```
 
-2. **The "explain why" preference paid off** - Understanding patterns and reasoning helps me adapt to new situations
+**Memory #4 - Project scope reality (added Week 6):**
+```
+When I propose project ideas:
+- Do: Pressure-test if it's completable in 2-4 weeks with my time constraints
+- Don't: Let me scope-creep into 3-month projects that will get abandoned
+- Why: Completed simple projects beat abandoned ambitious ones for portfolio and learning
+```
 
-3. **Progressive implementation instruction was game-changing** - Went from overwhelmed to making steady progress
-
-4. **Pitfalls section kept me accountable** - Having Claude call out tutorial hell or perfectionism helped break those patterns
-
-5. **Operating modes clarified different interaction needs** - Planning vs. coding vs. career thinking need different approaches
-
-**What I'd do differently:**
-- Would have added the tutorial hell pitfall sooner (caught myself sooner)
-- Could have been more specific about what "good structural understanding" actually means with examples
-
----
-
-## Project Outcomes So Far
-
-**Completed:**
-- 2 portfolio projects (basic but functional)
-- 5 open source contributions (small, but confidence-building)
-- Consistent 8-10 hours/week coding practice
-
-**In Progress:**
-- Building more substantial project showcasing multiple skills
-- Developing better code review habits
-- Starting to build professional network
-
-**Next Focus:**
-- Complete current project to portfolio-ready state
-- Apply for 2-3 junior positions or freelance projects
-- Continue expanding skills systematically
+**Memory #5 - Code review focus (added Week 7):**
+```
+When reviewing my code:
+- Do: Flag one critical issue and one learning opportunity per review
+- Don't: List 15 things wrong or suggest I research 5 advanced patterns
+- Why: Too much feedback leads to paralysis, need focused actionable improvements
+```
 
 ---
 
-## Three-Layer Summary
+## Evolution Summary
 
-**Layer 1 (Personal Preferences):** 3 universal standards set once, apply everywhere  
-**Layer 2 (Project Context):** 5 essentials + 3 optional sections added after Month 2  
-**Layer 3 (Memory):** 2 learned patterns from friction
+| Layer | Day 1 | Month 2 | What Changed |
+|-------|-------|---------|--------------|
+| **Layer 1** | 3 universal preferences | (unchanged) | Set once, applies everywhere |
+| **Layer 2** | 5 essentials only | + Operating Modes<br>+ Decision Framework<br>+ Common Pitfalls | Added 3 optional sections when friction revealed needs |
+| **Layer 3** | Empty | 5 memory instructions | Built through friction (Rule of Three) |
 
-**Total setup time:** 30 minutes initially, evolved over 2 months through real use
+**Total setup time:**
+- Day 1: 30 minutes (Layer 1 + Layer 2 essentials)
+- Week 1: 15 minutes (added 2 memory instructions from friction)
+- Month 2: 45 minutes (added 3 optional Layer 2 sections + 3 more memory instructions)
+
+**Key insight:** Discovered tutorial hell and perfectionism patterns through use, not upfront analysis. Common Pitfalls section added Week 7 after recognizing my own behavior patterns.
+
+---
+
+## Quick Reference: Three-Layer Decision Guide
+
+**"Ask clarifying questions rather than making assumptions"** → Layer 1 (applies to coding AND fitness AND everything)
+
+**"Self-taught developer, no CS degree, learning Python"** → Layer 2 (project context known before starting)
+
+**"Define technical terms on first use - self-taught means knowledge gaps"** → Layer 3 (learned after AI used jargon 3 times)
+
+**The pattern:** Layer 1 (universal) → Layer 2 (project setup) → Layer 3 (friction-learned)
+
+---
+
+## How This Addresses Tutorial Hell
+
+**Traditional approach:** Learn everything before building → endless tutorial consumption
+
+**This system's approach:**
+- **Layer 2 Goals:** "Build 3-4 portfolio projects" (forces building)
+- **Layer 2 Red Flags:** "Don't recommend learning 5 frameworks first" (prevents paralysis)
+- **Layer 2 Preferences:** "Push me toward building over consuming tutorials" (direction set)
+- **Layer 3 Memory #2:** Prevents AI from suggesting wholesale rewrites that delay shipping
+- **Layer 2 Pitfall #1:** Explicitly calls out tutorial hell pattern when it appears
+
+**Result:** System actively pushes against tutorial hell at multiple layers
