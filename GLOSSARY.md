@@ -1,69 +1,105 @@
 # Glossary
 
-Quick reference for key terms and concepts used throughout this framework.
+Quick reference for key terms and concepts in the AI Collaboration System framework.
 
 ---
 
-## Core Concepts
+## The Three-Layer System
 
-### Friction
-**What it is:** The gap between what Claude gives you and what you actually needed. Any moment where you find yourself correcting, reformatting, or clarifying Claude's response.
+### Layer 1: Personal Preferences
+**What it is:** Account-wide standards that apply to ALL your AI conversations across all projects and platforms.
+
+**Also called:** User Preferences, Account Preferences
+
+**Scope:** Universal - applies whether you're working on fitness, coding, writing, or any domain
+
+**Contains:**
+- Universal communication standards
+- Language preferences (British English, etc.)
+- General explanation depth
+- Work quality expectations
 
 **Examples:**
-- Claude assumes you have equipment you don't own
-- Responses are too detailed when you needed quick answers
-- Claude explains concepts you already understand
-- Format is wrong (bullets when you wanted prose)
+- "Always explain reasoning before giving recommendations"
+- "Challenge my assumptions when they might lead to poor outcomes"
+- "Ask clarifying questions rather than making assumptions"
 
-**Why it matters:** Friction is signal, not noise. It tells you exactly what your system is missing and needs to capture.
+**Where to set:**
+- Claude: Settings → Profile → Personal Preferences
+- ChatGPT: Settings → Personalization → Custom Instructions
+- GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
+- Gemini: Account settings
 
-**Related:** Rule of Three, Memory Instructions
+**When to use:** Standards that apply regardless of what you're working on
 
----
+**Decision rule:** Does this apply to fitness AND coding AND everything else? → Layer 1
 
-### Rule of Three
-**What it is:** A filtering mechanism - only capture a pattern as a memory instruction after you've corrected it 3+ times.
-
-**How it works:**
-- 1st correction: Note it
-- 2nd correction: Pattern maybe?
-- 3rd correction: Definitely a pattern → capture it
-
-**Why it matters:** Prevents over-specification. Many "problems" are one-off situations that won't recur. The Rule of Three filters signal from noise.
-
-**Related:** Friction, Memory Instructions
+**Related:** Project Context (Layer 2), Project Memory (Layer 3)
 
 ---
 
-### Project Context
-**What it is:** Your Custom Instructions in Claude Projects. The unchanging context that applies to every conversation.
+### Layer 2: Project Context
+**What it is:** Project-specific context that applies to every conversation in THIS project.
 
-**Also called:** Custom Instructions, Project Instructions
+**Also called:** Custom Instructions, Project Instructions, System Prompt (technical term)
+
+**Scope:** One specific project/domain only
 
 **Contains:**
-- Who you are (context)
-- Your constraints
-- Your goals
-- Communication preferences
+- Who you are in this domain (context)
+- Your constraints for this project
+- Your goals for this area
+- Project-specific communication preferences
 - What won't work for you (red flags)
 
-**When to use:** Things you know BEFORE starting to use Claude.
+**Examples:**
+- "I'm learning Python for data science with 8 hours/week"
+- "I have no gym access - home equipment only"
+- "Self-taught developer building portfolio projects"
 
-**Related:** Memory, Friction-Driven Development
+**Where to set:**
+- Claude: Project → Custom Instructions
+- ChatGPT: Create a GPT or conversation-specific instructions
+- GitHub Copilot: `.github/copilot-instructions.md` in repository
+- Gemini: Create a Gem
+- API: System message in requests
+
+**When to use:** Things you know BEFORE starting to use your AI for this project
+
+**Decision rule:** Did I know this before using the AI? → Layer 2
+
+**Related:** Personal Preferences (Layer 1), Project Memory (Layer 3), Starter Template
 
 ---
 
-### Memory / Project Memory
-**What it is:** Specific instructions stored separately in Claude Projects that capture patterns discovered through use.
+### Layer 3: Project Memory
+**What it is:** Learned patterns discovered through friction while using THIS specific project.
 
-**Also called:** Memory Instructions, Project Memory
+**Also called:** Memory Instructions, Project Memory, Memory
+
+**Scope:** One specific project only - patterns unique to this domain
 
 **Contains:**
-- Specific corrections from friction
-- Learned patterns (Rule of Three)
+- Specific corrections from friction (Rule of Three)
 - "When X, do Y, not Z" instructions
+- Edge cases and nuances discovered through use
+- Patterns that weren't obvious upfront
 
-**When to use:** Things you learn AFTER using Claude through friction.
+**Examples:**
+- "When suggesting exercises, always check equipment first"
+- "Don't use terminology without defining it on first use"
+- "Suggest incremental improvements, not all at once"
+
+**Where to set:**
+- Claude: Project → Memory
+- ChatGPT: Memory feature or append to GPT instructions
+- GitHub Copilot: Append to repository instructions (manual)
+- Gemini: Append to Gem instructions (manual)
+- API: Append to system message (manual)
+
+**When to use:** Things you learn AFTER using the AI through friction patterns
+
+**Decision rule:** Did I learn this through friction? Has it recurred 3+ times? → Layer 3
 
 **Format:**
 ```
@@ -73,38 +109,46 @@ When [situation]:
 - Why: [reason this matters]
 ```
 
-**Related:** Project Context, Friction, Rule of Three
+**Related:** Personal Preferences (Layer 1), Project Context (Layer 2), Friction, Rule of Three
 
 ---
 
-### Personal Preferences
-**What it is:** User-level preferences that apply across ALL Claude conversations (both Projects and non-Project chats). Set once in your Claude account settings.
+## Core Concepts
 
-**Also called:** User Preferences, Account Preferences
-
-**Contains:**
-- Language preference (British English, American English, etc.)
-- General communication style preferences
-- Universal formatting preferences
-- Cross-cutting work standards (e.g., documentation cleanup rules)
-
-**Scope:** 
-- Applies everywhere: Projects, regular chats, all conversations
-- More general than Project-specific instructions
-- Think "how I want Claude to work in general"
-
-**When to use:** Preferences that apply regardless of what project or task you're working on.
+### Friction
+**What it is:** The gap between what the AI gives you and what you actually needed. Any moment where you find yourself correcting, reformatting, or clarifying the response.
 
 **Examples:**
-- "Use British English spelling throughout"
-- "When revising documentation, always complete with cleanup pass"
-- "Explain technical concepts at intermediate level"
+- AI assumes you have equipment you don't own
+- Responses are too detailed when you needed quick answers
+- AI explains concepts you already understand
+- Format is wrong (bullets when you wanted prose)
+- Suggestions ignore your constraints
 
-**Where vs. Project Context:**
-- Personal Preferences: Universal across all Claude use
-- Project Context: Specific to one project's domain/context
+**Why it matters:** Friction is signal, not noise. It tells you exactly what your system is missing and needs to capture in Layer 3 (Memory).
 
-**Related:** Project Context, Memory
+**How to use:** Track friction patterns. After 3 occurrences, capture as memory instruction.
+
+**Related:** Rule of Three, Project Memory (Layer 3)
+
+---
+
+### Rule of Three
+**What it is:** A filtering mechanism - only capture a pattern as a memory instruction after you've corrected it 3+ times.
+
+**How it works:**
+- 1st correction: Note it (could be a fluke)
+- 2nd correction: Pattern maybe? (watch for it)
+- 3rd correction: Definitely a pattern → capture in Layer 3 (Memory)
+
+**Why it matters:** Prevents over-specification. Many "problems" are one-off situations that won't recur. The Rule of Three filters signal from noise.
+
+**Example:**
+- Day 1: AI suggests barbell squats (note: I don't have a barbell)
+- Day 3: AI suggests cable exercises (note: 2nd time assuming gym)
+- Day 5: AI suggests leg press (3rd time! → Create memory instruction)
+
+**Related:** Friction, Project Memory (Layer 3), Friction Log
 
 ---
 
@@ -114,146 +158,184 @@ When [situation]:
 **Core principle:** You cannot anticipate what you'll need before experiencing friction.
 
 **Process:**
-1. Start minimal (essentials only)
-2. Use the system normally
-3. Notice friction patterns
-4. Capture patterns (Rule of Three)
-5. Expand deliberately
-6. Repeat
+1. Set up Layer 1 (Personal Preferences) once
+2. Set up Layer 2 (Project Context) - essentials only (30 min)
+3. Use the system normally for a week
+4. Notice friction patterns
+5. Capture patterns in Layer 3 (Memory) using Rule of Three
+6. Expand Layer 2 with optional sections only when needed
+7. Repeat continuously
 
-**Why it matters:** Prevents over-engineering. Creates systems that evolved through use rather than guessing.
+**Why it matters:** Prevents over-engineering. Creates systems that evolved through use rather than guessing upfront needs.
 
-**Related:** Rule of Three, Friction, Memory
+**Contrasts with:** Traditional prompt engineering (design everything upfront)
+
+**Related:** Rule of Three, Friction, Three-Layer System
 
 ---
 
 ## Template Terms
 
 ### Starter Template
-**What it is:** Minimal viable setup with 5 essential sections. Always the starting point.
+**What it is:** Minimal viable setup with 5 essential sections for Layer 2 (Project Context). Always the starting point.
 
-**Contains:**
-- Context, Constraints, Goals, Preferences, Red Flags
-- One example per section (Health/Fitness domain)
-- Appendices with other domain examples
-- Guidance on what to add next
+**The Five Essentials:**
+1. Context (who you are in this domain)
+2. Constraints (what limits you)
+3. Goals (what you want to achieve)
+4. Preferences (how you work - project-specific)
+5. Red Flags (what won't work)
 
-**Time to complete:** 15-30 minutes
+**Domain:** Health/Fitness examples
 
-**When to use:** Always start here. Every new project.
+**Time to complete:** 20-30 minutes
 
-**Related:** Advanced Template, Essentials
+**Layer:** Layer 2 (Project Context)
+
+**When to use:** Always start here. Every new project begins with starter template.
+
+**Related:** Advanced Template, Layer 2, The Essentials
 
 ---
 
 ### Advanced Template
-**What it is:** Reference library of 8 optional expansion sections. Not a checklist - a menu of options.
+**What it is:** Reference library of 8 optional expansion sections for Layer 2. Not a checklist - a menu of options to add when friction reveals needs.
 
 **Contains:**
-- Operating Modes
-- Decision Framework
-- Domain Principles
-- Success Metrics
-- Response Structure
-- Common Pitfalls
-- Integration with Other Areas
-- Tools & Systems
+- Operating Modes (different interaction types)
+- Decision Framework (priority hierarchy)
+- Domain Principles (core beliefs)
+- Success Metrics (tracking progress)
+- Response Structure (format preferences)
+- Common Pitfalls (your recurring mistakes)
+- Integration with Other Areas (cross-domain)
+- Tools & Systems (external integrations)
 
-**Examples:** Career/Coding domain
+**Domain:** Career/Coding examples
 
-**When to use:** After Week 1+, when friction reveals specific needs. Add ONE section at a time.
+**Layer:** Layer 2 (Project Context) expansions
 
-**Related:** Starter Template, Friction
+**When to use:** After Week 2+, when friction reveals specific needs. Add ONE section at a time, not all at once.
+
+**Related:** Starter Template, Layer 2, Friction
 
 ---
 
 ### The Essentials
-**What they are:** The 5 core sections that every project needs:
-1. Context (who you are)
-2. Constraints (what limits you)
-3. Goals (what you want)
-4. Preferences (how to work)
-5. Red Flags (what won't work)
+**What they are:** The 5 core sections that every Layer 2 (Project Context) needs:
 
-**Why these 5:** Minimum information needed for Claude to provide useful, contextualised responses.
+1. **Context** - Who you are, what you're doing
+2. **Constraints** - Time, resources, limitations (be honest)
+3. **Goals** - 3-5 specific objectives
+4. **Preferences** - How you want to work (project-specific only)
+5. **Red Flags** - What definitely won't work
 
-**Related:** Starter Template
+**Why these 5:** Minimum information needed for the AI to provide useful, contextualised responses.
+
+**Note:** Universal preferences go in Layer 1 (Personal Preferences), not here.
+
+**Related:** Starter Template, Layer 2
 
 ---
 
-## Domain Terms
+## Optional Expansion Terms
 
 ### Operating Modes
-**What it is:** Explicit definitions of different interaction patterns (e.g., planning vs. execution).
+**What it is:** Explicit definitions of different interaction patterns within a project (e.g., planning vs. execution).
 
-**When to add:** You notice you interact with Claude differently for different types of work.
+**Part of:** Advanced Template (Layer 2 expansion)
 
-**Example:** 
-- Mode 1: Strategic Planning (detailed, challenging)
-- Mode 2: Daily Execution (concise, actionable)
+**When to add:** You notice you interact with the AI differently for different types of work within this project.
 
-**Related:** Advanced Template
+**Example:**
+- Mode 1: Strategic Planning (detailed, challenging, long-term)
+- Mode 2: Daily Execution (concise, actionable, immediate)
+- Mode 3: Analysis & Review (objective, data-driven)
+
+**Related:** Advanced Template, Layer 2
 
 ---
 
 ### Decision Framework
-**What it is:** Explicit priority hierarchy for helping Claude align suggestions with what matters to you.
+**What it is:** Explicit priority hierarchy for helping the AI align suggestions with what matters to you.
 
-**When to add:** Claude's suggestions work technically but don't align with your actual priorities.
+**Part of:** Advanced Template (Layer 2 expansion)
+
+**When to add:** The AI's suggestions work technically but don't align with your actual priorities.
 
 **Example:**
 ```
-Priority 1: Sustainability
-Priority 2: Safety
+Priority 1: Sustainability & Consistency
+Priority 2: Safety & Injury Prevention
 Priority 3: Effectiveness
+Priority 4: Enjoyment
 ```
 
-**Related:** Advanced Template, Domain Principles
+**Related:** Advanced Template, Domain Principles, Layer 2
 
 ---
 
 ### Domain Principles
 **What it is:** Core beliefs that guide all advice in your domain.
 
-**When to add:** Claude keeps suggesting things that violate how you fundamentally think the work should be done.
+**Part of:** Advanced Template (Layer 2 expansion)
+
+**When to add:** The AI keeps suggesting things that violate how you fundamentally think the work should be done.
 
 **Example (Fitness):**
 - Consistency beats intensity
 - Form before load
 - Recovery is training
 
-**Related:** Decision Framework, Advanced Template
+**Example (Coding):**
+- Readability over cleverness
+- Working code before optimization
+- Delete code rather than comment it out
+
+**Related:** Decision Framework, Advanced Template, Layer 2
 
 ---
 
 ### Success Metrics
 **What it is:** How you measure progress - primary metrics, secondary indicators, leading signals.
 
-**When to add:** You want Claude to help analyse progress and suggest adjustments based on data.
+**Part of:** Advanced Template (Layer 2 expansion)
 
-**Related:** Advanced Template
+**When to add:** You want the AI to help analyse progress and suggest adjustments based on data.
+
+**Example:**
+- Primary: Workouts completed per week
+- Secondary: Energy levels, sleep quality
+- Leading: Planning sessions completed
+
+**Related:** Advanced Template, Layer 2
 
 ---
 
 ## Process Terms
 
 ### Friction Log
-**What it is:** Simple tracking of patterns where Claude misses the mark.
+**What it is:** Simple tracking of patterns where the AI misses the mark. Essential for applying the Rule of Three systematically.
 
-**Format:** Just note date + issue + pattern status
-- "2025-01-03: Assumed gym access again (2nd time)"
-- "2025-01-05: Assumed gym access (3rd time - create memory)"
+**Format:** Just note date + issue + pattern count
 
-**Why useful:** Helps apply Rule of Three systematically.
+**Example:**
+```
+2025-01-03: Assumed gym access (1st time)
+2025-01-05: Suggested cable exercises (2nd time - watching)
+2025-01-07: Suggested leg press (3rd time - CREATE MEMORY)
+```
 
-**Can be:** Mental notes, simple text file, or structured log
+**Can be:** Mental notes, simple text file, or structured tracking
 
-**Related:** Friction, Rule of Three
+**Why useful:** Makes it easy to identify when a pattern has recurred 3 times and needs capturing in Layer 3 (Memory).
+
+**Related:** Friction, Rule of Three, Project Memory (Layer 3)
 
 ---
 
 ### Memory Instruction
-**What it is:** Specific, actionable instruction captured after friction pattern confirmed (Rule of Three).
+**What it is:** Specific, actionable instruction captured in Layer 3 after friction pattern confirmed by Rule of Three.
 
 **Format:**
 ```
@@ -263,178 +345,175 @@ When [situation]:
 - Why: [reason this matters]
 ```
 
-**Where stored:** Project Memory (not Custom Instructions)
+**Where stored:** Layer 3 (Project Memory) - separate from Layer 2 (Project Context)
 
 **Example:**
 ```
 When suggesting exercises:
 - Do: Ask about available equipment first
-- Don't: Assume gym access
-- Why: Prevents suggesting workouts I can't complete
+- Don't: Assume gym access or standard equipment
+- Why: Prevents suggesting workouts I can't complete at home
 ```
 
-**Related:** Memory, Friction, Rule of Three
+**Related:** Project Memory (Layer 3), Friction, Rule of Three
 
 ---
 
 ### Evolution Process
-**What it is:** The ongoing cycle of use → friction → capture → refine.
+**What it is:** The ongoing cycle of use → friction → capture → refine across all three layers.
 
-**Phases:**
-1. Essential Setup (Day 1)
-2. Friction Recognition (Weeks 1-3)
-3. Deliberate Expansion (Month 1+)
-4. Continuous Evolution (Ongoing)
+**Timeline:**
+1. **Day 1:** Set up Layers 1 & 2 (Personal Preferences + Project Context)
+2. **Week 1:** Use system, track friction, make no changes yet
+3. **Weeks 2-3:** Identify patterns (Rule of Three), start building Layer 3
+4. **Month 1:** First review, 2-3 memory instructions added
+5. **Month 2:** Consider Layer 2 expansions if friction reveals needs
+6. **Ongoing:** Monthly reviews, continuous refinement
 
-**Why it matters:** Systems that evolve through use work better than systems designed upfront.
+**Why it matters:** Systems that evolve through use work better than systems designed entirely upfront.
 
-**Related:** Friction-Driven Development
+**Related:** Friction-Driven Development, Three-Layer System
 
 ---
 
 ## Common Phrases
 
 ### "Start minimal, expand deliberately"
-**Meaning:** Begin with just the essentials, add complexity only when friction reveals genuine needs.
+**Meaning:** Begin with just the essentials (Layers 1 & 2), add complexity only when friction reveals genuine needs.
 
-**Why:** You can't anticipate needs before experiencing friction. Over-engineering wastes time on sections you'll never use.
+**Why:** You can't anticipate needs before experiencing friction. Over-engineering wastes time on features you'll never use.
+
+**Application:** Start with Starter Template (Layer 2), not Advanced Template. Add to Layer 3 only after Rule of Three.
 
 ---
 
 ### "Friction is signal, not noise"
-**Meaning:** When Claude misses the mark, that's valuable information about what your system needs.
+**Meaning:** When the AI misses the mark, that's valuable information about what your system needs in Layer 3.
 
-**Why:** Each friction point tells you exactly what instruction or context is missing.
+**Why:** Each friction point tells you exactly what instruction or context is missing. Don't ignore it - track it.
 
 ---
 
 ### "Trust the process"
 **Meaning:** Follow friction-driven development even when tempted to plan everything upfront.
 
-**Why:** Systems evolved through use outperform systems designed through guessing.
+**Why:** Systems evolved through use (Layers 2 & 3 built incrementally) outperform systems designed through guessing (trying to fill Advanced Template on Day 1).
 
 ---
 
 ### "Context over commands"
-**Meaning:** Rich situation description enables Claude to adapt, versus rigid command-based instructions.
+**Meaning:** Rich situational description (Layer 2) enables AI to adapt, versus rigid command-based instructions.
 
-**Why:** Claude can figure out what to do if it understands who you are and what you're trying to achieve.
-
----
-
-### "Memory vs. Project Context"
-**Meaning:** Project Context = what you knew before; Memory = what you learned through use.
-
-**Decision rule:**
-- Knew it before using Claude? → Project Context
-- Learned it through using Claude? → Memory
+**Why:** The AI can figure out what to do if it understands who you are and what you're trying to achieve. Layer 2 provides this context.
 
 ---
 
-### "Personal Preferences vs. Project Context vs. Memory"
-**Understanding the three layers:**
+## Three-Layer Decision Guide
 
-**Personal Preferences (Universal):**
-- Scope: All Claude conversations everywhere
-- Examples: Language, general communication style, work standards
-- When: Set once, applies always
-- Where: Account Settings → Personal Preferences
+**Quick Reference:**
 
-**Project Context (Project-Specific):**
-- Scope: One specific Claude Project only
-- Examples: Your role, constraints, goals for THIS domain
-- When: Known before starting project
-- Where: Project Settings → Custom Instructions
-
-**Memory (Learned Patterns):**
-- Scope: One specific Claude Project only
-- Examples: Corrections after Rule of Three
-- When: Discovered through friction
-- Where: Project Settings → Memory
-
-**Visual:**
 ```
-Personal Preferences (Everywhere)
-    ├── Project A: Project Context + Memory
-    ├── Project B: Project Context + Memory
-    └── Regular Chats (no Project)
+Does this apply to ALL my AI use (fitness, coding, writing, everything)?
+├─ Yes → Layer 1: Personal Preferences
+└─ No → Continue...
+
+    Did I know this BEFORE using the AI for this project?
+    ├─ Yes → Layer 2: Project Context
+    └─ No → Continue...
+
+        Have I corrected this 3+ times?
+        ├─ Yes → Layer 3: Memory
+        └─ No → Don't capture yet, wait for pattern
 ```
 
-**Example:**
-- Personal Preference: "Use British English spelling" (everywhere)
-- Project Context: "I'm learning Python for data science" (Python Project only)
-- Memory: "When explaining code, define jargon on first use" (Python Project, after friction)
+**Examples by Layer:**
+
+**Layer 1 (Personal Preferences):**
+- "Always explain reasoning before recommendations"
+- "Use British English spelling"
+- "Challenge my assumptions constructively"
+
+**Layer 2 (Project Context):**
+- "I'm learning Python for data science"
+- "I have 8 hours/week for coding practice"
+- "Self-taught, no CS degree, building portfolio"
+
+**Layer 3 (Memory):**
+- "When explaining code, define jargon on first use" (learned through friction)
+- "Always ask about equipment before suggesting exercises" (learned through friction)
+- "Suggest incremental changes, not wholesale rewrites" (learned through friction)
+
+---
+
+## Visual: The Three-Layer System
+
+```
+Layer 1: Personal Preferences (Account-wide)
+│   "Use British English everywhere"
+│   "Always explain reasoning"
+│
+├─> Project A (Fitness)
+│   ├─ Layer 2: Project Context
+│   │   "Home workouts, no gym, 4 hours/week"
+│   └─ Layer 3: Memory
+│       "Always ask about equipment first" (friction-learned)
+│
+├─> Project B (Coding)
+│   ├─ Layer 2: Project Context
+│   │   "Learning Python, 8 hours/week, beginner"
+│   └─ Layer 3: Memory
+│       "Define jargon on first use" (friction-learned)
+│
+└─> Regular Conversations (no project)
+    └─ Only Layer 1 applies
+```
 
 ---
 
 ## Meta Terms
 
 ### Hybrid Approach
-**What it is:** This framework - combining structured templates (from articles) with adaptive friction-driven development (from Claude's experience).
+**What it is:** This framework's methodology - combining structured templates with adaptive friction-driven development.
 
-**Why hybrid:** 
-- Structure provides starting point and reference
-- Friction-driven prevents over-engineering
+**Why hybrid:**
+- Structure (templates) provides starting point and reference
+- Friction-driven development prevents over-engineering
 - Together they balance "enough structure" with "evolve through use"
 
-**Related:** Friction-Driven Development, Templates
+**Contrasts with:**
+- Pure structured approach: Design everything upfront (over-engineering risk)
+- Pure adaptive approach: No structure at all (blank-page paralysis)
+
+**Related:** Friction-Driven Development, Templates, Three-Layer System
 
 ---
 
-### Single Source of Truth
-**Meaning:** One authoritative version of each piece of information, no duplicates or contradictions.
+### Platform-Agnostic
+**Meaning:** This framework works with any AI system that supports persistent instructions (Claude, ChatGPT, GitHub Copilot, Gemini, etc.).
 
-**Why it matters:** Prevents confusion, reduces maintenance burden, ensures consistency.
+**How:** Core concepts (three layers, friction-driven) are universal. Implementation details (where to put instructions) vary by platform.
 
-**Practice:** Delete old versions after creating new ones, update all cross-references.
-
----
-
-## Quick Reference
-
-**When deciding where something goes:**
-
-*Step 1: Does this apply to ALL my Claude use?*
-- Yes → Personal Preferences (Account Settings)
-- No → Go to Step 2
-
-*Step 2: Did I know this before using Claude?*
-- Yes → Project Context (Custom Instructions)
-- No → Go to Step 3
-
-*Step 3: Have I corrected this 3+ times?*
-- Yes → Memory (Project Memory)
-- No → Don't capture yet, wait for pattern
-
-**Examples by category:**
-
-*Personal Preferences:*
-- British English spelling
-- Documentation cleanup standards
-- General explanation depth preference
-
-*Project Context:*
-- Who you are in this domain
-- Your constraints for this project
-- Goals for this specific area
-
-*Memory:*
-- "Always ask about equipment first" (fitness project)
-- "Define jargon on first use" (coding project)
-- Specific patterns from friction
-
-**When deciding what to add:**
-- Week 1: Nothing - just use essentials
-- Week 2-3: Memory instructions for confirmed patterns
-- Month 1+: One advanced section if friction reveals need
-- Ongoing: Review monthly, refine as needed
+**Platform variations:** See each layer's "Where to set" section for platform-specific locations.
 
 ---
 
 ## Related Documents
 
-- **README.md** - System overview
-- **project-context-guide.md** - Detailed setup process
-- **memory-guide.md** - Deep dive on memory development
-- **personal-preferences-guide.md** - Account-level preferences setup
+**Understanding the system:**
+- **README.md** - Overview and three-layer introduction
+- **PROJECT-INDEX.md** - Complete navigation guide
+- **This GLOSSARY** - Terms and concepts
+
+**Building each layer:**
+- **personal-preferences-guide.md** - Layer 1 setup
+- **project-context-guide.md** - Layer 2 setup
+- **memory-guide.md** - Layer 3 development
+
+**Templates and examples:**
+- **starter-template.md** - Layer 2 essentials
+- **advanced-template.md** - Layer 2 expansions reference
+- **examples/** - Complete three-layer implementations
+
+**Quick start:**
+- **quick-start-checklist.md** - Fast-track setup
 - **template-usage-order.md** - How to use templates
