@@ -86,8 +86,8 @@ Fill in the starter template with these 5 sections:
 - [ ] Commit it, see [claude-code-memory-guide.md](claude-code-memory-guide.md) for the full hierarchy
 
 **ChatGPT:**
-- [ ] Create new GPT or use Custom Instructions
-- [ ] Paste your five essentials
+- [ ] Create a Project (or a GPT if you want a shareable, reusable assistant)
+- [ ] Paste your five essentials into the project's instructions
 - [ ] Save
 
 **GitHub Copilot:**

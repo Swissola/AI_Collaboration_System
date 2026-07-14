@@ -38,7 +38,7 @@ Before using templates, understand what you're building:
 - Claude Code: `~/.claude/CLAUDE.md` (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
 - ChatGPT: Settings → Personalization → Custom Instructions
 - GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
-- Gemini: Account settings
+- Gemini: Settings & help → Personal Intelligence
 
 **Once done, you're ready for templates.**
 
@@ -58,7 +58,7 @@ Before using templates, understand what you're building:
 3. Add to your project's context storage:
    - Claude: Project → Custom Instructions
    - Claude Code: project `./CLAUDE.md`
-   - ChatGPT: Create GPT or conversation instructions
+   - ChatGPT: Create a Project (or a GPT for a shareable assistant)
    - GitHub Copilot: `.github/copilot-instructions.md` file
    - Gemini: Create Gem with instructions
    - API: System message

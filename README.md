@@ -97,7 +97,7 @@ Fill in five core sections:
 
 *For Claude: Add to Project Custom Instructions*  
 *For Claude Code: Add to project `./CLAUDE.md`*  
-*For ChatGPT: Add to Custom Instructions in Settings*  
+*For ChatGPT: Add to a Project's instructions*  
 *For GitHub Copilot: Create `.github/copilot-instructions.md` in your repository*  
 *For Gemini: Create a Gem with these instructions*  
 *For other AIs: Use your platform's equivalent persistent instruction field*
@@ -154,7 +154,7 @@ Your complete AI collaboration system has three levels:
 - Claude Code: `~/.claude/CLAUDE.md`  
 - ChatGPT: Custom Instructions in Settings
 - GitHub Copilot: Personal Instructions (github.com/copilot → profile menu)
-- Gemini: Account-level settings
+- Gemini: Settings & help → Personal Intelligence
 - Other AIs: Account-level settings where available
 
 **Project Context (Project-specific):**
@@ -167,7 +167,7 @@ Your complete AI collaboration system has three levels:
 *Platform-specific:*  
 - Claude: Project Custom Instructions  
 - Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides  
-- ChatGPT: GPTs or conversation-specific instructions
+- ChatGPT: Projects (instructions + files per project), or GPTs for a shareable assistant
 - GitHub Copilot: Repository Instructions (`.github/copilot-instructions.md`)
 - Gemini: Gems (custom AI instances)
 - Other AIs: Per-session or project-specific prompts
@@ -214,8 +214,8 @@ Understanding the difference between project-level instructions:
 Don't capture every correction as a pattern.
 
 **Pattern recognition:**
-- Occurs once → Could be fluke, just correct it
-- Occurs twice → Might be pattern, note it
+- Occurs once → Could be a fluke, just correct it
+- Occurs twice → Might be a pattern, note it
 - Occurs three times → Confirmed pattern, capture it
 
 **Why this works:**
@@ -426,9 +426,9 @@ Yes. The framework is platform-agnostic. The core concepts (context, constraints
 *Platform differences:*  
 - **Claude Projects:** Native support for separate Custom Instructions and Memory makes implementation straightforward  
 - **Claude Code:** Implements all three layers as files (`~/.claude/CLAUDE.md`, project `./CLAUDE.md`, auto memory). See [claude-code-memory-guide.md](guides/claude-code-memory-guide.md)  
-- **ChatGPT:** Use Custom Instructions (account-level) and GPTs or conversation context (project-level), plus Memory feature
+- **ChatGPT:** Use Custom Instructions (account-level) and Projects (project-level, instructions + files), plus Memory feature
 - **GitHub Copilot:** Personal Instructions (account-level) and Repository Instructions (project-level via `.github/copilot-instructions.md`)
-- **Gemini:** Account settings and Gems (custom AI instances)
+- **Gemini:** Settings & help → Personal Intelligence, and Gems (custom AI instances)
 - **Other AIs:** Adapt to your platform's instruction/memory capabilities
 
 The friction-driven methodology works regardless of platform - just adjust how you store and structure your instructions.

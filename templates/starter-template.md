@@ -183,7 +183,7 @@ This prevents the AI from suggesting things that sound good but won't work for y
 **Where to add Layer 2 (Project Context):**
 - **Claude:** Project → Custom Instructions
 - **Claude Code:** project `./CLAUDE.md`
-- **ChatGPT:** Create a GPT, or use custom instructions for conversation
+- **ChatGPT:** Create a Project (or a GPT for a shareable, reusable assistant)
 - **GitHub Copilot:** Create `.github/copilot-instructions.md` file in your repository
 - **Gemini:** Create a Gem with these instructions
 - **API:** Include as system message in your requests

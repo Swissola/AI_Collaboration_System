@@ -906,7 +906,7 @@ Once you've decided to add an optional section, add it to your **Layer 2 (Projec
 **Platform-specific locations:**
 - **Claude:** Project → Custom Instructions (append to your five essentials)
 - **Claude Code:** project `./CLAUDE.md` (see [claude-code-memory-guide.md](../guides/claude-code-memory-guide.md))
-- **ChatGPT:** Edit your GPT or custom instructions (append to existing)
+- **ChatGPT:** Edit your Project's instructions (or your GPT's), append to existing
 - **GitHub Copilot:** Edit `.github/copilot-instructions.md` (append to file)
 - **Gemini:** Edit your Gem instructions (append to existing)
 - **API:** Append to system message

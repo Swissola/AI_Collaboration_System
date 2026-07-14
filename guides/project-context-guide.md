@@ -31,7 +31,7 @@ Your complete AI system has three distinct layers:
 - Claude Code: `~/.claude/CLAUDE.md` (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
 - ChatGPT: Settings → Personalization → Custom Instructions
 - GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
-- Gemini: Account settings
+- Gemini: Settings & help → Personal Intelligence
 - API: Not applicable (stateless)
 
 **Layer 2: Project Context (Project-specific) ← THIS GUIDE**
@@ -44,7 +44,7 @@ Your complete AI system has three distinct layers:
 *Where to set:*
 - Claude: Project → Custom Instructions
 - Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
-- ChatGPT: Create a GPT or use conversation instructions
+- ChatGPT: Create a Project (or a GPT for a shareable, reusable assistant)
 - GitHub Copilot: `.github/copilot-instructions.md` in your repository
 - Gemini: Create a Gem
 - API: System message in each request
@@ -129,7 +129,7 @@ Open starter template and fill in:
 **For different platforms:**
 - Claude Projects: Settings → Custom Instructions
 - Claude Code: project `./CLAUDE.md` (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
-- ChatGPT: Settings → Custom Instructions
+- ChatGPT: Create a Project, add instructions there (not the account-wide Settings → Custom Instructions, that's Layer 1)
 - GitHub Copilot: Repository → `.github/copilot-instructions.md` file
 - Gemini: Create a Gem with custom instructions
 - API usage: Include in system message

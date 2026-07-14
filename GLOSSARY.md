@@ -29,7 +29,7 @@ Quick reference for key terms and concepts in the AI Collaboration System framew
 - Claude Code: `~/.claude/CLAUDE.md` (see [claude-code-memory-guide.md](guides/claude-code-memory-guide.md))
 - ChatGPT: Settings → Personalization → Custom Instructions
 - GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
-- Gemini: Account settings
+- Gemini: Settings & help → Personal Intelligence
 
 **When to use:** Standards that apply regardless of what you're working on
 
@@ -61,7 +61,7 @@ Quick reference for key terms and concepts in the AI Collaboration System framew
 **Where to set:**
 - Claude: Project → Custom Instructions
 - Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides
-- ChatGPT: Create a GPT or conversation-specific instructions
+- ChatGPT: Create a Project (or a GPT for a shareable, reusable assistant)
 - GitHub Copilot: `.github/copilot-instructions.md` in repository
 - Gemini: Create a Gem
 - API: System message in requests
