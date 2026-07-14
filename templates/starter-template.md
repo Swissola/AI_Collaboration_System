@@ -182,6 +182,7 @@ This prevents the AI from suggesting things that sound good but won't work for y
 
 **Where to add Layer 2 (Project Context):**
 - **Claude:** Project → Custom Instructions
+- **Claude Code:** project `./CLAUDE.md`
 - **ChatGPT:** Create a GPT, or use custom instructions for conversation
 - **GitHub Copilot:** Create `.github/copilot-instructions.md` file in your repository
 - **Gemini:** Create a Gem with these instructions
@@ -203,13 +204,14 @@ This prevents the AI from suggesting things that sound good but won't work for y
 
 ### Week 2-3: Build Layer 3 (Memory)
 When you find yourself correcting the same thing 3+ times:
-1. Recognize the pattern
+1. Recognise the pattern
 2. Create a memory instruction (Layer 3)
 3. Add it to your platform's memory storage
 4. Test if it resolves the friction
 
 **Where to add Layer 3 (Project Memory):**
 - **Claude:** Project → Memory
+- **Claude Code:** mostly automatic, see [claude-code-memory-guide.md](../guides/claude-code-memory-guide.md)
 - **ChatGPT:** Memory feature or append to GPT instructions
 - **GitHub Copilot:** Append to `.github/copilot-instructions.md` (manual)
 - **Gemini:** Append to Gem instructions (manual)
@@ -269,7 +271,7 @@ After using your Layer 2 essentials for a month and building some Layer 3 memory
 - **Operating Modes:** You interact differently for different types of work (planning vs. execution)
 - **Decision Framework:** AI suggestions work but don't align with your priorities
 - **Domain Principles:** AI keeps suggesting things that violate how you think work should be done
-- **Success Metrics:** You want help analyzing progress and adjusting based on data
+- **Success Metrics:** You want help analysing progress and adjusting based on data
 - **Response Structure:** Specific format preferences keep recurring
 - **Common Pitfalls:** You have recurring mistakes the AI should help you avoid
 - **Integration:** This project connects with other areas needing coordination
@@ -363,7 +365,7 @@ Limitations: No marketing experience. Small network. Solo founder (no cofounder)
 ### Research/Learning
 ```
 1. Complete comprehensive literature review of 50+ papers in 3 months
-2. Develop original framework synthesizing findings across disciplines
+2. Develop original framework synthesising findings across disciplines
 3. Write 60-page thesis draft by Month 6 (leaving 2 months for revision)
 4. Present preliminary findings at departmental seminar
 5. Build foundation for potential PhD applications (if I decide to continue)
@@ -537,4 +539,4 @@ When suggesting product features:
 4. Build Layer 3 from patterns (Week 2+)
 5. Expand Layer 2 if needed (Month 1+, see [Advanced Template](advanced-template.md))
 
-Good luck building your AI collaboration system! 🚀
+Good luck building your AI collaboration system.

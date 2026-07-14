@@ -26,6 +26,7 @@ Quick reference for key terms and concepts in the AI Collaboration System framew
 
 **Where to set:**
 - Claude: Settings → Profile → Personal Preferences
+- Claude Code: `~/.claude/CLAUDE.md` (see [claude-code-memory-guide.md](guides/claude-code-memory-guide.md))
 - ChatGPT: Settings → Personalization → Custom Instructions
 - GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
 - Gemini: Account settings
@@ -59,6 +60,7 @@ Quick reference for key terms and concepts in the AI Collaboration System framew
 
 **Where to set:**
 - Claude: Project → Custom Instructions
+- Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides
 - ChatGPT: Create a GPT or conversation-specific instructions
 - GitHub Copilot: `.github/copilot-instructions.md` in repository
 - Gemini: Create a Gem
@@ -92,6 +94,7 @@ Quick reference for key terms and concepts in the AI Collaboration System framew
 
 **Where to set:**
 - Claude: Project → Memory
+- Claude Code: mostly automatic, see [claude-code-memory-guide.md](guides/claude-code-memory-guide.md)
 - ChatGPT: Memory feature or append to GPT instructions
 - GitHub Copilot: Append to repository instructions (manual)
 - Gemini: Append to Gem instructions (manual)
@@ -289,7 +292,7 @@ Priority 4: Enjoyment
 
 **Example (Coding):**
 - Readability over cleverness
-- Working code before optimization
+- Working code before optimisation
 - Delete code rather than comment it out
 
 **Related:** Decision Framework, Advanced Template, Layer 2
@@ -494,6 +497,32 @@ Layer 1: Personal Preferences (Account-wide)
 **How:** Core concepts (three layers, friction-driven) are universal. Implementation details (where to put instructions) vary by platform.
 
 **Platform variations:** See each layer's "Where to set" section for platform-specific locations.
+
+---
+
+## Claude Code Terms
+
+Claude Code implements the three-layer system as files rather than account settings. Full detail in [claude-code-memory-guide.md](guides/claude-code-memory-guide.md).
+
+### CLAUDE.md
+**What it is:** A markdown file Claude Code reads automatically at the start of a session. Exists at four levels (managed policy, user, project, local), most specific loading last.
+
+**Related:** Layer 1, Layer 2, `@import`
+
+### The Memory Hierarchy
+**What it is:** The four CLAUDE.md levels, combined rather than overridden: managed policy (organisation-wide), user (`~/.claude/CLAUDE.md`), project (`./CLAUDE.md`), local (`./CLAUDE.local.md`, gitignored).
+
+**Related:** CLAUDE.md, Layer 1, Layer 2
+
+### `@import`
+**What it is:** Syntax for pulling one file's content into a CLAUDE.md, `@path/to/file.md`. Keeps a single source of truth instead of copy-pasting the same instructions into several files. Four hops deep at most.
+
+**Related:** CLAUDE.md
+
+### Auto Memory
+**What it is:** Claude Code's own Layer 3 implementation. Claude writes structured notes as it works with you, under `~/.claude/projects/<project>/memory/`, rather than you drafting memory instructions by hand after the Rule of Three.
+
+**Related:** Layer 3, Rule of Three, Friction
 
 ---
 

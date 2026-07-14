@@ -101,4 +101,4 @@ When reviewing my code → Flag one critical issue and one learning opportunity 
 
 **Total time:** 30 min setup → 15 min Week 1 → 45 min Month 2 = 90 min over 8 weeks
 
-**Key insight:** Discovered tutorial hell and perfectionism through use, not upfront. Common Pitfalls section added Week 7 after recognizing my own behavior patterns.
+**Key insight:** Discovered tutorial hell and perfectionism through use, not upfront. Common Pitfalls section added Week 7 after recognising my own behaviour patterns.

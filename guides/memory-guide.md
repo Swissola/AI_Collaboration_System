@@ -1,14 +1,16 @@
 # Memory Development Guide
 
-## Understanding Memory in Claude Projects
+## Understanding Project Memory
 
-**Project Context (Custom Instructions):** What you know before starting - your context, goals, constraints, preferences.
+**Project Context (Custom Instructions):** What you know before starting, your context, goals, constraints, preferences.
 
-**Project Memory:** What you learn through using Claude - specific patterns, corrections, discovered preferences.
+**Project Memory:** What you learn through using the AI, specific patterns, corrections, discovered preferences.
 
 Think of it this way:
 - Project Context = Your hypothesis about what you need
 - Memory = Your findings from testing that hypothesis
+
+**Using Claude Code?** Everything below describes memory as something you build by hand. That's still the right mental model for *how* memory should evolve, stay lean, wait for a pattern to confirm, remove what stops helping. But on Claude Code specifically, most of the writing itself now happens for you: Claude keeps its own notes as you work rather than waiting for you to draft an instruction. See [claude-code-memory-guide.md](claude-code-memory-guide.md) for how that works.
 
 ---
 
@@ -96,7 +98,7 @@ Technical explanations:
 
 ## Using the Friction-Detection Shortcut
 
-Instead of manually analyzing patterns, let Claude help:
+Instead of manually analysing patterns, let Claude help:
 
 ### Mid-Conversation Prompt
 
@@ -376,7 +378,7 @@ When memory instructions get complex, move them to framework documents.
 **Example:**
 Instead of 5 separate memory instructions about code review, create:
 - `code-review-framework.md` in project knowledge
-- Single memory entry: "Code reviews: Use Code Review Framework (see project files). Prioritize: working > clean > optimal"
+- Single memory entry: "Code reviews: Use Code Review Framework (see project files). Prioritise: working > clean > optimal"
 
 ---
 
@@ -470,6 +472,6 @@ Instead of 5 separate memory instructions about code review, create:
 4. **Month 1:** Review and refine, add 2-4 more as needed
 5. **Ongoing:** Monthly maintenance, evolve with needs
 
-**Remember:** Memory builds through real use, not imagination. Start empty, let friction fill it.
+**Remember:** memory builds through real use, not guesswork. Start empty and let friction fill it in.
 
-The best memory system is lean, relevant, and evolved through actual patterns in your work with Claude.
+The best memory system is lean, relevant, and shaped by what actually happened in your work with Claude, not what you assumed you'd need.

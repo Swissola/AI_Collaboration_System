@@ -81,6 +81,10 @@ Fill in the starter template with these 5 sections:
 - [ ] Paste your five essentials
 - [ ] Save
 
+**Claude Code:**
+- [ ] Paste your five essentials into project `./CLAUDE.md`
+- [ ] Commit it, see [claude-code-memory-guide.md](claude-code-memory-guide.md) for the full hierarchy
+
 **ChatGPT:**
 - [ ] Create new GPT or use Custom Instructions
 - [ ] Paste your five essentials
@@ -163,6 +167,9 @@ Count: [1st time / 2nd time / 3rd time]
 **Claude:**
 - [ ] Project → Memory → Add instruction
 
+**Claude Code:**
+- [ ] Mostly automatic, Claude writes these for you. Say "remember this" for anything urgent, or see [claude-code-memory-guide.md](claude-code-memory-guide.md)
+
 **ChatGPT:**
 - [ ] Use Memory feature or append to GPT instructions
 
@@ -223,6 +230,8 @@ Watch for these common issues:
 - [ ] Do you need an optional section from Advanced Template?
 - [ ] Only add ONE section if friction clearly reveals the need
 - [ ] Don't add "just in case"
+
+**Claude Code users:** run `/claude-md-management:claude-md-improver` for this monthly review instead of doing it by eye. It audits every CLAUDE.md in the repo against a quality rubric and proposes a diff before touching anything. See [claude-code-memory-guide.md](claude-code-memory-guide.md).
 
 ### Test changes:
 - [ ] Ask typical questions
@@ -340,4 +349,4 @@ Layer 3 (Memory) → Build through friction (Week 1+)
 
 **The system gets better through use, not through planning.**
 
-Start minimal. Trust friction. Evolve deliberately. 🚀
+Start minimal. Trust friction. Evolve deliberately.

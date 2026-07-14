@@ -1,15 +1,15 @@
 # AI Collaboration System (AICS)
 ## Hybrid Approach: Structured Flexibility
 
-A comprehensive system for creating effective AI collaboration setups that combines structured frameworks with adaptive, friction-driven development.
+A system for setting up effective AI collaboration: structured frameworks combined with adaptive, friction-driven development.
 
-Works with any AI provider that supports custom instructions and persistent context. Designed primarily for Claude Projects but fully applicable to ChatGPT, Gemini, and other LLM platforms.
+Works with any AI provider that supports custom instructions and persistent context. Designed primarily for Claude Projects and Claude Code, but fully applicable to ChatGPT, Gemini, and other LLM platforms.
 
 ---
 
 ## What This System Does
 
-Transforms any AI assistant from a generic tool into a personalised collaborator that:
+Turns a generic AI assistant into a personalised collaborator:
 - Understands your context without repeated explanation
 - Adapts to your skill level and constraints
 - Learns your preferences through actual use
@@ -96,6 +96,7 @@ Fill in five core sections:
 **Add to your AI system's custom instructions → Use for one week**
 
 *For Claude: Add to Project Custom Instructions*  
+*For Claude Code: Add to project `./CLAUDE.md`*  
 *For ChatGPT: Add to Custom Instructions in Settings*  
 *For GitHub Copilot: Create `.github/copilot-instructions.md` in your repository*  
 *For Gemini: Create a Gem with these instructions*  
@@ -150,6 +151,7 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Personal Preferences in Settings → Profile  
+- Claude Code: `~/.claude/CLAUDE.md`  
 - ChatGPT: Custom Instructions in Settings
 - GitHub Copilot: Personal Instructions (github.com/copilot → profile menu)
 - Gemini: Account-level settings
@@ -164,6 +166,7 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Project Custom Instructions  
+- Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides  
 - ChatGPT: GPTs or conversation-specific instructions
 - GitHub Copilot: Repository Instructions (`.github/copilot-instructions.md`)
 - Gemini: Gems (custom AI instances)
@@ -178,6 +181,7 @@ Your complete AI collaboration system has three levels:
 
 *Platform-specific:*  
 - Claude: Project Memory feature  
+- Claude Code: mostly automatic, see [claude-code-memory-guide.md](guides/claude-code-memory-guide.md)  
 - ChatGPT: Memory feature or persistent instructions
 - GitHub Copilot: Append to repository instructions (manual evolution)
 - Gemini: Append to Gem instructions (manual evolution)
@@ -402,7 +406,7 @@ Most people either leave custom instructions empty or write a few vague sentence
 
 **"Do I need to fill in everything in the advanced template?"**
 
-No! The advanced template shows what's *possible* to add. Most projects only need 20-30% of those sections. Let friction tell you what you actually need.
+No. The advanced template shows what's *possible* to add. Most projects only need 20-30% of those sections. Let friction tell you what you actually need.
 
 **"What if my project doesn't fit these categories?"**
 
@@ -417,10 +421,11 @@ Templates are starting points, not restrictions. Adapt freely. The core concept 
 
 **"Can I use this with ChatGPT, Gemini, Copilot, or other AIs?"**
 
-Absolutely! The framework is platform-agnostic. The core concepts (context, constraints, goals, friction-driven evolution) work with any AI system that supports custom instructions. 
+Yes. The framework is platform-agnostic. The core concepts (context, constraints, goals, friction-driven evolution) work with any AI system that supports custom instructions. 
 
 *Platform differences:*  
 - **Claude Projects:** Native support for separate Custom Instructions and Memory makes implementation straightforward  
+- **Claude Code:** Implements all three layers as files (`~/.claude/CLAUDE.md`, project `./CLAUDE.md`, auto memory). See [claude-code-memory-guide.md](guides/claude-code-memory-guide.md)  
 - **ChatGPT:** Use Custom Instructions (account-level) and GPTs or conversation context (project-level), plus Memory feature
 - **GitHub Copilot:** Personal Instructions (account-level) and Repository Instructions (project-level via `.github/copilot-instructions.md`)
 - **Gemini:** Account settings and Gems (custom AI instances)
@@ -507,4 +512,4 @@ The best collaboration system is one that grew with you, not one that tried to p
 6. Capture patterns
 7. Evolve continuously
 
-Good luck! 🚀
+Good luck.

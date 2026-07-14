@@ -191,7 +191,7 @@ If yes to 1 and 2, no to 3 → Add to preferences
 **Work Standards:**
 - Code verification requirements
 - Documentation cleanup rules
-- File organization principles
+- File organisation principles
 
 **Collaboration Style:**
 - When to ask vs. when to act

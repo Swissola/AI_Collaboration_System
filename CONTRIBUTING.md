@@ -1,6 +1,6 @@
 # Contributing to AI Collaboration System (AICS)
 
-Thank you for your interest in contributing! This project welcomes contributions from the community.
+Thank you for your interest in contributing. This project welcomes contributions from the community.
 
 ## How to Contribute
 

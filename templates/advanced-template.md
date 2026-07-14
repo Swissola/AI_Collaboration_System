@@ -36,7 +36,7 @@ Add these to your project context ONE AT A TIME when friction reveals the need.
 
 ### Operating Modes (Add when you notice distinct interaction patterns)
 
-**When to use:** You realize you interact with your AI differently for different types of work and want those differences made explicit.
+**When to use:** You realise you interact with your AI differently for different types of work and want those differences made explicit.
 
 **Why this matters:** Without modes, you might get detailed strategic thinking when you just need a quick answer, or vice versa.
 
@@ -46,7 +46,7 @@ Mode [Name]: [When you're doing what]
 - Approach: [How to think about the problem]
 - Depth: [How much detail]
 - Style: [Tone and delivery]
-- Focus: [What to emphasize]
+- Focus: [What to emphasise]
 - Trigger examples: [Phrases you naturally use]
 ```
 
@@ -86,7 +86,7 @@ AI should:
 
 **When to use:** You notice the AI suggests things that technically work but don't align with what actually matters to you.
 
-**Why this matters:** Without explicit priorities, the AI might optimize for effectiveness when you care more about sustainability, or suggest expensive solutions when budget is your main constraint.
+**Why this matters:** Without explicit priorities, the AI might optimise for effectiveness when you care more about sustainability, or suggest expensive solutions when budget is your main constraint.
 
 **Structure:**
 ```
@@ -143,7 +143,7 @@ Analysis:
 Recommendation: Several focused projects wins on P2 and P4.
 ```
 
-**Using the Framework:** When the AI suggests something, you should be able to see which priority it's optimizing for. If suggestions consistently ignore your top priorities, the framework needs to be more explicit.
+**Using the Framework:** When the AI suggests something, you should be able to see which priority it's optimising for. If suggestions consistently ignore your top priorities, the framework needs to be more explicit.
 
 *See [Appendix B](#appendix-b-additional-decision-framework-examples) for more examples across different domains.*
 
@@ -331,7 +331,7 @@ Special cases:
 
 ### Common Pitfalls (Add when you notice your own patterns)
 
-**When to use:** You recognize mistakes you tend to make repeatedly and want the AI to watch for them.
+**When to use:** You recognise mistakes you tend to make repeatedly and want the AI to watch for them.
 
 **Why this matters:** You have blind spots. Naming your patterns lets the AI catch you before you make the same mistake again.
 
@@ -395,8 +395,8 @@ This project connects to:
 [Related area]:
 - How they interact: [Description]
 - What to consider: [Trade-offs and synergies]
-- When to prioritize this: [Conditions]
-- When to prioritize other: [Conditions]
+- When to prioritise this: [Conditions]
+- When to prioritise other: [Conditions]
 ```
 
 **Quick example:**
@@ -404,8 +404,8 @@ This project connects to:
 Learning connects to job performance:
 - How they interact: Skill development affects job opportunities; work demands affect learning time
 - Consider: Don't start major learning projects during work crunch periods
-- Prioritize learning when: Work is stable, have mental energy
-- Prioritize work when: Critical deadlines, then resume learning after
+- Prioritise learning when: Work is stable, have mental energy
+- Prioritise work when: Critical deadlines, then resume learning after
 ```
 
 ---
@@ -436,13 +436,13 @@ Training log spreadsheet:
 
 ---
 
-### Domain-Specific Guidelines (Add specialized instructions)
+### Domain-Specific Guidelines (Add specialised instructions)
 
 **When to use:** Your domain has specific practices, terminology, or requirements that general advice misses.
 
 **Structure:**
 ```
-Specialized instructions for [domain]:
+Specialised instructions for [domain]:
 
 Technical Requirements:
 - [Requirement]
@@ -529,7 +529,7 @@ If I correct code explanations 3+ times:
 **Medium priority:**
 - Success Metrics → Want help tracking and analyzing progress
 - Response Structure → Keep reformatting responses
-- Common Pitfalls → Recognize your own patterns need watching
+- Common Pitfalls → Recognise your own patterns need watching
 
 **Lower priority (add only if genuinely needed):**
 - Integration with Other Areas → Cross-impacts are significant
@@ -709,7 +709,7 @@ Priority 4: Strategic Positioning
    - Example: Boring headline + solid advice > clever but shallow
 
 2. Specific > Generic
-   - Why: Generic optimized for no one
+   - Why: Generic optimised for no one
    - Means: Write for specific person with specific problem
    - Example: "How I solved X with Y constraints" > "10 ways to X"
 
@@ -792,7 +792,7 @@ Formatting:
 Avoid:
 - Long preambles before answer
 - Excessive exercise options (paralysis)
-- Overcomplicated periodization when simple works
+- Overcomplicated periodisation when simple works
 - Too much science unless asked
 
 Special cases:
@@ -905,6 +905,7 @@ Once you've decided to add an optional section, add it to your **Layer 2 (Projec
 
 **Platform-specific locations:**
 - **Claude:** Project → Custom Instructions (append to your five essentials)
+- **Claude Code:** project `./CLAUDE.md` (see [claude-code-memory-guide.md](../guides/claude-code-memory-guide.md))
 - **ChatGPT:** Edit your GPT or custom instructions (append to existing)
 - **GitHub Copilot:** Edit `.github/copilot-instructions.md` (append to file)
 - **Gemini:** Edit your Gem instructions (append to existing)
@@ -933,4 +934,4 @@ Once you've decided to add an optional section, add it to your **Layer 2 (Projec
 - **Layer 2:** Starter essentials + these optional expansions
 - **Layer 3:** Memory from friction (separate storage)
 
-Start minimal. Expand deliberately. Evolve through use. 🚀
+Start minimal. Expand deliberately. Evolve through use.

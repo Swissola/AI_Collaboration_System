@@ -28,6 +28,7 @@ Your complete AI system has three distinct layers:
 
 *Where to set:*
 - Claude: Settings → Profile → Personal Preferences
+- Claude Code: `~/.claude/CLAUDE.md` (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
 - ChatGPT: Settings → Personalization → Custom Instructions
 - GitHub Copilot: github.com/copilot → Profile Menu → Personal Instructions
 - Gemini: Account settings
@@ -42,6 +43,7 @@ Your complete AI system has three distinct layers:
 
 *Where to set:*
 - Claude: Project → Custom Instructions
+- Claude Code: project `./CLAUDE.md`, plus `./CLAUDE.local.md` for personal overrides (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
 - ChatGPT: Create a GPT or use conversation instructions
 - GitHub Copilot: `.github/copilot-instructions.md` in your repository
 - Gemini: Create a Gem
@@ -56,6 +58,7 @@ Your complete AI system has three distinct layers:
 
 *Where to set:*
 - Claude: Project → Memory
+- Claude Code: mostly automatic, see [claude-code-memory-guide.md](claude-code-memory-guide.md) for how auto memory replaces most of the hand-authoring below
 - ChatGPT: Memory feature or append to GPT instructions
 - GitHub Copilot: Append to repository instructions file (manual)
 - Gemini: Append to Gem instructions (manual)
@@ -125,6 +128,7 @@ Open starter template and fill in:
 
 **For different platforms:**
 - Claude Projects: Settings → Custom Instructions
+- Claude Code: project `./CLAUDE.md` (see [claude-code-memory-guide.md](claude-code-memory-guide.md))
 - ChatGPT: Settings → Custom Instructions
 - GitHub Copilot: Repository → `.github/copilot-instructions.md` file
 - Gemini: Create a Gem with custom instructions
@@ -324,7 +328,7 @@ The advanced template includes many optional sections. Here's when to add each:
 **Signs you need this:**
 - You have recurring tendencies that derail progress
 - You'd benefit from being called out constructively
-- Past patterns predict future behavior
+- Past patterns predict future behaviour
 
 **How to add:**
 1. Identify 2-4 mistakes you tend to make
@@ -862,8 +866,6 @@ After 3 months, you should have:
 5. Apply friction-driven improvements
 6. Schedule first monthly review
 
-**Remember:** Perfect is the enemy of good. Start with 80% and iterate to 100% through real use.
+**Remember:** perfect is the enemy of good. Start with 80% and iterate to 100% through real use.
 
 The best system is one that evolved through practice, not one that tried to anticipate everything upfront.
-
-Good luck! 🚀

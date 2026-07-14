@@ -10,7 +10,7 @@ Quick navigation guide to all files in this project.
 - What this system is and why it exists
 - Three-layer framework explained (Personal Preferences, Project Context, Memory)
 - Quick start overview
-- Platform compatibility (Claude, ChatGPT, Copilot, Gemini)
+- Platform compatibility (Claude, Claude Code, ChatGPT, Copilot, Gemini)
 - FAQ and common questions
 
 ---
@@ -92,6 +92,18 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
 - Memory instruction templates
 - Real-world examples across domains
 - Maintenance and evolution strategies
+
+### Platform-Specific Guides
+
+**[`guides/claude-code-memory-guide.md`](guides/claude-code-memory-guide.md)** - Claude Code implementation of all three layers
+- CLAUDE.md hierarchy (managed policy, user, project, local)
+- Writing a CLAUDE.md (WHAT-WHY-HOW, line budget, `.claude/rules/`)
+- `@import` syntax
+- Auto memory: Layer 3, automatic
+- Maintaining it with the `claude-md-management` plugin
+- AGENTS.md, briefly
+
+**Use when:** You're using Claude Code specifically, not claude.ai. Read alongside the layer-specific guides above, this one is the file-based implementation of the same three layers.
 
 ### Supporting Guides
 
@@ -179,6 +191,8 @@ Both examples show evolution timeline in ultra-lean format (~100 lines each):
    └─> Explore all possible Layer 2 expansions
 ```
 
+**Using Claude Code?** Read the [Claude Code Memory Guide](guides/claude-code-memory-guide.md) alongside whichever path above fits you, it's the file-based implementation of the same three layers, not a replacement for them.
+
 ---
 
 ## 📁 Directory Structure
@@ -203,6 +217,7 @@ AI_Collaboration_System/
     ├── personal-preferences-guide.md   # Layer 1: Account-wide setup
     ├── project-context-guide.md        # Layer 2: Project-specific setup
     ├── memory-guide.md                 # Layer 3: Friction-driven development
+    ├── claude-code-memory-guide.md     # All 3 layers, Claude Code implementation
     ├── quick-start-checklist.md        # Fast-track Layer 2 setup
     └── template-usage-order.md         # How to use templates effectively
 ```
@@ -259,7 +274,7 @@ AI_Collaboration_System/
 **Used AI custom instructions casually:**
 → Project Context Guide → Examples → Memory Guide
 
-**Power user wanting optimization:**
+**Power user wanting optimisation:**
 → Memory Guide → Advanced Techniques → Three-layer decision mastery
 
 ---
@@ -300,7 +315,8 @@ Layer 1: Personal Preferences (Account-wide)
 | Decide what goes where | Project Context Guide (Decision Guide) | GLOSSARY |
 | Troubleshoot issues | Project Context Guide (Troubleshooting) | All Examples |
 | Maintain all layers | Quick Start Checklist (Monthly) | Project Context Guide (Timeline) |
-| Advanced optimization | Memory Guide (Advanced), Project Context Guide (Advanced) | Examples (evolved states) |
+| Advanced optimisation | Memory Guide (Advanced), Project Context Guide (Advanced) | Examples (evolved states) |
+| Set up on Claude Code | Claude Code Memory Guide | GLOSSARY (Claude Code Terms) |
 
 ---
 
@@ -309,7 +325,7 @@ Layer 1: Personal Preferences (Account-wide)
 ### README.md
 - System overview
 - Three-layer framework introduction
-- Platform compatibility (Claude, ChatGPT, Copilot, Gemini)
+- Platform compatibility (Claude, Claude Code, ChatGPT, Copilot, Gemini)
 - Core philosophy (friction-driven, hybrid approach)
 - FAQ
 
@@ -338,6 +354,13 @@ Layer 1: Personal Preferences (Account-wide)
 - Memory instruction templates
 - Maintenance strategies
 - Advanced techniques
+
+### Claude Code Memory Guide (claude-code-memory-guide.md)
+- CLAUDE.md hierarchy (managed policy, user, project, local)
+- Writing a CLAUDE.md, `@import` syntax
+- Auto memory (Layer 3, automatic on this platform)
+- The `claude-md-management` plugin
+- AGENTS.md, briefly
 
 ### Starter Template (starter-template.md)
 - Context: Who you are, what you're doing
@@ -397,7 +420,7 @@ Layer 1: Personal Preferences (Account-wide)
 3. **Use Quick Start for Layer 2** - fastest path to working system
 4. **Let friction guide Layer 3** - don't anticipate, discover
 5. **Reference guides as needed** - don't read everything upfront
-6. **Compare examples** when customizing your own
+6. **Compare examples** when customising your own
 7. **Return to Memory Guide** after Week 1+ of real use
 
 **Most important:** The three-layer system is designed to be built incrementally. Start minimal (Layers 1 & 2), use for a week, then develop Layer 3 through friction.
@@ -415,7 +438,7 @@ README (15 min) → Personal Preferences Guide (20 min) → Project Context Guid
 **Path 3 - Existing Project Migration (1.5 hours):**
 README (15 min) → Project Context Guide - Existing Projects (30 min) → Three-Layer Decision Guide (20 min) → Restructure (25 min)
 
-Choose your path and start building!
+Choose your path and start building.
 
 ---
 
@@ -434,7 +457,7 @@ The system has three types of documents that work in concert:
 - Memory Guide → Layer 3
 - Quick Start Checklist → Fast path
 
-**Reference (customize):**
+**Reference (customise):**
 - Starter Template → Layer 2 form
 - Advanced Template → Layer 2 options
 - Examples → Completed versions
@@ -442,5 +465,5 @@ The system has three types of documents that work in concert:
 **Process:**
 1. Read conceptual docs to understand
 2. Use instructional guides to build
-3. Reference templates and examples while customizing
-4. Return to guides when stuck or optimizing
+3. Reference templates and examples while customising
+4. Return to guides when stuck or optimising
